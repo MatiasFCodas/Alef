@@ -2,9 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Luz : MonoBehaviour
-{
+public class Luz : MonoBehaviour {
+
+
+    /// <Explicação>
+    /// 
+    /// Cria o raycast para emitir a "luz" 
+    /// e checar as chaves para abrir as 
+    /// portas 
+    /// 
+    /// Talvez fazer a focal light ativar 
+    /// por aqui 
+    /// (Khalil - 14:40 - 07/11/2018) 
+    /// 
+    /// </Explicação>
+
+
     public GameObject obj;
+
+    public bool chavePortaNormal;
+    public bool chavePortaSecreta;
+
+
+
+    private void Update()
+    {
+        DirecaoLuz();
+    }
 
 
     void DirecaoLuz()
@@ -16,19 +40,30 @@ public class Luz : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 30))
         {
-            if (hit.collider.CompareTag("Receptor"))
+
+
+            //Ativa Receptores da Porta Normal
+            if (hit.collider.CompareTag("ReceptorNormal"))
             {
-                GameObject hitObj = hit.collider.gameObject;
-                hitObj.GetComponent<Renderer>().material.color = Color.red;
-
+                chavePortaNormal = true;
             }
-                   
-        }
-        Debug.DrawRay(from, direction * 30, Color.blue);
-    }
+            else
+            {
+                chavePortaNormal = false;
+            }
 
-    private void Update()
-    {
-        DirecaoLuz();
+
+            //Ativa Receptores da Sala Secreta
+            if (hit.collider.CompareTag("ReceptorSecreto"))
+            {
+                chavePortaSecreta = true;
+            }
+            else
+            {
+                chavePortaSecreta = false;
+            }
+
+        }
+        Debug.DrawRay(from, direction * 30, Color.blue); // Desenha Raycast
     }
 }
