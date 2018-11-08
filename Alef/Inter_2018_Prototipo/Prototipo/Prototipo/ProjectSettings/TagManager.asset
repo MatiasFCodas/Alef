@@ -23,6 +23,8 @@ TagManager:
   - "Face_Bot\xE3o"
   - Receptor
   - Gate
+  - ReceptorNormal
+  - ReceptorSecreto
   layers:
   - Default
   - TransparentFX
