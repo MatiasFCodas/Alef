@@ -21,7 +21,6 @@ public class EscadaTutorial : MonoBehaviour {
 		if(puzzle.GetComponent<PuzzleA_01>().puzzleA_01 == true)
         {
             animPlataforma.SetTrigger("AbriPlataforma");
-            platSource.Play();
         }
 	}
 
@@ -29,5 +28,10 @@ public class EscadaTutorial : MonoBehaviour {
     {
         animEscada.SetTrigger("AbriEscada");
         stairSource.Play();
+    }
+
+    public void SomPlataforma()
+    {
+        platSource.Play();
     }
 }
