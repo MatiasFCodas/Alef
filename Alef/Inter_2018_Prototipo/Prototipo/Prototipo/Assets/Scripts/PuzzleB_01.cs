@@ -7,7 +7,6 @@ public class PuzzleB_01 : MonoBehaviour {
 
     public bool puzzleB_01 = false;
 
-    public GameObject door;
     public GameObject player;
 	public CinemachineVirtualCamera cam;
     public GameObject interativo;
@@ -37,7 +36,6 @@ public class PuzzleB_01 : MonoBehaviour {
 
             feed.Play();
             puzzleB_01 = true;
-            door.SetActive(false);
            // cam_puzzle.SetActive(false);
 			cam.Priority = 9;
             player.SetActive(true);
