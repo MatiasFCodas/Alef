@@ -16,17 +16,11 @@ public class PuzzleA_02 : MonoBehaviour {
     public AudioSource feedFim;
     public AudioSource porta;
     public AudioSource somPuzzle02;
+    
 
-
-    // Use this for initialization
     void Start () {
         feedFim = GetComponent<AudioSource>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	}	
 
     void OnTriggerEnter(Collider other)
     {
