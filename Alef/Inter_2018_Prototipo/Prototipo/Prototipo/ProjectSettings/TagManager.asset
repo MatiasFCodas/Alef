@@ -22,9 +22,6 @@ TagManager:
   - Puzzle01_C
   - "Face_Bot\xE3o"
   - Receptor
-  - Gate
-  - ReceptorNormal
-  - ReceptorSecreto
   layers:
   - Default
   - TransparentFX
@@ -38,8 +35,8 @@ TagManager:
   - Caminho
   - Muro
   - Player
-  - Grade
-  - Fase
+  - 
+  - 
   - 
   - 
   - 
