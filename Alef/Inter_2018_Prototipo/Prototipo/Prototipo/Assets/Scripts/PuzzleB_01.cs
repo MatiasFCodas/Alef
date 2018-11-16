@@ -9,25 +9,13 @@ public class PuzzleB_01 : MonoBehaviour {
 
     public GameObject player;
 	public CinemachineVirtualCamera cam;
-    public GameObject interativo;
     public GameObject face;
     public GameObject inicio;
 
     public AudioSource feed;
 
+    public move2 movcubo;
 
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-
-
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -36,12 +24,13 @@ public class PuzzleB_01 : MonoBehaviour {
 
             feed.Play();
             puzzleB_01 = true;
-           // cam_puzzle.SetActive(false);
 			cam.Priority = 9;
+
+            movcubo.canMove = false;
+
             player.SetActive(true);
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);
-            interativo.GetComponent<move2>().enabled = false;
             face.GetComponent<BoxCollider>().enabled = false;
         }
     }

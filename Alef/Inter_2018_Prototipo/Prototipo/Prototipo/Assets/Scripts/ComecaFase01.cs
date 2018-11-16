@@ -14,7 +14,7 @@ public class ComecaFase01 : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
+	// Update is called once per frame  
 	void Update () {
 		
 	}
@@ -32,7 +32,7 @@ public class ComecaFase01 : MonoBehaviour {
 
     private void FadeComplete()
     {
-        SceneManager.LoadScene("Level_01C");
+        SceneManager.LoadScene("Ilha");
     }
 }
 

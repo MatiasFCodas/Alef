@@ -18,15 +18,9 @@ public class PuzzleB_02 : MonoBehaviour {
     public AudioSource feed;
     public AudioSource somPuzzle03;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public move2 movcubo;
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face"))
@@ -35,7 +29,9 @@ public class PuzzleB_02 : MonoBehaviour {
             feed.Play();
             puzzleB_02 = true;
             player.SetActive(true);
-           // cam_puzzle.SetActive(false);
+
+            movcubo.canMove = false;
+
 			cam.Priority = 9;
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);

@@ -9,27 +9,16 @@ public class PuzzleA_01 : MonoBehaviour {
 
     public GameObject player;
     public CinemachineVirtualCamera cam;
-    public GameObject interativo;
     public GameObject face;
     public GameObject inicio;
 
     public AudioSource feed;
     public AudioSource som;
 
+    public move2 movcubo;
+    
 
-
-
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+  
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face"))
@@ -38,12 +27,11 @@ public class PuzzleA_01 : MonoBehaviour {
 
             puzzleA_01 = true;
             player.SetActive(true);
-            // cam_puzzle.SetActive(false);
             cam.Priority = 9;
 
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);
-            interativo.GetComponent<move2>().enabled = false;
+            movcubo.canMove = false;
             face.GetComponent<BoxCollider>().enabled = false;
             som.Play();
         }

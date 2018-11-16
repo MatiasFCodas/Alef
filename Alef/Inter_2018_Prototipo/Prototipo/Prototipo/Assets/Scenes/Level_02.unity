@@ -1234,6 +1234,7 @@ MonoBehaviour:
   right: 1
   up: 1
   down: 1
+  canMove: 1
   maxMov: 0
   moves: 0
   giro: {fileID: 159821964}
@@ -2716,19 +2717,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4199279846634832, guid: d4cf856b7e7784445a2d61559182b02c, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.038851857
+      value: 0.038671095
       objectReference: {fileID: 0}
     - target: {fileID: 4199279846634832, guid: d4cf856b7e7784445a2d61559182b02c, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.050174907
+      value: 0.10821223
       objectReference: {fileID: 0}
     - target: {fileID: 4199279846634832, guid: d4cf856b7e7784445a2d61559182b02c, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.0019533285
+      value: -0.004212631
       objectReference: {fileID: 0}
     - target: {fileID: 4199279846634832, guid: d4cf856b7e7784445a2d61559182b02c, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9979826
+      value: 0.9933665
       objectReference: {fileID: 0}
     - target: {fileID: 4199279846634832, guid: d4cf856b7e7784445a2d61559182b02c, type: 2}
       propertyPath: m_RootOrder
@@ -6682,8 +6683,8 @@ MonoBehaviour:
   cam: {fileID: 978790118}
   player: {fileID: 542758358}
   inicio: {fileID: 64378518}
-  interativo: {fileID: 159821962}
   face: {fileID: 186368199}
+  movCubo: {fileID: 159821963}
 --- !u!82 &527611156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11212,6 +11213,7 @@ MonoBehaviour:
   right: 1
   up: 1
   down: 1
+  canMove: 1
   maxMov: 0
   moves: 0
   giro: {fileID: 684290117}
@@ -17094,6 +17096,7 @@ MonoBehaviour:
   right: 1
   up: 1
   down: 1
+  canMove: 1
   maxMov: 0
   moves: 0
   giro: {fileID: 982226399}
@@ -21551,27 +21554,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4766349689808640, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.045151424
+      value: 0.04492604
       objectReference: {fileID: 0}
     - target: {fileID: 4766349689808640, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.052371066
+      value: 0.1123345
       objectReference: {fileID: 0}
     - target: {fileID: 4766349689808640, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.0023744951
+      value: -0.0050884453
       objectReference: {fileID: 0}
     - target: {fileID: 4968597889060340, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.038851645
+      value: 0.03867146
       objectReference: {fileID: 0}
     - target: {fileID: 4968597889060340, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.050174925
+      value: 0.10821219
       objectReference: {fileID: 0}
     - target: {fileID: 4968597889060340, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.001953646
+      value: -0.0042130663
       objectReference: {fileID: 0}
     - target: {fileID: 4549882223061028, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21579,11 +21582,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4766349689808640, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.99760365
+      value: 0.9926413
       objectReference: {fileID: 0}
     - target: {fileID: 4968597889060340, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9979826
+      value: 0.9933665
       objectReference: {fileID: 0}
     - target: {fileID: 4549882223061028, guid: b036c68d03b4db147ad6160058d07938, type: 2}
       propertyPath: m_LocalPosition.y
@@ -22973,8 +22976,8 @@ MonoBehaviour:
   cam: {fileID: 978790118}
   player: {fileID: 542758358}
   inicio: {fileID: 1623310950}
-  interativo: {fileID: 982226397}
   face: {fileID: 1899147648}
+  movCubo: {fileID: 982226398}
 --- !u!82 &1385234493
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24724,8 +24727,8 @@ MonoBehaviour:
   cam: {fileID: 978790118}
   player: {fileID: 542758358}
   inicio: {fileID: 672393166}
-  interativo: {fileID: 684290116}
   face: {fileID: 940656593}
+  movCubo: {fileID: 684290118}
 --- !u!1 &1716773656
 GameObject:
   m_ObjectHideFlags: 0

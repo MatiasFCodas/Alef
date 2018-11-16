@@ -16,7 +16,8 @@ public class PuzzleA_02 : MonoBehaviour {
     public AudioSource feedFim;
     public AudioSource porta;
     public AudioSource somPuzzle02;
-    
+
+    public move2 movcubo;
 
     void Start () {
         feedFim = GetComponent<AudioSource>();
@@ -30,7 +31,9 @@ public class PuzzleA_02 : MonoBehaviour {
             feedFim.Play(0);
             puzzleA_02 = true;
             player.SetActive(true);
-            //cam_puzzle.SetActive(false);
+
+            movcubo.canMove = false;
+
 			cam.Priority = 9;
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);

@@ -31,9 +31,9 @@ public class F2_Fim : MonoBehaviour
 
     public GameObject player;
     public GameObject inicio;
-    public GameObject interativo;
     public GameObject face;
 
+    public move2 movCubo;
 
     void OnTriggerEnter(Collider other)
     {
@@ -45,8 +45,8 @@ public class F2_Fim : MonoBehaviour
             inicio.SetActive(false);
             
             player.GetComponent<CharController>().inPuzzle = false;
-            interativo.GetComponent<move2>().enabled = false;
             face.GetComponent<BoxCollider>().enabled = false;
+            movCubo.canMove = false;
         }
     }
 

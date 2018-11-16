@@ -18,15 +18,8 @@ public class PuzzleC_02 : MonoBehaviour {
 
     public bool puzzleC_02 = false;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public move2 movcubo;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face"))
@@ -35,8 +28,9 @@ public class PuzzleC_02 : MonoBehaviour {
             feed.Play();
 
             player.SetActive(true);
-           // cam_puzzle.SetActive(false);
 			cam.Priority = 9;
+
+            movcubo.canMove = false;
 
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);

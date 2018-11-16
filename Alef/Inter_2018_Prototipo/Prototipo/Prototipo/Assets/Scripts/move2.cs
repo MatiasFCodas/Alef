@@ -22,6 +22,7 @@ public class move2 : MonoBehaviour
     public bool right = true;
     public bool up = true;
     public bool down = true;
+    public bool canMove = true;
 
     public int maxMov;
     public int moves = 0;
@@ -51,10 +52,13 @@ public class move2 : MonoBehaviour
 
 
         // キー入力を拾う。
-        if (Input.GetKey(KeyCode.A) && left == true) x = -1; 
-        if (Input.GetKey(KeyCode.D) && right == true) x = +1; 
-        if (Input.GetKey(KeyCode.W) && up == true) y = 1; 
-        if (Input.GetKey(KeyCode.S) && down == true) y = -1;
+        if (canMove == true)
+        {
+            if (Input.GetKey(KeyCode.A) && left == true) x = -1;
+            else if (Input.GetKey(KeyCode.D) && right == true) x = +1;
+            else if (Input.GetKey(KeyCode.W) && up == true) y = 1;
+            else if (Input.GetKey(KeyCode.S) && down == true) y = -1;
+        }
 
         //  x = Input.GetAxisRaw("Horizontal");
 
