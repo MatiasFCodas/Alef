@@ -32,12 +32,13 @@ public class F2_Fim : MonoBehaviour
     public GameObject player;
     public GameObject inicio;
     public GameObject face;
+    public GameObject cuboCerto;
 
     public move2 movCubo;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Face"))
+        if (other.gameObject.CompareTag("Face") && other.gameObject == cuboCerto)
         {            
             cam.Priority = 9;
 
