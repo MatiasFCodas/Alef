@@ -12,29 +12,20 @@ public class PuzzleA_01 : MonoBehaviour {
     public GameObject interativo;
     public GameObject face;
     public GameObject inicio;
+    public GameObject instrucoes02;
 
     public AudioSource feed;
     public AudioSource som;
 
 
 
-
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face"))
         {
             feed.Play();
+
+            instrucoes02.SetActive(false);
 
             puzzleA_01 = true;
             player.SetActive(true);
