@@ -7,7 +7,7 @@ public class Checa_Chave : MonoBehaviour {
     /// <Explicação>
     /// 
     /// Verifica se as chaves foram habilitadas
-    /// e mais tarde abre as portas ou não
+    /// e mais tarde abre as portas
     /// 
     /// </Explicação>
 
@@ -15,47 +15,32 @@ public class Checa_Chave : MonoBehaviour {
     public Luz ch1;
     public Luz ch2;
     public Luz ch3;
+    
+    
 
     void Update()
     {
-        PassagemNormal();
+        if (F2_Fim.finalizado >= 3)
+        {
+            PassagemNormal();
+        }
         PortaSecreta();
     }
 
 
-    void PortaSecreta()
+    void PassagemNormal()
     {
-        if (ch1.chavePortaNormal == true)
+        if (ch1.chavePortaNormal == true && ch2.chavePortaNormal == true && ch3.chavePortaNormal == true)
         {
             Debug.Log("chave1foi");//substituir pela boolean de permissão da porta
         }
-        if (ch2.chavePortaNormal == true)
-        {
-            Debug.Log("chave2foi");//substituir pela boolean de permissão da porta
-        }
-        if (ch3.chavePortaNormal == true)
-        {
-            Debug.Log("chave3foi");//substituir pela boolean de permissão da porta
-        }
     }
 
-    void PassagemNormal()
+    void PortaSecreta()
     {
-        if (ch1.chavePortaSecreta == true)
+        if (ch1.chavePortaSecreta == true && ch2.chavePortaSecreta == true && ch3.chavePortaSecreta == true)
         {
             Debug.Log("ChaveSecreta1 ativa");//substituir pela boolean de permissão da porta
-        }
-
-
-        if (ch2.chavePortaSecreta == true)
-        {
-            Debug.Log("ChaveSecreta2 ativa");//substituir pela boolean de permissão da porta
-        }
-
-
-        if (ch3.chavePortaSecreta == true)
-        {
-            Debug.Log("ChaveSecreta3 ativa");//substituir pela boolean de permissão da porta
         }
     }
 

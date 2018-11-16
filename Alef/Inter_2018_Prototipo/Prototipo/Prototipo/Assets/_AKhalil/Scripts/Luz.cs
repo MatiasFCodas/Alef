@@ -11,14 +11,11 @@ public class Luz : MonoBehaviour {
     /// e checar as chaves para abrir as 
     /// portas 
     /// 
-    /// Talvez fazer a focal light ativar 
-    /// por aqui 
-    /// (Khalil - 14:40 - 07/11/2018) 
-    /// 
     /// </Explicação>
 
 
     public GameObject obj;
+    public GameObject foco;
 
     public bool chavePortaNormal;
     public bool chavePortaSecreta;
@@ -46,10 +43,12 @@ public class Luz : MonoBehaviour {
             if (hit.collider.CompareTag("ReceptorNormal"))
             {
                 chavePortaNormal = true;
+                foco.SetActive(true);
             }
             else
             {
                 chavePortaNormal = false;
+                foco.SetActive(false);
             }
 
 
