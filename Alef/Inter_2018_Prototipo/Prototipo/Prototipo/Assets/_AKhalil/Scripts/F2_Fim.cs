@@ -34,6 +34,8 @@ public class F2_Fim : MonoBehaviour
     public GameObject face;
     public GameObject cuboCerto;
 
+    public AudioSource feed;
+
     public move2 movCubo;
 
     void OnTriggerEnter(Collider other)
@@ -41,6 +43,8 @@ public class F2_Fim : MonoBehaviour
         if (other.gameObject.CompareTag("Face") && other.gameObject == cuboCerto)
         {            
             cam.Priority = 9;
+
+            feed.Play();
 
             player.SetActive(true);
             inicio.SetActive(false);
