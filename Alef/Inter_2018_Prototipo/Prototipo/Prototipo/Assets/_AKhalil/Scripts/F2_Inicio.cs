@@ -20,6 +20,7 @@ public class F2_Inicio : MonoBehaviour {
 
     public GameObject player;
     public GameObject Cubo;
+    public GameObject puzzleDisco;
 
     public CinemachineVirtualCamera cam;
 
@@ -35,6 +36,7 @@ public class F2_Inicio : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
+            puzzleDisco.SetActive(false);
 
             player.GetComponent<CharController>().inPuzzle = true;
             cam.Priority = 12;
