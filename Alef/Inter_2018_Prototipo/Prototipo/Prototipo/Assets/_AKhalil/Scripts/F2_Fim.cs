@@ -27,6 +27,7 @@ public class F2_Fim : MonoBehaviour
     public GameObject player;
     public GameObject inicio;
     public GameObject face;
+    public GameObject bloqueios;
 
     public static float finalizado = 0;
 
@@ -45,6 +46,7 @@ public class F2_Fim : MonoBehaviour
 
             player.SetActive(true);
             inicio.SetActive(false);
+            bloqueios.SetActive(false);
             
             player.GetComponent<CharController>().inPuzzle = false;
             face.GetComponent<BoxCollider>().enabled = false;
