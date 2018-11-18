@@ -14,6 +14,7 @@ public class Mural01 : MonoBehaviour {
     public GameObject player;
     public CinemachineVirtualCamera cam;
     public bool isComplete01;
+    public bool abriMural01;
 
 	void Update () {
 
@@ -39,6 +40,7 @@ public class Mural01 : MonoBehaviour {
 
     IEnumerator NarraMural01()
     {
+        abriMural01 = true;
 
         cam.Priority = 12;
         brilho01.SetActive(true);
