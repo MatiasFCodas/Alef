@@ -12,6 +12,7 @@ public class PuzzleA_02 : MonoBehaviour {
     public GameObject interativo;
     public GameObject face;
     public GameObject inicio;
+    public GameObject inicio02;
     public GameObject door;
     public AudioSource feedFim;
     public AudioSource porta;
@@ -39,6 +40,7 @@ public class PuzzleA_02 : MonoBehaviour {
 			cam.Priority = 9;
             player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);
+            inicio02.SetActive(true);
             interativo.GetComponent<move2>().enabled = false;
             face.GetComponent<BoxCollider>().enabled = false;
             somPuzzle02.Play();

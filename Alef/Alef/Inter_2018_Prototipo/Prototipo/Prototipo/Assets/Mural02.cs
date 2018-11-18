@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class Mural01 : MonoBehaviour {
+public class Mural02 : MonoBehaviour {
 
-    public PuzzleB_01 puzzleMural01;
     public PuzzleB_02 puzzleMural02;
     public Animator anim;
     public Animator camAnim;
@@ -14,17 +13,17 @@ public class Mural01 : MonoBehaviour {
     public GameObject brilho03;
     public GameObject player;
     public CinemachineVirtualCamera cam;
-    public bool isComplete01;
+    public bool isComplete02;
 
+ 
 	void Update () {
 
-        if (puzzleMural01.puzzleB_01 == true)
+        if (puzzleMural02.puzzleB_02 == true)
         {
-            StartCoroutine("NarraMural01");
-            
+            StartCoroutine("NarraMural02");
         }
 
-        if(isComplete01 == true)
+        if (isComplete02 == true)
         {
             cam.Priority = 9;
             brilho01.SetActive(false);
@@ -34,13 +33,10 @@ public class Mural01 : MonoBehaviour {
             player.GetComponent<CharController>().inPuzzle = false;
             player.SetActive(true);
         }
+    }
 
-
-	}
-
-    IEnumerator NarraMural01()
+    IEnumerator NarraMural02()
     {
-
         cam.Priority = 12;
         brilho01.SetActive(true);
         brilho02.SetActive(true);
@@ -48,14 +44,12 @@ public class Mural01 : MonoBehaviour {
 
 
         anim.SetTrigger("MuralOn");
-        camAnim.SetTrigger("CamMural01");
+        camAnim.SetTrigger("CamMural02");
 
-        yield return new WaitForSeconds(12);
+        yield return new WaitForSeconds(15);
 
-        isComplete01 = true;
+        isComplete02 = true;
 
         StopAllCoroutines();
-
     }
-
 }

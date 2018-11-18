@@ -30,8 +30,10 @@ public class InicioPuzzle02 : MonoBehaviour {
         {
 
             player.GetComponent<CharController>().inPuzzle = true;
-            //cam_puzzle.SetActive(true);
+            player.SetActive(false);
+
 			cam.Priority = 12;
+
             interativo.GetComponent<move2>().enabled = true;
             interativo.GetComponent<move2>().maxMov = puzzle02_B;
         }

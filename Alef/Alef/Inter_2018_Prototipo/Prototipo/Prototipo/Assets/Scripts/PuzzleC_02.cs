@@ -17,6 +17,7 @@ public class PuzzleC_02 : MonoBehaviour {
 
     public AudioSource porta;
     public AudioSource feed;
+    public AudioSource narrativa;
 
     public bool puzzleC_02 = false;
 
@@ -28,8 +29,6 @@ public class PuzzleC_02 : MonoBehaviour {
         {
             porta.Play();
             feed.Play();
-
-            player.SetActive(true);
 			cam.Priority = 9;
 
             movcubo.canMove = false;
@@ -42,6 +41,8 @@ public class PuzzleC_02 : MonoBehaviour {
             brilhinhoFinal.SetActive(true);
 
             puzzleC_02 = true;
+
+            narrativa.Play();
         }
     }
 }

@@ -28,6 +28,7 @@ public class InicioPuzzle03 : MonoBehaviour {
         {
 ;
             player.GetComponent<CharController>().inPuzzle = true;
+            player.SetActive(false);
            // cam_puzzle.SetActive(true);
 			cam.Priority = 12;
             interativo.GetComponent<move2>().enabled = true;
