@@ -18,19 +18,15 @@ public class InicioPuzzle03 : MonoBehaviour {
         interativo.GetComponent<move2>().enabled = false;
     }
 
-    private void Update()
-    {
-    }
 
-    private void OnTriggerStay(Collider other)
+     void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-;
-            player.GetComponent<CharController>().inPuzzle = true;
             player.SetActive(false);
-           // cam_puzzle.SetActive(true);
+
 			cam.Priority = 12;
+
             interativo.GetComponent<move2>().enabled = true;
             interativo.GetComponent<move2>().maxMov = puzzle02_C;
         }

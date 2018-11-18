@@ -33,10 +33,10 @@ public class PuzzleC_02 : MonoBehaviour {
 
             movcubo.canMove = false;
 
-            player.GetComponent<CharController>().inPuzzle = false;
             inicio.SetActive(false);
             interativo.GetComponent<move2>().enabled = false;
             face.GetComponent<BoxCollider>().enabled = false;
+            player.GetComponent<CharController>().inPuzzle = false;
 
             brilhinhoFinal.SetActive(true);
 

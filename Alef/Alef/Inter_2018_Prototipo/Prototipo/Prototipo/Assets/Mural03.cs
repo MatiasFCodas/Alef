@@ -28,9 +28,6 @@ public class Mural03 : MonoBehaviour {
             brilho01.SetActive(false);
             brilho02.SetActive(false);
             brilho03.SetActive(false);
-
-            player.GetComponent<CharController>().inPuzzle = false;
-            player.SetActive(true);
         }
     }
 
@@ -45,9 +42,10 @@ public class Mural03 : MonoBehaviour {
         anim.SetTrigger("MuralOn");
         camAnim.SetTrigger("CamMural03");
 
-        yield return new WaitForSeconds(14);
+        yield return new WaitForSeconds(13);
 
         isComplete03 = true;
+        player.SetActive(true);
 
         StopAllCoroutines();
     }

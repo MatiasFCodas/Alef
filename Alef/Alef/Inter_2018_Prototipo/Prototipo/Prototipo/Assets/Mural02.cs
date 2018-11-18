@@ -26,18 +26,17 @@ public class Mural02 : MonoBehaviour {
         if (isComplete02 == true)
         {
             cam.Priority = 9;
+
             brilho01.SetActive(false);
             brilho02.SetActive(false);
             brilho03.SetActive(false);
-
-            player.GetComponent<CharController>().inPuzzle = false;
-            player.SetActive(true);
         }
     }
 
     IEnumerator NarraMural02()
     {
         cam.Priority = 12;
+
         brilho01.SetActive(true);
         brilho02.SetActive(true);
         brilho03.SetActive(true);
@@ -46,9 +45,12 @@ public class Mural02 : MonoBehaviour {
         anim.SetTrigger("MuralOn");
         camAnim.SetTrigger("CamMural02");
 
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(14);
 
         isComplete02 = true;
+
+        player.SetActive(true);
+        player.GetComponent<CharController>().inPuzzle = false;
 
         StopAllCoroutines();
     }

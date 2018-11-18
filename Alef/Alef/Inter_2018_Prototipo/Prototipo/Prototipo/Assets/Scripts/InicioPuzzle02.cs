@@ -5,7 +5,7 @@ using Cinemachine;
 
 public class InicioPuzzle02 : MonoBehaviour {
 
-	 public GameObject player;
+	public GameObject player;
     public GameObject cam_puzzle;
 	public CinemachineVirtualCamera cam;
     public GameObject interativo;
@@ -18,11 +18,6 @@ public class InicioPuzzle02 : MonoBehaviour {
         interativo.GetComponent<move2>().enabled = false;
 
 	}
-
-     void Update()
-    {
-
-    }
 
     private void OnTriggerStay(Collider other)
     {
