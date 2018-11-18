@@ -28,7 +28,7 @@ public class Muro_A : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
         {
             player.GetComponent<CharController>().inPuzzle = true;
             //   cam_puzzle01A.SetActive(true);
