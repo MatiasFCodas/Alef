@@ -1763,6 +1763,83 @@ Transform:
   m_Father: {fileID: 1180674894}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &189094635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 189094636}
+  - component: {fileID: 189094638}
+  - component: {fileID: 189094637}
+  m_Layer: 5
+  m_Name: Legenda02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &189094636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 189094635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1375, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 889445193}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 732.9, y: 100}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &189094637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 189094635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.03529412, g: 0.7490196, b: 0.6, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49d2d55a71c995e4f8ba05200a217329, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Antes dessa cidade havia outra, constru\xEDda muitos anos em homenagem
+    a um Deus esquecido, dizem que dele tudo flu\xEDa, era uma liga\xE7\xE3o entre
+    os reinos, entre o divino e o mundano. "
+--- !u!222 &189094638
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 189094635}
+  m_CullTransparentMesh: 0
 --- !u!1 &192961599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1303320547193760, guid: 58ff4041eaa073148bb9be890b2ea614,
@@ -4045,6 +4122,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1488002606164918, guid: 4d291873ffd7cfe408062a98b11aa27a,
     type: 2}
   m_PrefabInternal: {fileID: 516097328}
+--- !u!114 &459507615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459507614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baaddc71abf97184a9bd9b84e3a8030c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iniciaLegenda: {fileID: 1300399277}
+  anim: {fileID: 459507617}
 --- !u!114 &459507616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4062,6 +4152,19 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 95436651704667306, guid: 4d291873ffd7cfe408062a98b11aa27a,
     type: 2}
   m_PrefabInternal: {fileID: 516097328}
+--- !u!114 &459507620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459507614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c179da11a72000c4dae6e60fa4a92ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iniciaLegenda: {fileID: 687243376}
+  anim: {fileID: 459507617}
 --- !u!1 &464177000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,7 +4222,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469720300}
-  m_LocalRotation: {x: 0.00071886036, y: -0.9981922, z: 0.058849644, w: 0.012193176}
+  m_LocalRotation: {x: 0.0007190611, y: -0.998192, z: 0.058851685, w: 0.012196047}
   m_LocalPosition: {x: 0.24, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10815,6 +10918,7 @@ MonoBehaviour:
   player: {fileID: 833847384}
   cam: {fileID: 469720303}
   isComplete03: 0
+  abriMural03: 0
 --- !u!95 &687243377
 Animator:
   serializedVersion: 3
@@ -11197,7 +11301,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 735022353}
-  m_LocalRotation: {x: 0.045081824, y: 0.07607058, z: -0.0034481904, w: 0.9960769}
+  m_LocalRotation: {x: 0.055612642, y: 0.19761577, z: -0.011235909, w: 0.9786363}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11990,7 +12094,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 827729709}
-  m_LocalRotation: {x: 0.038796447, y: 0.07300543, z: -0.002840634, w: 0.9965727}
+  m_LocalRotation: {x: 0.04947715, y: 0.1929051, z: -0.009738409, w: 0.97992086}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19265,7 +19369,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1007541038}
-  m_LocalRotation: {x: -0.20582396, y: -0.00000010882853, z: -0.00000010260349, w: -0.97858906}
+  m_LocalRotation: {x: -0.34625706, y: -0.000000122621, z: -0.00000008564585, w: -0.9381397}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -20148,7 +20252,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124998869}
-  m_LocalRotation: {x: 0.00019856167, y: -0.9998014, z: 0.014091649, w: 0.014091371}
+  m_LocalRotation: {x: 0.00019912279, y: -0.9998015, z: 0.014084477, w: 0.014094561}
   m_LocalPosition: {x: 0, y: 0, z: -0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -31089,7 +31193,9 @@ MonoBehaviour:
   brilho03: {fileID: 1328705788}
   player: {fileID: 833847384}
   cam: {fileID: 1124998872}
+  playerCam: {fileID: 554216745}
   isComplete02: 0
+  abriMural02: 0
 --- !u!95 &1300399278
 Animator:
   serializedVersion: 3
@@ -36877,7 +36983,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437026464}
-  m_LocalRotation: {x: -0.49569353, y: 0.5042673, z: -0.4955514, w: -0.5044118}
+  m_LocalRotation: {x: -0.49560907, y: 0.5043533, z: -0.49563807, w: -0.50432366}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -44909,6 +45015,83 @@ Transform:
   m_Father: {fileID: 1581867945}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1772793972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772793973}
+  - component: {fileID: 1772793975}
+  - component: {fileID: 1772793974}
+  m_Layer: 5
+  m_Name: Legenda03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1772793973
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772793972}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1374999, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 889445193}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 732.9, y: 100}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1772793974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772793972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.03529412, g: 0.7490196, b: 0.6, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49d2d55a71c995e4f8ba05200a217329, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: " Da boca dos moradores jorravam hist\xF3rias sobre esse Deus, as noites
+    os fios dessas hist\xF3rias serviam para costurar a vida, estreitar as rela\xE7\xF5es
+    entre os moradores e com a cidade."
+--- !u!222 &1772793975
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772793972}
+  m_CullTransparentMesh: 0
 --- !u!1 &1773024798
 GameObject:
   m_ObjectHideFlags: 0

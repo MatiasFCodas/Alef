@@ -13,7 +13,9 @@ public class Mural02 : MonoBehaviour {
     public GameObject brilho03;
     public GameObject player;
     public CinemachineVirtualCamera cam;
+    public CinemachineFreeLook playerCam;
     public bool isComplete02;
+    public bool abriMural02;
 
  
 	void Update () {
@@ -35,6 +37,9 @@ public class Mural02 : MonoBehaviour {
 
     IEnumerator NarraMural02()
     {
+
+        abriMural02 = true;
+
         cam.Priority = 12;
 
         brilho01.SetActive(true);
@@ -48,6 +53,8 @@ public class Mural02 : MonoBehaviour {
         yield return new WaitForSeconds(14);
 
         isComplete02 = true;
+
+        cam.Priority = 9;
 
         player.SetActive(true);
         player.GetComponent<CharController>().inPuzzle = false;
