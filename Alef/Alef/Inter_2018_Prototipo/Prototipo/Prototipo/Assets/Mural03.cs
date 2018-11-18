@@ -46,6 +46,7 @@ public class Mural03 : MonoBehaviour {
 
         isComplete03 = true;
         player.SetActive(true);
+        player.GetComponent<CharController>().inPuzzle = false;
 
         StopAllCoroutines();
     }

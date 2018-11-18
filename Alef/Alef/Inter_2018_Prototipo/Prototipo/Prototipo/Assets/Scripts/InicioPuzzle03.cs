@@ -23,6 +23,7 @@ public class InicioPuzzle03 : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            player.GetComponent<CharController>().inPuzzle = true;
             player.SetActive(false);
 
 			cam.Priority = 12;
