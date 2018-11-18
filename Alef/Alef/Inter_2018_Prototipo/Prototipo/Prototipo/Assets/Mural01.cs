@@ -6,7 +6,6 @@ using Cinemachine;
 public class Mural01 : MonoBehaviour {
 
     public PuzzleB_01 puzzleMural01;
-    public PuzzleB_02 puzzleMural02;
     public Animator anim;
     public Animator camAnim;
     public GameObject brilho01;
@@ -50,7 +49,7 @@ public class Mural01 : MonoBehaviour {
         anim.SetTrigger("MuralOn");
         camAnim.SetTrigger("CamMural01");
 
-        yield return new WaitForSeconds(12);
+        yield return new WaitForSeconds(10);
 
         isComplete01 = true;
 
