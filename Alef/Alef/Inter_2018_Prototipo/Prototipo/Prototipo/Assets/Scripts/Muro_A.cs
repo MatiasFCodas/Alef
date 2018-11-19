@@ -11,7 +11,7 @@ public class Muro_A : MonoBehaviour
     public Instrucao01 instrucao;
     public GameObject instrucoes02;
     public GameObject instrucoes03;
-    public GameObject fundo;
+
     public CinemachineVirtualCamera cam;
   //  public GameObject brilhinhoFinal;
 
@@ -22,12 +22,6 @@ public class Muro_A : MonoBehaviour
     {
         interativo01_A.GetComponent<move2>().enabled = false;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
  
 
      void OnTriggerEnter(Collider other)
@@ -35,7 +29,6 @@ public class Muro_A : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            fundo.SetActive(true);
             instrucoes02.SetActive(true);
         }
 
@@ -59,7 +52,6 @@ public class Muro_A : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        fundo.SetActive(false);
         instrucoes02.SetActive(false);
     }
 

@@ -32,7 +32,7 @@ public class ComecaFase01 : MonoBehaviour {
 
     private void FadeComplete()
     {
-        SceneManager.LoadScene("Ilha");
+        SceneManager.LoadScene("Level_01C");
     }
 }
 

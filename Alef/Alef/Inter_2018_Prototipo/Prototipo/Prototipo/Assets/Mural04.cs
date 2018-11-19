@@ -3,27 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class Mural03 : MonoBehaviour {
+public class Mural04 : MonoBehaviour {
 
-    public PuzzleC_02 puzzleMural03;
+    public Checa_Chave puzzleMural04;
     public Animator anim;
     public Animator camAnim;
     public GameObject brilho01;
     public GameObject brilho02;
     public GameObject brilho03;
     public GameObject player;
+    public GameObject legenda04;
+    public GameObject legenda05;
     public CinemachineVirtualCamera cam;
-    public bool isComplete03;
-    public bool abriMural03;
+    public bool isComplete04;
+    public bool abriMural04;
 
-    void Update () {
+    void Update()
+    {
 
-        if (puzzleMural03.puzzleC_02 == true)
+        if (puzzleMural04.mural04 == true)
         {
-            StartCoroutine("NarraMural03");
+            StartCoroutine("NarraMural04");
         }
 
-        if (isComplete03 == true)
+        if (isComplete04 == true)
         {
             cam.Priority = 9;
 
@@ -33,9 +36,9 @@ public class Mural03 : MonoBehaviour {
         }
     }
 
-    IEnumerator NarraMural03()
+    IEnumerator NarraMural04()
     {
-        abriMural03 = true;
+        abriMural04 = true;
 
         cam.Priority = 12;
         brilho01.SetActive(true);
@@ -44,15 +47,25 @@ public class Mural03 : MonoBehaviour {
 
 
         anim.SetTrigger("MuralOn");
-        camAnim.SetTrigger("CamMural03");
+        camAnim.SetTrigger("CamMural04");
 
-        yield return new WaitForSeconds(13);
+        legenda04.SetActive(true);
 
-        isComplete03 = true;
-        
+        yield return new WaitForSeconds(15);
+
+        legenda04.SetActive(false);
+        legenda05.SetActive(true);
+
+        yield return new WaitForSeconds(10);
+
+        legenda05.SetActive(false);
+
+        isComplete04 = true;
+
         player.SetActive(true);
         player.GetComponent<CharController>().inPuzzle = false;
 
         StopAllCoroutines();
     }
 }
+
