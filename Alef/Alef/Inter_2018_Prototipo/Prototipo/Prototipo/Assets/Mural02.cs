@@ -27,7 +27,6 @@ public class Mural02 : MonoBehaviour {
 
         if (isComplete02 == true)
         {
-            cam.Priority = 9;
 
             brilho01.SetActive(false);
             brilho02.SetActive(false);

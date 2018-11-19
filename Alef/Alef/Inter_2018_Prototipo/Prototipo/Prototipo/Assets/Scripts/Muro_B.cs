@@ -7,7 +7,8 @@ public class Muro_B : MonoBehaviour {
 
     public GameObject player;
     public GameObject interativo01_B;
-	public CinemachineVirtualCamera cam;
+    public GameObject instrucoes02;
+    public CinemachineVirtualCamera cam;
 
     public int moves = 100;
 
@@ -15,16 +16,22 @@ public class Muro_B : MonoBehaviour {
     void Start () {
         interativo01_B.GetComponent<move2>().enabled = false;
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.CompareTag("Player"))
+        {
+            instrucoes02.SetActive(true);
+        }
+
+    }
 
     private void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
         {
+            instrucoes02.SetActive(false);
             player.GetComponent<CharController>().inPuzzle = true;
         //    cam_puzzle01B.SetActive(true);
 			cam.Priority = 12;

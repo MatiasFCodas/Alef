@@ -12,6 +12,8 @@ public class PuzzleA_01 : MonoBehaviour {
     public GameObject face;
     public GameObject inicio;
     public GameObject inicio02;
+    public GameObject instrucoes03;
+    public GameObject fundo;
 
     public GameObject brilhinhoFinal;
 
@@ -30,6 +32,8 @@ public class PuzzleA_01 : MonoBehaviour {
 
             puzzleA_01 = true;
             player.SetActive(true);
+            instrucoes03.SetActive(false);
+            fundo.SetActive(false);
             cam.Priority = 9;
 
             player.GetComponent<CharController>().inPuzzle = false;

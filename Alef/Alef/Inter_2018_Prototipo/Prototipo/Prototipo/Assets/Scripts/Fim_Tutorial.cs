@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Fim_Tutorial : MonoBehaviour {
 
+    public GameObject instrucao05;
     public Animator animD;
     public Animator animE;
     public Animator animator;
+    public bool  ativaInstrucao;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +24,10 @@ public class Fim_Tutorial : MonoBehaviour {
 
      void OnTriggerStay(Collider other)
     {
+        instrucao05.SetActive(true);
+
         if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player")){
+            instrucao05.SetActive(false);
             animD.SetTrigger("AbriPorta");
             animE.SetTrigger("AbriPorta");
             FadeToLevel();
@@ -37,5 +42,10 @@ public class Fim_Tutorial : MonoBehaviour {
     public void FadeComplete()
     {
         SceneManager.LoadScene("Praça");
+    }
+
+    public void InstrucaoAparece()
+    {
+        ativaInstrucao = true;
     }
 }

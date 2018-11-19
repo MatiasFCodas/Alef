@@ -8,6 +8,10 @@ public class Muro_A : MonoBehaviour
 
     public GameObject player;
     public GameObject interativo01_A;
+    public Instrucao01 instrucao;
+    public GameObject instrucoes02;
+    public GameObject instrucoes03;
+    public GameObject fundo;
     public CinemachineVirtualCamera cam;
   //  public GameObject brilhinhoFinal;
 
@@ -26,18 +30,37 @@ public class Muro_A : MonoBehaviour
     }
  
 
+     void OnTriggerEnter(Collider other)
+    {
+
+        if (other.CompareTag("Player"))
+        {
+            fundo.SetActive(true);
+            instrucoes02.SetActive(true);
+        }
+
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
         {
+            instrucoes02.SetActive(false);
+            instrucoes03.SetActive(true);
             player.GetComponent<CharController>().inPuzzle = true;
             //   cam_puzzle01A.SetActive(true);
             cam.Priority = 12;
             interativo01_A.GetComponent<move2>().enabled = true;
             interativo01_A.GetComponent<move2>().maxMov = moves;
-           // brilhinhoFinal.SetActive(true);
-            
+            // brilhinhoFinal.SetActive(true);
+
         }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        fundo.SetActive(false);
+        instrucoes02.SetActive(false);
     }
 
 }
