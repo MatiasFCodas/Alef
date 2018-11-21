@@ -44,7 +44,7 @@ public class F2_Fim : MonoBehaviour
             finalizado++;
             cam.Priority = 9;
 
-            //feed.Play();
+            feed.Play();
 
             player.SetActive(true);
             inicio.SetActive(false);

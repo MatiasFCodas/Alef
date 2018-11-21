@@ -17,6 +17,8 @@ public class Checa_Chave : MonoBehaviour {
     public Luz ch3;
 
     public bool mural04;
+
+    public AudioSource feed;
     
     
 
@@ -34,6 +36,8 @@ public class Checa_Chave : MonoBehaviour {
     {
         if (ch1.chavePortaNormal == true && ch2.chavePortaNormal == true && ch3.chavePortaNormal == true)
         {
+
+            feed.Play();
             mural04 = true;
             Debug.Log("chave1foi");//substituir pela boolean de permissão da porta
         }

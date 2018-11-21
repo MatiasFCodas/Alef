@@ -17,6 +17,7 @@ public class ComecaFase02 : MonoBehaviour {
     void OnTriggerStay(Collider other)
     {
             portaAnim.SetTrigger("AbriPorta");
+        FadeToLevel();
     }
 
     public void FadeToLevel()

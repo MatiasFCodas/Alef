@@ -4,23 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Fim_da_Fase01 : MonoBehaviour {
+public class Fim_da_Fase02 : MonoBehaviour {
+
 
     public Animator anim;
+    public Checa_Fase key;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-     void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && key.fase03Liberado == true)
             FadeToLevel();
     }
 
@@ -31,7 +23,7 @@ public class Fim_da_Fase01 : MonoBehaviour {
 
     public void FadeComplete()
     {
-        SceneManager.LoadScene("Intersecção");
+        SceneManager.LoadScene("Praça");
     }
-}
 
+}

@@ -33,7 +33,7 @@ public class AbriPorta01 : MonoBehaviour {
 
         if (puzzle02.GetComponent<PuzzleB_02>().puzzleB_02 == true)
         {
-            anim02.SetTrigger("AbriPorta02");
+            anim02.SetTrigger("AbriPorta02");   
 
         }
 
