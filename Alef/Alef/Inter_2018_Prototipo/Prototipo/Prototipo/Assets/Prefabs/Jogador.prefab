@@ -307,7 +307,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d3fb837da333f6d409dd068db4781a97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -584,12 +584,12 @@ MonoBehaviour:
   player: {fileID: 1963341463142066}
   inPuzzle: 0
   isWalking: 0
+  cam: {fileID: 0}
   mark: {fileID: 1963341463142066}
   shot: {fileID: 107220, guid: 2e9c1a001eaed47fab8fcd4d231ef438, type: 2}
   jumpSpeed: 7
   steps: {fileID: 82994395354160618}
   jump: {fileID: 82654755267210642}
-  vCamera: {fileID: 114422626837748956}
 --- !u!114 &114360453292488300
 MonoBehaviour:
   m_ObjectHideFlags: 1
