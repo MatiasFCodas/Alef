@@ -18,7 +18,7 @@ public class PuzzleB_01 : MonoBehaviour {
 
     public move2 movcubo;
     public AudioSource narracao;
-    public float time;
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -32,14 +32,11 @@ public class PuzzleB_01 : MonoBehaviour {
             movcubo.canMove = false;
             inicio.SetActive(false);
             face.GetComponent<BoxCollider>().enabled = false;
-            time = Time.fixedDeltaTime;
-            time++;
 
             brilhinhoFinal.SetActive(true);
-            if ( time >= 1)
-            {
-                narracao.Play();
-            }
+
+                narracao.Play(3);
+            
         }
     }
 }

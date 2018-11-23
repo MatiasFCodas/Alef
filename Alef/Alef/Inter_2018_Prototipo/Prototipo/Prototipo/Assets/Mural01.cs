@@ -16,6 +16,7 @@ public class Mural01 : MonoBehaviour {
     public bool isComplete01;
     public bool abriMural01;
 
+
 	void Update () {
 
         if (puzzleMural01.puzzleB_01 == true)

@@ -22,10 +22,10 @@ public class Camela02 : MonoBehaviour
 
      void Start()
     {
-        if(cameloOn02.fase03Liberado == true)
-        {
-            camelo.SetActive(true);
-        }
+       // if(cameloOn02.fase03Liberado == true)
+        //{
+          //  camelo.SetActive(true);
+        //}
     }
 
 
@@ -38,11 +38,11 @@ public class Camela02 : MonoBehaviour
 
         }
 
-        if (cameloOn02.fase03Liberado == true)
-        {
-            camelo.SetActive(true);
+        //if (cameloOn02.fase03Liberado == true)
+        //{
+          //  camelo.SetActive(true);
 
-        }
+        //}
     }
 
     void OnTriggerEnter(Collider other)

@@ -12,7 +12,7 @@ public class Fim_da_Fase02 : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && key.fase03Liberado == true)
+      //  if (Input.GetKeyDown(KeyCode.E) && key.fase03Liberado == true)
             FadeToLevel();
     }
 
