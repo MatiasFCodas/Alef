@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checa_Fase : MonoBehaviour {
 
      Checa_Chave puzzleCompleto;
-    public bool fase03Liberado;
+    static public  bool fase03Liberado;
 
 	// Use this for initialization
 	void Start () {
