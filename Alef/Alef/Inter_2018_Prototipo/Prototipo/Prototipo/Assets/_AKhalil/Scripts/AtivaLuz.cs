@@ -10,16 +10,20 @@ public class AtivaLuz : MonoBehaviour {
 
     public GameObject Particula_01, Particula_02;
 
+    public GameObject Checker_01;
+
 
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject == Totem_01)
         {
+            Checker_01.SetActive(true);
             Particula_01.SetActive(true);
         }
 
         if(other.gameObject == Totem_02)
         {
+            Checker_01.SetActive(true);
             Particula_02.SetActive(true);
         }
     }
@@ -36,6 +40,7 @@ public class AtivaLuz : MonoBehaviour {
         {
             Particula_01.SetActive(false);
             Particula_02.SetActive(false);
+            Checker_01.SetActive(false);
         }
     }
 

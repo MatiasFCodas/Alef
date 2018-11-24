@@ -2905,6 +2905,7 @@ MonoBehaviour:
   Totem_02: {fileID: 0}
   Particula_01: {fileID: 0}
   Particula_02: {fileID: 0}
+  Checker_01: {fileID: 0}
 --- !u!65 &353626147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3249,7 +3250,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.038863678, y: 0.04375482, z: -0.0016902888, w: 0.9982847}
+  m_LocalRotation: {x: 0.038644545, y: 0.11476537, z: -0.0044547287, w: 0.9926307}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4562,8 +4563,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.0023389002, y: 0.99743533, z: -0.0388299, w: -0.060080033}
-  m_LocalPosition: {x: -1.1053426, y: 2.1299999, z: 32.127052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5932,7 +5933,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714059262}
   m_LocalRotation: {x: -0.20582408, y: 0.0000005494803, z: -0.0000002279412, w: -0.97858906}
-  m_LocalPosition: {x: -0.015697077, y: 0, z: -0.000021457672}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 27545552}
@@ -7120,7 +7121,7 @@ BoxCollider:
   m_GameObject: {fileID: 894372880}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7221,8 +7222,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.045166377, y: 0.04572319, z: -0.0020749145, w: 0.99793047}
-  m_LocalPosition: {x: 0.0000011920929, y: 0, z: 0}
+  m_LocalRotation: {x: 0.04489067, y: 0.11903911, z: -0.0053931028, w: 0.9918596}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1717444903}
@@ -7875,6 +7876,7 @@ MonoBehaviour:
   Totem_02: {fileID: 0}
   Particula_01: {fileID: 0}
   Particula_02: {fileID: 0}
+  Checker_01: {fileID: 0}
 --- !u!65 &982303341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9565,6 +9567,7 @@ MonoBehaviour:
   Totem_02: {fileID: 1968758274}
   Particula_01: {fileID: 1578111657}
   Particula_02: {fileID: 1578111657}
+  Checker_01: {fileID: 174212431}
 --- !u!65 &1199634338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14356,7 +14359,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1983701465}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.015697062, y: 2.83, z: -6.4299793}
+  m_LocalPosition: {x: -0.000000014901161, y: 2.83, z: -6.430001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 714059264}
@@ -15231,6 +15234,7 @@ MonoBehaviour:
   Totem_02: {fileID: 174212431}
   Particula_01: {fileID: 613999205}
   Particula_02: {fileID: 1639393517}
+  Checker_01: {fileID: 2026998296}
 --- !u!65 &2099435707
 BoxCollider:
   m_ObjectHideFlags: 0
