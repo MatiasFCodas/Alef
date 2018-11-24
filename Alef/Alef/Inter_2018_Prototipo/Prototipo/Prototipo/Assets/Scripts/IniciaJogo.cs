@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class IniciaJogo : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -17,6 +19,6 @@ public class IniciaJogo : MonoBehaviour {
 
     public void Iniciar()
     {
-        SceneManager.LoadScene("TutorialC");
+        SceneManager.LoadScene("Tutorial");
     }
 }
