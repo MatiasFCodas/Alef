@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Teto
   m_Shader: {fileID: 4800000, guid: d7a166b36355b5a4fbc4a673f3f1e4f0, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: BOOLEAN_3CB1AC48_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_B973E316:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 615f85ee00700f94d919362e4eb91ef2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -59,7 +59,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_3CB1AC48: 0
+    - Boolean_3CB1AC48: 1
     - Boolean_E72D01AF: 0
     - _BumpScale: 1
     - _Cutoff: 0.5

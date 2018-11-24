@@ -1,0 +1,273 @@
+fileFormatVersion: 2
+guid: ca03db5c5b416a94eb1ca14e545f0789
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back
+    100002: bottom
+    100004: //RootNode
+    100006: left
+    100008: polySurface276
+    100010: polySurface478
+    100012: polySurface479
+    100014: polySurface528
+    100016: polySurface529
+    100018: polySurface535
+    100020: polySurface542
+    100022: polySurface553
+    100024: polySurface554
+    100026: polySurface555
+    100028: polySurface605
+    100030: polySurface610
+    400000: back
+    400002: bottom
+    400004: //RootNode
+    400006: left
+    400008: polySurface276
+    400010: polySurface478
+    400012: polySurface479
+    400014: polySurface528
+    400016: polySurface529
+    400018: polySurface535
+    400020: polySurface542
+    400022: polySurface553
+    400024: polySurface554
+    400026: polySurface555
+    400028: polySurface605
+    400030: polySurface610
+    2000000: back
+    2000002: bottom
+    2000004: left
+    2100000: Arco_do_teto
+    2100002: "porta_sa\xEDda"
+    2100004: alavanca
+    2100006: Porta_Default_V4
+    2100008: Arcoporta_Entrada1
+    2100010: chao1
+    2100012: lambert1
+    2100014: lambert14
+    2100016: Puzzle
+    2100018: Teto
+    2100020: "ArcoPortasa\xEDda"
+    2300000: polySurface478
+    2300002: polySurface479
+    2300004: polySurface528
+    2300006: polySurface529
+    2300008: polySurface535
+    2300010: polySurface542
+    2300012: polySurface553
+    2300014: polySurface554
+    2300016: polySurface555
+    2300018: polySurface605
+    2300020: polySurface610
+    3300000: polySurface478
+    3300002: polySurface479
+    3300004: polySurface528
+    3300006: polySurface529
+    3300008: polySurface535
+    3300010: polySurface542
+    3300012: polySurface553
+    3300014: polySurface554
+    3300016: polySurface555
+    3300018: polySurface605
+    3300020: polySurface610
+    4300000: polySurface478
+    4300002: polySurface479
+    4300004: polySurface528
+    4300006: polySurface529
+    4300008: polySurface554
+    4300010: polySurface555
+    4300012: polySurface553
+    4300014: polySurface542
+    4300016: polySurface535
+    4300018: polySurface605
+    4300020: polySurface610
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "ArcoPortasa\xEDda"
+    second: {fileID: 2100000, guid: 440a3f0ea77edea4090189d46bc4b7c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arco_do_teto
+    second: {fileID: 2100000, guid: 74907cbbd0b3f95428dac86f1a3ddb66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arcoporta_Entrada1
+    second: {fileID: 2100000, guid: 811dbc26ce94ed740a45df53cd050822, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Porta_Default_V4
+    second: {fileID: 2100000, guid: 19d5a66a835133c4ca17c0cb116f293e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Puzzle
+    second: {fileID: 2100000, guid: 3383389366a80614e9dc285ba9ff27e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teto
+    second: {fileID: 2100000, guid: b0765ac6109a3fc4e8334b1a4bf73003, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alavanca
+    second: {fileID: 2100000, guid: 755cf5907c230d64b8bdcf1920ec018e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chao1
+    second: {fileID: 2100000, guid: dfa426a9250592445b6ca43a4a333173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: de4d842016a3fb24fbcd06783a93e441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert14
+    second: {fileID: 2100000, guid: 06f43d3ab682fca4e9da9660f8611ae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "porta_sa\xEDda"
+    second: {fileID: 2100000, guid: e575174d1f7086c489fdefeabd500d1b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Alavanca
+    second: {fileID: 2800000, guid: 2661b1ae856409249862d020fee466d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Arcos do Teto
+    second: {fileID: 2800000, guid: dac62a11464196e4ca81856c399ff4c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Chao
+    second: {fileID: 2800000, guid: 749920545f1361a44b4bd3abdc427dc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paredes
+    second: {fileID: 2800000, guid: 3c0f7cc49ea6675488c7da7bdc19cc25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Puzzle
+    second: {fileID: 2800000, guid: a9567ca57f8e4414082e63ad4c1ef9cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: porta_default
+    second: {fileID: 2800000, guid: cb395ee5a4571c34e80c6e5fa80eb53f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: porta_default_V2
+    second: {fileID: 2800000, guid: 254d015d0915ff74e87d4fb9fd539294, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "porta_sa\xEDda"
+    second: {fileID: 2800000, guid: e4902d73284df8e4ab5948cd31177d4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: porta_sem_funcionalidade
+    second: {fileID: 2800000, guid: dd06273983f869a4aa9aea67262414e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tETO
+    second: {fileID: 2800000, guid: 9cc0f1c7d2d487e44a7e7cf57260fb48, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
