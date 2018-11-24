@@ -82,6 +82,9 @@ public class Totem_Manager : MonoBehaviour
 
 
 
+    [HideInInspector] public bool ativaTotem;
+
+
 
     // Referencia para a variável "estagio" a qual diz quantos totens/petalas o jogador já liberou
     // sendo assim o quanto ele avançou no level
@@ -108,7 +111,7 @@ public class Totem_Manager : MonoBehaviour
         {
             modo = modoArmazenado01;
             AjustaPosicoes(t1Pos1, t1Pos2, t1Pos3, t1PosN1, t1PosN2, t1PosN3);
-            MoveTotem(1);
+            MoveTotem(3);
             modoArmazenado01 = modo;
             startingPoint = Alterado_01;
             finishingPoint = Referencia_01;
@@ -134,7 +137,7 @@ public class Totem_Manager : MonoBehaviour
         {
             modo = modoArmazenado03;
             AjustaPosicoes(t3Pos1, 0, 0, t3PosN1, 0, 0);
-            MoveTotem(3);
+            MoveTotem(1);
             modoArmazenado03 = modo;
             startingPoint = Alterado_03;
             finishingPoint = Referencia_03;
@@ -197,7 +200,7 @@ public class Totem_Manager : MonoBehaviour
 
     void MoveTotem(int qualTotem) //Dependendo de quanto o jogador avançou na fase ele tem um certo limite
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time >= tempoArmazenado)
+        if (Input.GetKeyDown(KeyCode.A)/* && Time.time >= tempoArmazenado*/ && ativaTotem == true)
         {
             tempoArmazenado = Time.time + tempoAdicionado;
             speed = 0.05f;
@@ -266,7 +269,7 @@ public class Totem_Manager : MonoBehaviour
 
 
 
-        else if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time >= tempoArmazenado)
+        else if (Input.GetKeyDown(KeyCode.D) /*&& Time.time >= tempoArmazenado*/ && ativaTotem == true)
         {
             tempoArmazenado = Time.time + tempoAdicionado;
             speed = 0.05f;

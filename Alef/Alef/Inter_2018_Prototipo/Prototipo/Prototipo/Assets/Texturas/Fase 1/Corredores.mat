@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: corredores
+  m_Name: Corredores
   m_Shader: {fileID: 4800000, guid: d7a166b36355b5a4fbc4a673f3f1e4f0, type: 3}
   m_ShaderKeywords: BOOLEAN_3CB1AC48_ON
   m_LightmapFlags: 4
