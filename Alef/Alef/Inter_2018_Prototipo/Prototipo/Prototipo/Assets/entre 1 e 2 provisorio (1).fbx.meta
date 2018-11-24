@@ -34,7 +34,42 @@ ModelImporter:
     2300000: polySurface13
     3300000: polySurface13
     4300000: polySurface13
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: azul_do_desastre
+    second: {fileID: 2100000, guid: c88ee0317e09bd6488f89007e7e9266f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bueiro
+    second: {fileID: 2100000, guid: 4101ce2240b88204f9e85d5ebec42d16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chao_desespero
+    second: {fileID: 2100000, guid: 9bbaecdd14934fc4aa9265809a51cf4c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Petala
+    second: {fileID: 2800000, guid: f8cf3df50e66b4d4380608b2003b5f77, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chaos_patamares
+    second: {fileID: 2800000, guid: d078e9cba650b2f42b57233655742cc7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: escadinha_final
+    second: {fileID: 2800000, guid: 3243ff56675b7714b8eb2a213f0e76b1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sampledNormals
+    second: {fileID: 2800000, guid: e0fa3d26629fbf04a8ad6d5a7776d095, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
