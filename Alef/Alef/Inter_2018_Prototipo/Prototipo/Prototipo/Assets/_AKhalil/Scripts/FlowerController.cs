@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class FlowerController : MonoBehaviour {
 
@@ -9,6 +10,10 @@ public class FlowerController : MonoBehaviour {
     public Movimento_Petalas_Lerp petal;
     public Totem_Manager totem;
 
+    public GameObject petalasManager;
+    public GameObject totemManager;
+    public CinemachineVirtualCamera cam;
+    public GameObject player;
 
     private void Update()
     {
@@ -49,7 +54,10 @@ public class FlowerController : MonoBehaviour {
             && petal.Referencia_03.rotation.y <= 0.6156614 && petal.Referencia_03.rotation.y >= 0.601815
             && totem.Referencia_03.rotation.y <= 0.6156614 && totem.Referencia_03.rotation.y >= 0.601815)
         {
-            Debug.Log("FinalizouTerceiraParte");
+            player.GetComponent<CharController>().inPuzzle = false;
+            cam.Priority = 9;
+            petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
+            totemManager.GetComponent<Totem_Manager>().enabled = false;
         }
 
 

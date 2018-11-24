@@ -3250,7 +3250,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.038644545, y: 0.11476537, z: -0.0044547287, w: 0.9926307}
+  m_LocalRotation: {x: 0.038644504, y: 0.11476526, z: -0.0044547184, w: 0.9926307}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4563,8 +4563,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0050993934, y: 0.9906204, z: -0.038564883, w: -0.13098869}
+  m_LocalPosition: {x: -1.0896533, y: 2.1299999, z: 32.12656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7222,7 +7222,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.04489067, y: 0.11903911, z: -0.0053931028, w: 0.9918596}
+  m_LocalRotation: {x: 0.044890802, y: 0.119039126, z: -0.0053931093, w: 0.9918596}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7960,6 +7960,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petal: {fileID: 934158887}
   totem: {fileID: 1895229320}
+  petalasManager: {fileID: 934158886}
+  totemManager: {fileID: 1895229319}
+  cam: {fileID: 1693020507}
+  player: {fileID: 666018459}
 --- !u!4 &985505709
 Transform:
   m_ObjectHideFlags: 0
