@@ -146,9 +146,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4098453}
-  - {fileID: 817609783}
   m_Father: {fileID: 1340900361}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3241753
 MonoBehaviour:
@@ -157,7 +156,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3241751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6449d25387eff5448900da7a4b2b4e65, type: 3}
   m_Name: 
@@ -171,6 +170,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 5386293}
   feed: {fileID: 1879308910}
   movCubo: {fileID: 1797709133}
+  cubo: {fileID: 1797709131}
+  fimOutrosPuzzles_01: {fileID: 503945396}
+  fimOutrosPuzzles_02: {fileID: 459569659}
+  proprioFimPuzzle: {fileID: 3241751}
 --- !u!82 &3241754
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1849,9 +1852,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 542758358}
   Cubo: {fileID: 159821962}
-  puzzleDisco: {fileID: 0}
   cam: {fileID: 978790118}
   MaxMov: 50
+  fim: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
 --- !u!82 &64378520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2946,7 +2951,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118554049}
-  m_LocalRotation: {x: 0.04479073, y: 0.13634256, z: -0.0061694286, w: 0.9896295}
+  m_LocalRotation: {x: 0.0448898, y: 0.119457714, z: -0.005405276, w: 0.99180925}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3555,6 +3560,9 @@ MonoBehaviour:
   aro_01: {fileID: 1063256194}
   aro_02: {fileID: 487186427}
   aro_03: {fileID: 575931181}
+  finaisDosCubos_01: {fileID: 0}
+  finaisDosCubos_02: {fileID: 0}
+  finaisDosCubos_03: {fileID: 0}
 --- !u!65 &141808256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4113,6 +4121,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 159821964}
 --- !u!82 &159821964
 AudioSource:
@@ -5519,6 +5529,9 @@ MonoBehaviour:
   aro_01: {fileID: 1063256194}
   aro_02: {fileID: 487186427}
   aro_03: {fileID: 575931181}
+  finaisDosCubos_01: {fileID: 0}
+  finaisDosCubos_02: {fileID: 0}
+  finaisDosCubos_03: {fileID: 0}
 --- !u!65 &232912978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10307,9 +10320,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 647000508}
-  - {fileID: 1958762874}
   m_Father: {fileID: 1047946146}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &459569661
 MonoBehaviour:
@@ -10318,7 +10330,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 459569659}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6449d25387eff5448900da7a4b2b4e65, type: 3}
   m_Name: 
@@ -10332,6 +10344,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 5386293}
   feed: {fileID: 1879308909}
   movCubo: {fileID: 964642600}
+  cubo: {fileID: 964642598}
+  fimOutrosPuzzles_01: {fileID: 3241751}
+  fimOutrosPuzzles_02: {fileID: 503945396}
+  proprioFimPuzzle: {fileID: 459569659}
 --- !u!82 &459569662
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11425,9 +11441,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2049418608}
-  - {fileID: 1034472160}
   m_Father: {fileID: 1956087410}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &503945398
 MonoBehaviour:
@@ -11436,7 +11451,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 503945396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6449d25387eff5448900da7a4b2b4e65, type: 3}
   m_Name: 
@@ -11450,6 +11465,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 5386293}
   feed: {fileID: 1879308911}
   movCubo: {fileID: 1536705894}
+  cubo: {fileID: 1536705892}
+  fimOutrosPuzzles_01: {fileID: 3241751}
+  fimOutrosPuzzles_02: {fileID: 459569659}
+  proprioFimPuzzle: {fileID: 503945396}
 --- !u!82 &503945399
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11985,6 +12004,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 0}
   feed: {fileID: 0}
   movCubo: {fileID: 159821963}
+  cubo: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
+  proprioFimPuzzle: {fileID: 0}
 --- !u!82 &527611156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14360,9 +14383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 542758358}
   Cubo: {fileID: 979060295}
-  puzzleDisco: {fileID: 0}
   cam: {fileID: 978790118}
   MaxMov: 50
+  fim: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
 --- !u!1 &675860613
 GameObject:
   m_ObjectHideFlags: 0
@@ -20431,6 +20456,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 755455092}
 --- !u!82 &755455092
 AudioSource:
@@ -20992,7 +21019,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773604277}
-  m_LocalRotation: {x: 0.038560938, y: 0.13175434, z: -0.0051292013, w: 0.99051887}
+  m_LocalRotation: {x: 0.038641304, y: 0.11517534, z: -0.00448378, w: 0.9925832}
   m_LocalPosition: {x: 0, y: 2.8300002, z: -6.4300003}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
@@ -21132,6 +21159,9 @@ MonoBehaviour:
   aro_01: {fileID: 896702735}
   aro_02: {fileID: 264124251}
   aro_03: {fileID: 1724800351}
+  finaisDosCubos_01: {fileID: 503945396}
+  finaisDosCubos_02: {fileID: 3241751}
+  finaisDosCubos_03: {fileID: 459569659}
 --- !u!65 &776950593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21723,7 +21753,7 @@ GameObject:
   - component: {fileID: 817609785}
   - component: {fileID: 817609784}
   m_Layer: 0
-  m_Name: Brilho do cubo (2)
+  m_Name: Brilho do cubo_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21737,11 +21767,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 817609782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0.63, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3241752}
-  m_RootOrder: 1
+  m_Father: {fileID: 1340900361}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &817609784
 ParticleSystemRenderer:
@@ -28122,6 +28152,9 @@ MonoBehaviour:
   aro_01: {fileID: 896702735}
   aro_02: {fileID: 264124251}
   aro_03: {fileID: 1724800351}
+  finaisDosCubos_01: {fileID: 503945396}
+  finaisDosCubos_02: {fileID: 3241751}
+  finaisDosCubos_03: {fileID: 459569659}
 --- !u!65 &913820872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33944,6 +33977,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 964642601}
 --- !u!82 &964642601
 AudioSource:
@@ -34269,6 +34304,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 979060297}
 --- !u!82 &979060297
 AudioSource:
@@ -34515,6 +34552,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 982226399}
 --- !u!82 &982226399
 AudioSource:
@@ -35396,7 +35435,7 @@ GameObject:
   - component: {fileID: 1034472162}
   - component: {fileID: 1034472161}
   m_Layer: 0
-  m_Name: Brilho do cubo (2)
+  m_Name: Brilho do cubo_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35410,11 +35449,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1034472159}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: -6, y: 0.53999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 503945397}
-  m_RootOrder: 1
+  m_Father: {fileID: 1956087410}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1034472161
 ParticleSystemRenderer:
@@ -40552,6 +40591,7 @@ Transform:
   - {fileID: 1693008757}
   - {fileID: 964642599}
   - {fileID: 644896912}
+  - {fileID: 1958762874}
   - {fileID: 459569660}
   m_Father: {fileID: 252854056}
   m_RootOrder: 5
@@ -42132,7 +42172,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124673887}
-  m_LocalRotation: {x: 0.03856233, y: 0.13175395, z: -0.005116183, w: 0.9905189}
+  m_LocalRotation: {x: 0.038642727, y: 0.115174875, z: -0.004470962, w: 0.9925833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -51328,6 +51368,7 @@ Transform:
   - {fileID: 2026995414}
   - {fileID: 1797709132}
   - {fileID: 1669101983}
+  - {fileID: 817609783}
   - {fileID: 3241752}
   m_Father: {fileID: 252854056}
   m_RootOrder: 4
@@ -52695,6 +52736,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 0}
   feed: {fileID: 0}
   movCubo: {fileID: 982226398}
+  cubo: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
+  proprioFimPuzzle: {fileID: 0}
 --- !u!82 &1385234493
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53923,6 +53968,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 1424591178}
 --- !u!82 &1424591178
 AudioSource:
@@ -54755,6 +54802,9 @@ MonoBehaviour:
   aro_01: {fileID: 896702735}
   aro_02: {fileID: 264124251}
   aro_03: {fileID: 1724800351}
+  finaisDosCubos_01: {fileID: 503945396}
+  finaisDosCubos_02: {fileID: 3241751}
+  finaisDosCubos_03: {fileID: 459569659}
 --- !u!65 &1451854660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56118,6 +56168,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 1536705895}
 --- !u!82 &1536705895
 AudioSource:
@@ -57158,9 +57210,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 542758358}
   Cubo: {fileID: 982226397}
-  puzzleDisco: {fileID: 0}
   cam: {fileID: 978790118}
   MaxMov: 50
+  fim: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
 --- !u!82 &1623310952
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57373,7 +57427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1626562754
 Transform:
   m_ObjectHideFlags: 0
@@ -58891,9 +58945,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 165687150}
   Cubo: {fileID: 964642598}
-  puzzleDisco: {fileID: 5386293}
   cam: {fileID: 1693020507}
   MaxMov: 50
+  fim: {fileID: 459569659}
+  fimOutrosPuzzles_01: {fileID: 3241751}
+  fimOutrosPuzzles_02: {fileID: 503945396}
 --- !u!65 &1693008754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59619,6 +59675,10 @@ MonoBehaviour:
   puzzleDisco: {fileID: 0}
   feed: {fileID: 0}
   movCubo: {fileID: 979060296}
+  cubo: {fileID: 0}
+  fimOutrosPuzzles_01: {fileID: 0}
+  fimOutrosPuzzles_02: {fileID: 0}
+  proprioFimPuzzle: {fileID: 0}
 --- !u!1 &1714013423
 GameObject:
   m_ObjectHideFlags: 0
@@ -60286,7 +60346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1744874648
 Transform:
   m_ObjectHideFlags: 0
@@ -61209,6 +61269,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 0
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 1797709134}
 --- !u!82 &1797709134
 AudioSource:
@@ -62396,9 +62458,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 165687150}
   Cubo: {fileID: 1536705892}
-  puzzleDisco: {fileID: 5386293}
   cam: {fileID: 1693020507}
   MaxMov: 50
+  fim: {fileID: 503945396}
+  fimOutrosPuzzles_01: {fileID: 3241751}
+  fimOutrosPuzzles_02: {fileID: 459569659}
 --- !u!65 &1903586180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62523,6 +62587,9 @@ MonoBehaviour:
   aro_01: {fileID: 1063256194}
   aro_02: {fileID: 487186427}
   aro_03: {fileID: 575931181}
+  finaisDosCubos_01: {fileID: 0}
+  finaisDosCubos_02: {fileID: 0}
+  finaisDosCubos_03: {fileID: 0}
 --- !u!65 &1908515969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63594,6 +63661,7 @@ Transform:
   - {fileID: 1903586183}
   - {fileID: 1536705893}
   - {fileID: 175695878}
+  - {fileID: 1034472160}
   - {fileID: 503945397}
   m_Father: {fileID: 252854056}
   m_RootOrder: 3
@@ -63610,7 +63678,7 @@ GameObject:
   - component: {fileID: 1958762876}
   - component: {fileID: 1958762875}
   m_Layer: 0
-  m_Name: Brilho do cubo (2)
+  m_Name: Brilho do cubo_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63624,11 +63692,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1958762873}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.11, z: 0}
+  m_LocalPosition: {x: 10, y: 0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 459569660}
-  m_RootOrder: 1
+  m_Father: {fileID: 1047946146}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1958762875
 ParticleSystemRenderer:
@@ -69401,9 +69469,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 165687150}
   Cubo: {fileID: 1797709131}
-  puzzleDisco: {fileID: 5386293}
   cam: {fileID: 1693020507}
   MaxMov: 50
+  fim: {fileID: 3241751}
+  fimOutrosPuzzles_01: {fileID: 503945396}
+  fimOutrosPuzzles_02: {fileID: 459569659}
 --- !u!65 &2026995411
 BoxCollider:
   m_ObjectHideFlags: 0
