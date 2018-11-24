@@ -23,9 +23,9 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
     // Referencias das petalas que irão girar
     // Caso haja a necessidade de refazer as associações apagar "[HideInInspector]"
-    [HideInInspector] public Transform Alterado_01;
-    [HideInInspector] public Transform Alterado_02;
-    [HideInInspector] public Transform Alterado_03;
+    /*[HideInInspector]*/ public Transform Alterado_01;
+    /*[HideInInspector]*/ public Transform Alterado_02;
+    /*[HideInInspector]*/ public Transform Alterado_03;
     [HideInInspector] public Transform Referencia_01;
     [HideInInspector] public Transform Referencia_02;
     [HideInInspector] public Transform Referencia_03;
@@ -60,6 +60,10 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
     float posicaoArmazenada_01;
     float posicaoArmazenada_02;
     float posicaoArmazenada_03;
+
+
+    public float tempoArmazenado;
+    public float tempoAdicionado = 1.5f;
 
 
     void Start()
@@ -116,14 +120,16 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
         if (estagio == 2) // Alteração entre as petalas caso o jogador esteja no nivel 2
         {
-            if (Input.GetKeyDown(KeyCode.W)) //===== CIMA =====//
+            if (Input.GetKeyDown(KeyCode.W) && Time.time >= totem.tempoArmazenado && Time.time >= tempoArmazenado) //===== CIMA =====//
             {
+                totem.tempoArmazenado = Time.time + totem.tempoAdicionado;
                 if (petalaSelecionada >= 2) petalaSelecionada--;
                 else petalaSelecionada = 2;
             }
 
-            if (Input.GetKeyDown(KeyCode.S)) //===== BAIXO =====//
+            if (Input.GetKeyDown(KeyCode.S) && Time.time >= totem.tempoArmazenado && Time.time >= tempoArmazenado) //===== BAIXO =====//
             {
+                totem.tempoArmazenado = Time.time + totem.tempoAdicionado;
                 if (petalaSelecionada <= 1) petalaSelecionada++;
                 else petalaSelecionada = 1;
             }
@@ -131,14 +137,16 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
         if (estagio == 3)// Alteração entre as petalas caso o jogador esteja no nivel 3
         {
-            if (Input.GetKeyDown(KeyCode.W)) //===== CIMA =====//
+            if (Input.GetKeyDown(KeyCode.W) && Time.time >= totem.tempoArmazenado && Time.time >= tempoArmazenado) //===== CIMA =====//
             {
+                totem.tempoArmazenado = Time.time + totem.tempoAdicionado;
                 if (petalaSelecionada >= 2) petalaSelecionada--;
                 else petalaSelecionada = 3;
             }
 
-            if (Input.GetKeyDown(KeyCode.S)) //===== BAIXO =====//
+            if (Input.GetKeyDown(KeyCode.S) && Time.time >= totem.tempoArmazenado && Time.time >= tempoArmazenado) //===== BAIXO =====//
             {
+                totem.tempoArmazenado = Time.time + totem.tempoAdicionado;
                 if (petalaSelecionada <= 2) petalaSelecionada++;
                 else petalaSelecionada = 1;
             }
@@ -157,8 +165,9 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
 
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && Time.time >= tempoArmazenado)
         {
+            tempoArmazenado = Time.time + tempoAdicionado;
             totem.speed = 1;
             if (posicao > -distancia * (estagio - ajuste))
             {
@@ -174,8 +183,9 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
 
 
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.A) && Time.time >= tempoArmazenado)
         {
+            tempoArmazenado = Time.time + tempoAdicionado;
             totem.speed = 1;
             if (posicao < distancia * (estagio - ajuste))
             {

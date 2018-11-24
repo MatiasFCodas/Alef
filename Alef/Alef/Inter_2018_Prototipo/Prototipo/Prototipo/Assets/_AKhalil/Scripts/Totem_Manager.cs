@@ -66,7 +66,22 @@ public class Totem_Manager : MonoBehaviour
     int modoArmazenado01;
     int modoArmazenado02;
     int modoArmazenado03;
-         
+
+
+    // Variavel que impede o jogador de spammar movimentos, permitindo assim que as "animações" de cada petala
+    // sejam finalizadas evitando a flicagem das mesmas
+    [HideInInspector] public float tempoArmazenado;
+    [HideInInspector] public float tempoAdicionado = 1.5f;
+
+
+
+    public GameObject brilho_01;
+    public GameObject brilho_02;
+    public GameObject brilho_03;
+
+
+
+
 
     // Referencia para a variável "estagio" a qual diz quantos totens/petalas o jogador já liberou
     // sendo assim o quanto ele avançou no level
@@ -76,7 +91,7 @@ public class Totem_Manager : MonoBehaviour
 
     void FixedUpdate()
     {
-        GiraTotem();
+        GiraTotem();        
         petal.petalaSelecionada = totemSelecionado;
         totemSelecionado = petal.petalaSelecionada;                
     }
@@ -97,6 +112,9 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado01 = modo;
             startingPoint = Alterado_01;
             finishingPoint = Referencia_01;
+            brilho_01.SetActive(true);
+            brilho_02.SetActive(false);
+            brilho_03.SetActive(false);
         }
 
         if (totemSelecionado == 2)
@@ -107,6 +125,9 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado02 = modo;
             startingPoint = Alterado_02;
             finishingPoint = Referencia_02;
+            brilho_01.SetActive(false);
+            brilho_02.SetActive(true);
+            brilho_03.SetActive(false);
         }
 
         if (totemSelecionado == 3)
@@ -117,19 +138,25 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado03 = modo;
             startingPoint = Alterado_03;
             finishingPoint = Referencia_03;
+            brilho_01.SetActive(false);
+            brilho_02.SetActive(false);
+            brilho_03.SetActive(true);
         }
 
 
         if (petal.estagio == 2) // Alteração entre os totens caso o jogador esteja no nivel 2
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow)) //===== CIMA =====//
+            if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time >= tempoArmazenado) //===== CIMA =====//
             {
+
+                tempoArmazenado = Time.time + tempoAdicionado;
                 if (totemSelecionado >= 2) totemSelecionado--;
                 else totemSelecionado = 2;
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow)) //===== BAIXO =====//
+            if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time >= tempoArmazenado) //===== BAIXO =====//
             {
+                tempoArmazenado = Time.time + tempoAdicionado;
                 if (totemSelecionado <= 1) totemSelecionado++;
                 else totemSelecionado = 1;
             }
@@ -137,14 +164,16 @@ public class Totem_Manager : MonoBehaviour
 
         if (petal.estagio == 3)// Alteração entre os totens caso o jogador esteja no nivel 3
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow)) //===== CIMA =====//
+            if (Input.GetKeyDown(KeyCode.UpArrow) && Time.time >= tempoArmazenado) //===== CIMA =====//
             {
+                tempoArmazenado = Time.time + tempoAdicionado;
                 if (totemSelecionado >= 2) totemSelecionado--;
                 else totemSelecionado = 3;
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow)) //===== BAIXO =====//
+            if (Input.GetKeyDown(KeyCode.DownArrow) && Time.time >= tempoArmazenado) //===== BAIXO =====//
             {
+                tempoArmazenado = Time.time + tempoAdicionado;
                 if (totemSelecionado <= 2) totemSelecionado++;
                 else totemSelecionado = 1;
             }
@@ -168,8 +197,9 @@ public class Totem_Manager : MonoBehaviour
 
     void MoveTotem(int qualTotem) //Dependendo de quanto o jogador avançou na fase ele tem um certo limite
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && Time.time >= tempoArmazenado)
         {
+            tempoArmazenado = Time.time + tempoAdicionado;
             speed = 0.05f;
 
             if (modo == -3)
@@ -236,8 +266,9 @@ public class Totem_Manager : MonoBehaviour
 
 
 
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow) && Time.time >= tempoArmazenado)
         {
+            tempoArmazenado = Time.time + tempoAdicionado;
             speed = 0.05f;
             
             if(modo == -3)
