@@ -42,12 +42,16 @@ public class F2_Fim : MonoBehaviour
     public GameObject fimOutrosPuzzles_01;
     public GameObject fimOutrosPuzzles_02;
 
+    
 
     public GameObject proprioFimPuzzle;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+
+        Debug.Log(player.GetComponent<CharController>().inPuzzle);
+
+        if (Input.GetKeyDown(KeyCode.Q) && player.GetComponent<CharController>().inPuzzle == true)
         {
 
             movCubo.ResetPosistion();

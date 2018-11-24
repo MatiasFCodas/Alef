@@ -18,8 +18,9 @@ public class Switch : MonoBehaviour {
     /// tornar as booleans falsas
     /// 
     /// </Explicação>
-    
 
+
+    public bool puzzleAros = false;
 
     public bool m_Aro01, m_Aro02, m_Aro03;
 
@@ -48,11 +49,13 @@ public class Switch : MonoBehaviour {
 
     void SaiDoPuzzle()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && player.GetComponent<CharController>().inPuzzle == true && puzzleAros == true)
         {
+            Debug.Log("Aqui");
             player.GetComponent<CharController>().inPuzzle = false; 
             player.SetActive(true);
 
+            puzzleAros = false;
 
             aro_01.GetComponent<Move_Disco>().enabled = false;
             aro_02.GetComponent<Move_Disco>().enabled = false;
@@ -70,6 +73,7 @@ public class Switch : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
+            puzzleAros = true;
 
             finaisDosCubos_01.SetActive(false);
             finaisDosCubos_02.SetActive(false);
