@@ -5502,6 +5502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85f8e6b7c73b34bbac0d9962f9d8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camela: {fileID: 0}
 --- !u!1 &317180671
 GameObject:
   m_ObjectHideFlags: 0
@@ -8412,7 +8413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 919380917}
-  portaAnim: {fileID: 530172085}
+  camela: {fileID: 0}
 --- !u!65 &530172083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18086,7 +18087,6 @@ MonoBehaviour:
   legenda02: {fileID: 591743404}
   parado: {fileID: 1767159777}
   isComplete: 0
-  cameloOn02: {fileID: 1166157632}
   camelo: {fileID: 1166157630}
 --- !u!114 &1166157632
 MonoBehaviour:
@@ -18099,6 +18099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b85f8e6b7c73b34bbac0d9962f9d8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camela: {fileID: 1166157630}
 --- !u!82 &1166157633 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,

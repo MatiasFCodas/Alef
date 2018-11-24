@@ -5,7 +5,8 @@ using UnityEngine;
 public class Checa_Fase : MonoBehaviour {
 
      Checa_Chave puzzleCompleto;
-    static public  bool fase03Liberado;
+    public static  int fase03Liberado = 0;
+    public GameObject camela;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +18,15 @@ public class Checa_Fase : MonoBehaviour {
 		
         if(puzzleCompleto.mural04 == true)
         {
-            fase03Liberado = true;
+            fase03Liberado = 1;
         }
+
+        if(fase03Liberado == 1)
+        {
+            camela.SetActive(true);
+        }
+
+
 
 	}
 }

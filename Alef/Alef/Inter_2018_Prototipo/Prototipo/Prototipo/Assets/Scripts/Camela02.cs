@@ -15,18 +15,9 @@ public class Camela02 : MonoBehaviour
 
     public bool isComplete;
 
-    public Checa_Fase cameloOn02;
-
     public GameObject camelo;
 
 
-     void Start()
-    {
-       // if(cameloOn02.fase03Liberado == true)
-        //{
-          //  camelo.SetActive(true);
-        //}
-    }
 
 
      void Update()
@@ -38,11 +29,6 @@ public class Camela02 : MonoBehaviour
 
         }
 
-        //if (cameloOn02.fase03Liberado == true)
-        //{
-          //  camelo.SetActive(true);
-
-        //}
     }
 
     void OnTriggerEnter(Collider other)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Fase03Liberado : MonoBehaviour {
 
     public bool fase03;
-    public GameObject checaChave;
+    public Checa_Fase key;
 
 	// Use this for initialization
 	void Start () {

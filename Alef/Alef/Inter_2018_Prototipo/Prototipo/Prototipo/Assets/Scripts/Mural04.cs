@@ -16,7 +16,7 @@ public class Mural04 : MonoBehaviour {
     public GameObject legenda05;
     public CinemachineVirtualCamera cam;
     public bool isComplete04;
-    public bool abriMural04;
+    static public bool abriMural04;
 
     void Update()
     {
