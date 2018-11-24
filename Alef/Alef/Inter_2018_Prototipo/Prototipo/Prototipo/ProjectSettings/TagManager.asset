@@ -22,6 +22,11 @@ TagManager:
   - Puzzle01_C
   - "Face_Bot\xE3o"
   - Receptor
+  - Ativador
+  - ReceptorSecreto
+  - ReceptorNormal
+  - Gate
+  - SentidoCorreto
   layers:
   - Default
   - TransparentFX

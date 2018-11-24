@@ -46,6 +46,10 @@ public class F2_Fim : MonoBehaviour
 
     public GameObject proprioFimPuzzle;
 
+
+    public SentidoCubo sentido;
+
+
     void Update()
     {
 
@@ -83,7 +87,7 @@ public class F2_Fim : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Face") && other.gameObject == face)
+        if (other.gameObject.CompareTag("Face") && other.gameObject == face && sentido.checaSentido == true)
         {
             finalizado++;
             cam.Priority = 9;
