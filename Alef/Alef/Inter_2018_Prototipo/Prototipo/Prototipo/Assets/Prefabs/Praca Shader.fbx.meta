@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1206122a12974034e8aba37e8562ad5d
+guid: ee1ce3eb1f9a8e943931c37e364f6813
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -546,52 +546,52 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Muros
-    second: {fileID: 2800000, guid: acdc4b726b726c14bb5348830567e735, type: 3}
+    second: {fileID: 2800000, guid: 07c1e8eaf5e44914a8ce48f3ed5eba8a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: chao_em_volta_do_templo
-    second: {fileID: 2800000, guid: f2e318eecb212b849953bfb5ba21c0e2, type: 3}
+    second: {fileID: 2800000, guid: 3337f514498f12244b1af27ed2d4dcf4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: chaodotemplo
-    second: {fileID: 2800000, guid: 0dd36eed82580dd49a756aba1d66a6e5, type: 3}
+    second: {fileID: 2800000, guid: d8e260ffc6dfbf34eb7b14072f4b1507, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: "fundo do po\xE7o"
-    second: {fileID: 2800000, guid: 69e2578991bee60448e3925c2b8ca32a, type: 3}
+    second: {fileID: 2800000, guid: 53c1fada5e90de5449152077909dd013, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gazebo_templo
-    second: {fileID: 2800000, guid: 9190d4e9284fd9340996e54eb54c8ce5, type: 3}
+    second: {fileID: 2800000, guid: 1769664460fb5e04e9db284c8e519a02, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: gradinha
-    second: {fileID: 2800000, guid: faa87fcb66043094e886aa874680a9a1, type: 3}
+    second: {fileID: 2800000, guid: edd1eafbe5692754e9ff58945879bfac, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: paredes_do_templo
-    second: {fileID: 2800000, guid: 5d208e5433b717147b72cfeda9ae6db5, type: 3}
+    second: {fileID: 2800000, guid: e3b4302604a7d4a47825382beda42572, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: "port\xE3ov1"
-    second: {fileID: 2800000, guid: d74f16cba6a8bd74f88e5f08f1cfc882, type: 3}
+    second: {fileID: 2800000, guid: 695b1447bc20a48458868e45c30b6a93, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: "port\xE3ov2"
-    second: {fileID: 2800000, guid: ac40789da045cf14989191a90633b9f5, type: 3}
+    second: {fileID: 2800000, guid: e13e61af15a0fd54597f2b98eec4c9f7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tetodotemplo
-    second: {fileID: 2800000, guid: 3319e04eb21b1bb4184d79f84c8c7cef, type: 3}
+    second: {fileID: 2800000, guid: 8ab106bb7e787924ea7b4dc6b0f9a53f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -630,7 +630,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
