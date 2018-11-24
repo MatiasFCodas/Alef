@@ -16,7 +16,7 @@ public class CharController : MonoBehaviour {
 	private float walkSpeed = 6;
 	private float gravity = 0.5f;
     public float jumpSpeed = 5;
-	private float mouseSensivity = 50; 
+	private float mouseSensivity = 20; 
 	private float rotationX = 0;
 	private Vector3 moveDirection = Vector3.zero;
 
