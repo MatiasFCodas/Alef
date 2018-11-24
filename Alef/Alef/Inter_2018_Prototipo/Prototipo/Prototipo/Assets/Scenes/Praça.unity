@@ -5503,6 +5503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 0}
+  ok: 0
 --- !u!1 &317180671
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,7 +8380,6 @@ GameObject:
   - component: {fileID: 530172081}
   - component: {fileID: 530172085}
   - component: {fileID: 530172083}
-  - component: {fileID: 530172082}
   m_Layer: 0
   m_Name: PortaFase02
   m_TagString: Untagged
@@ -8401,19 +8401,6 @@ Transform:
   m_Father: {fileID: 919380918}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &530172082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530172080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd959e2eb5f1e043a08490fd4ae08ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 919380917}
-  camela: {fileID: 0}
 --- !u!65 &530172083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9382,7 +9369,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 1582d426ee03a484d8af1100f8315825, type: 3}
     - target: {fileID: 1781288823195020, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114783968366441824, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
@@ -18100,6 +18087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 1166157630}
+  ok: 0
 --- !u!82 &1166157633 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
