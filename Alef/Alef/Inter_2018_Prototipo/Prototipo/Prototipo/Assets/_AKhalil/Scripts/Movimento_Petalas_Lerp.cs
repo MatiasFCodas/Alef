@@ -62,6 +62,11 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
     float posicaoArmazenada_03;
 
 
+    [HideInInspector]public bool ativaPetalas = true;
+
+
+
+    // Contador de tempo que impede o jogador de spammar movimentos
     public float tempoArmazenado;
     public float tempoAdicionado = 1.5f;
 
@@ -72,6 +77,14 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
     }
 
 
+    private void Update()
+    {
+        MudaPetala();
+        totem.totemSelecionado = petalaSelecionada;
+        petalaSelecionada = totem.totemSelecionado;
+    }
+
+    /*
 
     void FixedUpdate()
     {
@@ -79,7 +92,7 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
         totem.totemSelecionado = petalaSelecionada;
         petalaSelecionada = totem.totemSelecionado;
     }
-
+    */
 
 
 
@@ -152,6 +165,22 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
             }
         }// Alteração entre as petalas caso o jogador esteja no nivel 3
 
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("foi");
+            if (ativaPetalas == true)
+            {
+                ativaPetalas = false;
+                totem.ativaTotem = true;
+            }
+            else
+            {
+                ativaPetalas = true;
+                totem.ativaTotem = false;
+            }
+        }
+
     }
 
 
@@ -165,7 +194,7 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
 
 
-        if (Input.GetKeyDown(KeyCode.D) && Time.time >= tempoArmazenado)
+        if (Input.GetKeyDown(KeyCode.D) /*&& Time.time >= tempoArmazenado*/ && ativaPetalas == true)
         {
             tempoArmazenado = Time.time + tempoAdicionado;
             totem.speed = 1;
@@ -183,7 +212,7 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
 
 
 
-        else if (Input.GetKeyDown(KeyCode.A) && Time.time >= tempoArmazenado)
+        else if (Input.GetKeyDown(KeyCode.A)/* && Time.time >= tempoArmazenado*/ && ativaPetalas == true)
         {
             tempoArmazenado = Time.time + tempoAdicionado;
             totem.speed = 1;
