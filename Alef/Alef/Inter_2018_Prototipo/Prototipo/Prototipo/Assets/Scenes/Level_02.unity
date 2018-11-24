@@ -91,7 +91,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: 228498cfb0a170446bf71ec056644550,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2952,7 +2952,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118554049}
-  m_LocalRotation: {x: 0.04489123, y: 0.11903875, z: -0.0053862245, w: 0.9918597}
+  m_LocalRotation: {x: 0.045164444, y: 0.04642648, z: -0.0020998362, w: 0.997898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8477,7 +8477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: -8.31, y: -25.120003, z: -24.3}
+  m_FollowOffset: {x: -16.310001, y: -45.86996, z: -22.069986}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -21254,8 +21254,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773604277}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.57, y: -2.59, z: 9.1}
+  m_LocalRotation: {x: 0.038862042, y: 0.04446526, z: -0.0017310341, w: 0.9982533}
+  m_LocalPosition: {x: 0, y: 2.8300002, z: -6.4300003}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 1215576393}
@@ -42409,7 +42409,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124673887}
-  m_LocalRotation: {x: 0.03864422, y: 0.11476518, z: -0.004455033, w: 0.9926307}
+  m_LocalRotation: {x: 0.038862165, y: 0.044464644, z: -0.001718155, w: 0.99825335}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -48753,14 +48753,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204326370}
-  m_LocalRotation: {x: 0.10484027, y: -0.88042986, z: 0.40112138, w: 0.23011622}
-  m_LocalPosition: {x: 7.84, y: 12.4, z: -0.26}
+  m_LocalRotation: {x: -0.007234701, y: -0.99940336, z: -0.008110553, w: 0.032784436}
+  m_LocalPosition: {x: 0.3, y: -8.2, z: 1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 365008808}
   m_Father: {fileID: 151199215}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.6120005, y: -148.617, z: 0.80300003}
 --- !u!95 &1204326372
 Animator:
   serializedVersion: 3
