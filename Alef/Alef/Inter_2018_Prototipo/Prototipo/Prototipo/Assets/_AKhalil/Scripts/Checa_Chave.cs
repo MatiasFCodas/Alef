@@ -19,8 +19,14 @@ public class Checa_Chave : MonoBehaviour {
     public bool mural04;
 
     public AudioSource feed;
-    
-    
+
+
+    public GameObject inicioCubo_01;
+    public GameObject inicioCubo_02;
+    public GameObject inicioCubo_03;
+    public GameObject inicioAro_01;
+    public GameObject inicioAro_02;
+    public GameObject inicioAro_03;
 
     void Update()
     {
@@ -36,10 +42,20 @@ public class Checa_Chave : MonoBehaviour {
     {
         if (ch1.chavePortaNormal == true && ch2.chavePortaNormal == true && ch3.chavePortaNormal == true)
         {
-
             feed.Play();
             mural04 = true;
-            Debug.Log("chave1foi");//substituir pela boolean de permissão da porta
+            inicioCubo_01.SetActive(false);
+            inicioCubo_02.SetActive(false);
+            inicioCubo_03.SetActive(false);
+            inicioAro_01.SetActive(false);
+            inicioAro_02.SetActive(false);
+            inicioAro_03.SetActive(false);
+
+            /// <Expicação>
+            ///
+            /// Coloca Aqui a ativação da animação do mural/Movimentação da câmera para visualizar o mural
+            /// 
+            /// </Explicação>
         }
     }
 
@@ -47,7 +63,7 @@ public class Checa_Chave : MonoBehaviour {
     {
         if (ch1.chavePortaSecreta == true && ch2.chavePortaSecreta == true && ch3.chavePortaSecreta == true)
         {
-            Debug.Log("ChaveSecreta1 ativa");//substituir pela boolean de permissão da porta
+         //   Debug.Log("ChaveSecreta1 ativa");//substituir pela boolean de permissão da porta
         }
     }
 

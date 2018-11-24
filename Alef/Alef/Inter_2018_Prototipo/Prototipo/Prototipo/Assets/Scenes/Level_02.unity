@@ -2952,7 +2952,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118554049}
-  m_LocalRotation: {x: 0.045164444, y: 0.04642648, z: -0.0020998362, w: 0.997898}
+  m_LocalRotation: {x: 0.044888943, y: 0.11945751, z: -0.005405189, w: 0.99180937}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -21254,7 +21254,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773604277}
-  m_LocalRotation: {x: 0.038862042, y: 0.04446526, z: -0.0017310341, w: 0.9982533}
+  m_LocalRotation: {x: 0.038641304, y: 0.11517544, z: -0.0044837845, w: 0.9925832}
   m_LocalPosition: {x: 0, y: 2.8300002, z: -6.4300003}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
@@ -27145,6 +27145,12 @@ MonoBehaviour:
   ch3: {fileID: 1916868788}
   mural04: 0
   feed: {fileID: 0}
+  inicioCubo_01: {fileID: 0}
+  inicioCubo_02: {fileID: 0}
+  inicioCubo_03: {fileID: 0}
+  inicioAro_01: {fileID: 0}
+  inicioAro_02: {fileID: 0}
+  inicioAro_03: {fileID: 0}
 --- !u!1 &850194332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: 17852297d67914943bab52faffafca28,
@@ -42409,7 +42415,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124673887}
-  m_LocalRotation: {x: 0.038862165, y: 0.044464644, z: -0.001718155, w: 0.99825335}
+  m_LocalRotation: {x: 0.038642637, y: 0.115174964, z: -0.0044709872, w: 0.9925833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -62493,6 +62499,12 @@ MonoBehaviour:
   ch3: {fileID: 642042214}
   mural04: 0
   feed: {fileID: 0}
+  inicioCubo_01: {fileID: 1903586178}
+  inicioCubo_02: {fileID: 2026995409}
+  inicioCubo_03: {fileID: 1693008752}
+  inicioAro_01: {fileID: 913820869}
+  inicioAro_02: {fileID: 1451854657}
+  inicioAro_03: {fileID: 776950590}
 --- !u!1 &1879308907
 GameObject:
   m_ObjectHideFlags: 0

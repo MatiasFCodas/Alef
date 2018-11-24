@@ -91,7 +91,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: 9c93e84d63a80c443adcc98880b7f626,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3250,7 +3250,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.038644504, y: 0.11476526, z: -0.0044547184, w: 0.9926307}
+  m_LocalRotation: {x: 0.03864298, y: 0.11517504, z: -0.00447071, w: 0.9925833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4563,7 +4563,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.0050993934, y: 0.9906204, z: -0.038564883, w: -0.13098869}
+  m_LocalRotation: {x: -0.0051153623, y: 0.9905662, z: -0.03856312, w: -0.1313977}
   m_LocalPosition: {x: -1.0896533, y: 2.1299999, z: 32.12656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7222,7 +7222,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.044890802, y: 0.119039126, z: -0.0053931093, w: 0.9918596}
+  m_LocalRotation: {x: 0.044888407, y: 0.11945796, z: -0.0054120487, w: 0.9918092}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7964,6 +7964,7 @@ MonoBehaviour:
   totemManager: {fileID: 1895229319}
   cam: {fileID: 1693020507}
   player: {fileID: 666018459}
+  inicioPuzzle: {fileID: 76712980}
 --- !u!4 &985505709
 Transform:
   m_ObjectHideFlags: 0
