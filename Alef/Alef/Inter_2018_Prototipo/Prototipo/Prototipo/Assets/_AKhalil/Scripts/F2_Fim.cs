@@ -37,6 +37,46 @@ public class F2_Fim : MonoBehaviour
 
     public move2 movCubo;
 
+    public GameObject cubo;
+
+    public GameObject fimOutrosPuzzles_01;
+    public GameObject fimOutrosPuzzles_02;
+
+
+    public GameObject proprioFimPuzzle;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+
+            movCubo.ResetPosistion();
+
+            
+            cubo.GetComponent<move2>().left = false;
+            cubo.GetComponent<move2>().right = false;
+            cubo.GetComponent<move2>().up = false;
+            cubo.GetComponent<move2>().down = false;
+            cubo.transform.rotation = cubo.GetComponent<move2>().inicioRot;
+            cubo.transform.position = cubo.GetComponent<move2>().inicio;
+
+
+
+
+            player.SetActive(true);
+            puzzleDisco.SetActive(true);
+            player.GetComponent<CharController>().inPuzzle = false;
+            cubo.GetComponent<move2>().enabled = false;
+            
+            cam.Priority = 9;
+
+
+            fimOutrosPuzzles_01.SetActive(true);
+            fimOutrosPuzzles_02.SetActive(true);
+
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face") && other.gameObject == face)
@@ -51,10 +91,17 @@ public class F2_Fim : MonoBehaviour
             bloqueios.SetActive(false);
             bloqueiosFinaizado.SetActive(true);
             puzzleDisco.SetActive(true);
-            
+
+            fimOutrosPuzzles_01.SetActive(true);
+            fimOutrosPuzzles_02.SetActive(true);
+
             player.GetComponent<CharController>().inPuzzle = false;
             face.GetComponent<BoxCollider>().enabled = false;
             movCubo.canMove = false;
+
+            proprioFimPuzzle.SetActive(false);
+
+
         }
     }
 

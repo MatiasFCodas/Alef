@@ -26,8 +26,8 @@ public class move2 : MonoBehaviour
 
     public int maxMov;
     public int moves = 0;
-    Vector3 inicio;
-    Quaternion inicioRot;
+    [HideInInspector] public Vector3 inicio;
+    [HideInInspector] public Quaternion inicioRot;
 
     public AudioSource giro;
 
@@ -179,7 +179,15 @@ public class move2 : MonoBehaviour
 
     }
 
-
+    public void ResetPosistion()
+    {
+        left = false;
+        right = false;
+        up = false;
+        down = false;
+        this.transform.rotation = inicioRot;
+        this.transform.position = inicio;
+    }
 
     IEnumerator ParaMoves()
     {

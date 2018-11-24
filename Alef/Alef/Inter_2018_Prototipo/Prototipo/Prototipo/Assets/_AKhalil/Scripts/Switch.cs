@@ -29,6 +29,9 @@ public class Switch : MonoBehaviour {
     public GameObject aro_02;
     public GameObject aro_03;
 
+    public GameObject finaisDosCubos_01;
+    public GameObject finaisDosCubos_02;
+    public GameObject finaisDosCubos_03;
 
 
     void Start()
@@ -54,6 +57,10 @@ public class Switch : MonoBehaviour {
             aro_01.GetComponent<Move_Disco>().enabled = false;
             aro_02.GetComponent<Move_Disco>().enabled = false;
             aro_03.GetComponent<Move_Disco>().enabled = false;
+
+            finaisDosCubos_01.SetActive(true);
+            finaisDosCubos_02.SetActive(true);
+            finaisDosCubos_03.SetActive(true);
         }
     }
 
@@ -63,6 +70,11 @@ public class Switch : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
+
+            finaisDosCubos_01.SetActive(false);
+            finaisDosCubos_02.SetActive(false);
+            finaisDosCubos_03.SetActive(false);
+
             player.GetComponent<CharController>().inPuzzle = true; //desativa o jogador        
 
             if (m_Aro01 == true)

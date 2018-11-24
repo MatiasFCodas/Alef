@@ -20,15 +20,22 @@ public class F2_Inicio : MonoBehaviour {
 
     public GameObject player;
     public GameObject Cubo;
-    public GameObject puzzleDisco;
+    //public GameObject puzzleDisco;
 
     public CinemachineVirtualCamera cam;
 
     public int MaxMov;
 
+    public GameObject fim;
+
+    public GameObject fimOutrosPuzzles_01;
+    public GameObject fimOutrosPuzzles_02;
+
+
     void Start()
     {
         Cubo.GetComponent<move2>().enabled = false;
+        fim.GetComponent<F2_Fim>().enabled = true;
     }
 
 
@@ -36,8 +43,17 @@ public class F2_Inicio : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
-            puzzleDisco.SetActive(false);
 
+            Cubo.GetComponent<move2>().left = true;
+            Cubo.GetComponent<move2>().up = true;
+            Cubo.GetComponent<move2>().right = true;
+            Cubo.GetComponent<move2>().down = true;
+
+            fimOutrosPuzzles_01.SetActive(false);
+            fimOutrosPuzzles_02.SetActive(false);
+
+            //puzzleDisco.SetActive(false);
+            fim.GetComponent<F2_Fim>().enabled = true;
             player.GetComponent<CharController>().inPuzzle = true;
             cam.Priority = 12;
             Cubo.GetComponent<move2>().enabled = true;
