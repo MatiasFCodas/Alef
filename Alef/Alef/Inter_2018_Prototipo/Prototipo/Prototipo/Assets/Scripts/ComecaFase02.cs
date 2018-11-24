@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 public class ComecaFase02 : MonoBehaviour {
 
     public Animator anim;
-    public Animator portaAnim;
+    public Camela01 camela;
     
 	// Use this for initialization
 	void Start () {
 		
 	}
 
-    void OnTriggerStay(Collider other)
+    void Update()
     {
-            portaAnim.SetTrigger("AbriPorta");
+        if(camela.isComplete == true)
         FadeToLevel();
     }
 
