@@ -18,8 +18,6 @@ public class Checa_Chave : MonoBehaviour {
 
     public bool mural04;
 
-    public AudioSource feed;
-
 
     public GameObject inicioCubo_01;
     public GameObject inicioCubo_02;
@@ -42,7 +40,7 @@ public class Checa_Chave : MonoBehaviour {
     {
         if (ch1.chavePortaNormal == true && ch2.chavePortaNormal == true && ch3.chavePortaNormal == true)
         {
-            feed.Play();
+
             mural04 = true;
             inicioCubo_01.SetActive(false);
             inicioCubo_02.SetActive(false);

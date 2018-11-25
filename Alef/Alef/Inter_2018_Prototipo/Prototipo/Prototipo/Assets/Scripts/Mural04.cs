@@ -16,19 +16,24 @@ public class Mural04 : MonoBehaviour {
     public GameObject legenda05;
     public CinemachineVirtualCamera cam;
     public bool isComplete04;
-    static public bool abriMural04;
+    public bool abriMural04;
+    public AudioSource narracao;
 
     void Update()
     {
 
         if (puzzleMural04.mural04 == true)
         {
+            narracao.Play();
             StartCoroutine("NarraMural04");
         }
 
         if (isComplete04 == true)
         {
             cam.Priority = 9;
+
+            player.SetActive(true);
+            player.GetComponent<CharController>().inPuzzle = false;
 
             brilho01.SetActive(false);
             brilho02.SetActive(false);
@@ -45,20 +50,17 @@ public class Mural04 : MonoBehaviour {
         brilho02.SetActive(true);
         brilho03.SetActive(true);
 
+        player.SetActive(false);
+        player.GetComponent<CharController>().inPuzzle = true;
+
 
         anim.SetTrigger("MuralOn");
         camAnim.SetTrigger("CamMural04");
 
-        legenda04.SetActive(true);
 
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(25);
 
-        legenda04.SetActive(false);
-        legenda05.SetActive(true);
-
-        yield return new WaitForSeconds(10);
-
-        legenda05.SetActive(false);
+        cam.Priority = 9;
 
         isComplete04 = true;
 
@@ -66,6 +68,9 @@ public class Mural04 : MonoBehaviour {
         player.GetComponent<CharController>().inPuzzle = false;
 
         StopAllCoroutines();
+
     }
+
+
 }
 
