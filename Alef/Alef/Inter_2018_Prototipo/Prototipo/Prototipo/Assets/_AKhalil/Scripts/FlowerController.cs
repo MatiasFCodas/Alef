@@ -17,6 +17,12 @@ public class FlowerController : MonoBehaviour {
 
     public GameObject inicioPuzzle;
 
+    public bool abriMural05;
+
+    public AudioSource feed01;
+    public AudioSource feed02;
+    public AudioSource feed03;
+
     private void Update()
     {
         ChecaCorreto();
@@ -31,6 +37,7 @@ public class FlowerController : MonoBehaviour {
             && totem.Referencia_01.rotation.y >= 0.7009093 && totem.Referencia_01.rotation.y <= 0.7132504)
         {
             Debug.Log("LiberouPrimeiraParte");
+            feed01.PlayDelayed(1);
             petal.estagio++;
         }
 
@@ -41,6 +48,7 @@ public class FlowerController : MonoBehaviour {
             && totem.Referencia_02.rotation.y >= -0.0523359 && totem.Referencia_02.rotation.y <= -0.03489958)
         {
             Debug.Log("LiberouSegundaParte");
+            feed02.PlayDelayed(1);
             petal.estagio++;
         }
 
@@ -56,24 +64,30 @@ public class FlowerController : MonoBehaviour {
             && petal.Referencia_03.rotation.y <= 0.6156614 && petal.Referencia_03.rotation.y >= 0.601815
             && totem.Referencia_03.rotation.y <= 0.6156614 && totem.Referencia_03.rotation.y >= 0.601815)
         {
-            StartCoroutine(Finalizador());
+           // StartCoroutine(Finalizador());
             petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
             totemManager.GetComponent<Totem_Manager>().enabled = false;
+            inicioPuzzle.SetActive(false);
+            cam.Priority = 9;
+            abriMural05 = true;
         }
 
 
 
     }
 
-    IEnumerator Finalizador()
-    {
-        Debug.Log("LiberouTerceiraParte");
-        player.SetActive(true);
-        inicioPuzzle.SetActive(false);
-        player.GetComponent<CharController>().inPuzzle = false;
-        cam.Priority = 9;
-        yield return new WaitForSeconds(1);
-    }
+   // IEnumerator Finalizador()
+    //{
+
+      //  Debug.Log("LiberouTerceiraParte");
+       // player.SetActive(true);
+      //  inicioPuzzle.SetActive(false);
+       // player.GetComponent<CharController>().inPuzzle = false;
+      //  cam.Priority = 9;
+       // yield return new WaitForSeconds(1);
+
+        //abriMural05 = true;
+  //  }
 
 
 }
