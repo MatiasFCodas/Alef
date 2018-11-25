@@ -7,13 +7,20 @@ using UnityEngine.SceneManagement;
 public class Fim_da_Fase02 : MonoBehaviour {
 
 
+    public Mural04 key;
+
     public Animator anim;
-    public Checa_Fase key;
+    public Animator animD;
+    public Animator animE;
 
     void OnTriggerStay(Collider other)
     {
-      //  if (Input.GetKeyDown(KeyCode.E) && key.fase03Liberado == true)
+        if (Input.GetKeyDown(KeyCode.E))
+        {
             FadeToLevel();
+            animD.SetTrigger("AbriPortaD");
+            animE.SetTrigger("AbriPortaE");
+        }
     }
 
     public void FadeToLevel()

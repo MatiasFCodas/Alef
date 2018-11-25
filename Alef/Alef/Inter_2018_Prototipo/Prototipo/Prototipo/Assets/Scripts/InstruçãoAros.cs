@@ -22,9 +22,5 @@ public class InstruçãoAros : MonoBehaviour {
         instrucaoAro.SetActive(true);
     }
 
-     void OnTriggerExit(Collider other)
-    {
-        instrucaoAro.SetActive(false);
-        hitBox.SetActive(false);
-    }
+
 }
