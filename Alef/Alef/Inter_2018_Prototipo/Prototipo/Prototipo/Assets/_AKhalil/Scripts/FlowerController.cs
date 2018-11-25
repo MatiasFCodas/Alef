@@ -56,15 +56,23 @@ public class FlowerController : MonoBehaviour {
             && petal.Referencia_03.rotation.y <= 0.6156614 && petal.Referencia_03.rotation.y >= 0.601815
             && totem.Referencia_03.rotation.y <= 0.6156614 && totem.Referencia_03.rotation.y >= 0.601815)
         {
-            inicioPuzzle.SetActive(false);
-            player.GetComponent<CharController>().inPuzzle = false;
-            cam.Priority = 9;
+            StartCoroutine(Finalizador());
             petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
             totemManager.GetComponent<Totem_Manager>().enabled = false;
         }
 
 
 
+    }
+
+    IEnumerator Finalizador()
+    {
+        Debug.Log("LiberouTerceiraParte");
+        player.SetActive(true);
+        inicioPuzzle.SetActive(false);
+        player.GetComponent<CharController>().inPuzzle = false;
+        cam.Priority = 9;
+        yield return new WaitForSeconds(1);
     }
 
 
