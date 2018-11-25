@@ -542,7 +542,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -6012,7 +6012,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -7069,7 +7069,7 @@ Transform:
   m_Children:
   - {fileID: 272658866}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272658865
 GameObject:
@@ -11924,6 +11924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806513469}
   - component: {fileID: 806513468}
+  - component: {fileID: 806513470}
   m_Layer: 0
   m_Name: Checa Fase
   m_TagString: Untagged
@@ -11943,8 +11944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 1305154946}
-  camela02: {fileID: 0}
+  camela02: {fileID: 1879506368}
   ok: 0
+  ok2: 0
 --- !u!4 &806513469
 Transform:
   m_ObjectHideFlags: 0
@@ -11958,6 +11960,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806513470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806513467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d337584eba792c043a4c64aa7151613a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camela02: {fileID: 1879506368}
+  ok2: 0
 --- !u!1 &822375086
 GameObject:
   m_ObjectHideFlags: 0
@@ -12481,7 +12496,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.045006517, y: 0.09524857, z: -0.0043227207, w: 0.9944262}
+  m_LocalRotation: {x: 0.04500643, y: 0.09524836, z: -0.0043228115, w: 0.99442625}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13924,7 +13939,7 @@ Transform:
   m_Children:
   - {fileID: 765168099}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1038122953
 GameObject:
@@ -22190,7 +22205,7 @@ Transform:
   m_Children:
   - {fileID: 1132019388}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1562464985
 GameObject:
@@ -23959,7 +23974,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -29384,6 +29399,34 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1879506368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879506369}
+  m_Layer: 0
+  m_Name: "N\xE3oMexer (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1879506369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879506368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7399998, y: -2.46, z: 22.958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883944697
 GameObject:
   m_ObjectHideFlags: 0
@@ -29900,7 +29943,7 @@ MonoBehaviour:
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1

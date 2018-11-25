@@ -5503,7 +5503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 0}
+  camela02: {fileID: 0}
   ok: 0
+  ok2: 0
 --- !u!1 &317180671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,7 +5890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 1166157630}
+  camela02: {fileID: 1042789041}
   ok: 0
+  ok2: 0
 --- !u!4 &367053737
 Transform:
   m_ObjectHideFlags: 0
@@ -9411,7 +9415,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 1582d426ee03a484d8af1100f8315825, type: 3}
     - target: {fileID: 1781288823195020, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
         type: 2}
@@ -15539,6 +15543,127 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1036629434}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1042789040
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -29.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602688184164618, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c6e20d724cb8734abcc3dc95bddca34, type: 3}
+    - target: {fileID: 1781288823195020, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781288823195020, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+      propertyPath: m_Name
+      value: Camela02
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114783968366441824, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 6a61236bcbcae174a9fbb1486289976d, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1042789041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1781288823195020, guid: 6a61236bcbcae174a9fbb1486289976d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1042789040}
+--- !u!82 &1042789042 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1042789040}
+--- !u!114 &1042789043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042789041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b85f8e6b7c73b34bbac0d9962f9d8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camela: {fileID: 1166157630}
+  camela02: {fileID: 1042789041}
+  ok: 0
+  ok2: 0
+--- !u!114 &1042789044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042789041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897048d445fd57341b4aedcbe8c25601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camela02: {fileID: 1042789042}
+  animCamelo: {fileID: 1042789045}
+  legenda02: {fileID: 591743404}
+  parado: {fileID: 1767159777}
+  isComplete: 0
+  camelo: {fileID: 1042789041}
+--- !u!95 &1042789045
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042789041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b8e0781d6a8a3f499b6cf71bef23ff4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1044935274
 GameObject:
   m_ObjectHideFlags: 0
@@ -18134,7 +18259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camela: {fileID: 1166157630}
+  camela02: {fileID: 0}
   ok: 0
+  ok2: 0
 --- !u!82 &1166157633 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 82131787188439712, guid: 6a61236bcbcae174a9fbb1486289976d,
