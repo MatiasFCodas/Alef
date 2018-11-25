@@ -92,7 +92,7 @@ public class Totem_Manager : MonoBehaviour
 
     
 
-    void FixedUpdate()
+    void Update()
     {
         GiraTotem();        
         petal.petalaSelecionada = totemSelecionado;
@@ -111,13 +111,14 @@ public class Totem_Manager : MonoBehaviour
         {
             modo = modoArmazenado01;
             AjustaPosicoes(t1Pos1, t1Pos2, t1Pos3, t1PosN1, t1PosN2, t1PosN3);
-            MoveTotem(3);
+            MoveTotem(1);
             modoArmazenado01 = modo;
             startingPoint = Alterado_01;
             finishingPoint = Referencia_01;
             brilho_01.SetActive(true);
             brilho_02.SetActive(false);
             brilho_03.SetActive(false);
+            return;
         }
 
         if (totemSelecionado == 2)
@@ -131,19 +132,21 @@ public class Totem_Manager : MonoBehaviour
             brilho_01.SetActive(false);
             brilho_02.SetActive(true);
             brilho_03.SetActive(false);
+            return;
         }
 
         if (totemSelecionado == 3)
         {
             modo = modoArmazenado03;
             AjustaPosicoes(t3Pos1, 0, 0, t3PosN1, 0, 0);
-            MoveTotem(1);
+            MoveTotem(3);
             modoArmazenado03 = modo;
             startingPoint = Alterado_03;
             finishingPoint = Referencia_03;
             brilho_01.SetActive(false);
             brilho_02.SetActive(false);
             brilho_03.SetActive(true);
+            return;
         }
 
 
