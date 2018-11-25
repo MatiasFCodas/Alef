@@ -21,18 +21,21 @@ public class ComecaFase01 : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) )
+        {
             portaAnim.SetTrigger("AbriPorta");
+        }
     }
 
     public void FadeToLevel()
     {
-        anim.SetTrigger("FadeOut");
+        anim.SetTrigger("FadeOut01");
     }
 
-    private void FadeComplete()
+    private void FadeComplete01()
     {
-        SceneManager.LoadScene("Level_01C");
+        SceneManager.LoadScene("Level_01");
     }
+
 }
 

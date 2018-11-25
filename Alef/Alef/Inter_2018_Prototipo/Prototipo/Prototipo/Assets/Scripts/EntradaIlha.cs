@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class EntradaIlha : MonoBehaviour {
 
     public Animator anim;
+    public Animator ilhaAnim;
+
 
     // Use this for initialization
     void Start () {
@@ -19,17 +21,22 @@ public class EntradaIlha : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
+
+
         if (Input.GetKeyDown(KeyCode.E))
-            FadeToLevel();
+        {
+            ilhaAnim.SetTrigger("EntraIlha");
+        }
     }
 
-    private void FadeToLevel()
+    public void FadeToLevel()
     {
-        anim.SetTrigger("FadeOut");
+        anim.SetTrigger("FadeOut_Ilha");
     }
 
-    private void FadeComplete()
+     void FadeCompleteIlha()
     {
-        SceneManager.LoadScene("Ilha");
+            SceneManager.LoadScene("Ilha");
+        
     }
 }

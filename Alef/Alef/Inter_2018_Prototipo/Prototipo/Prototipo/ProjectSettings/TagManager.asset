@@ -27,6 +27,8 @@ TagManager:
   - ReceptorNormal
   - Gate
   - SentidoCorreto
+  - PortaFase01
+  - EntradaIlha
   layers:
   - Default
   - TransparentFX

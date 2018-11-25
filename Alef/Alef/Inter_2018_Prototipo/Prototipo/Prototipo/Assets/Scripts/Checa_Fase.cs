@@ -7,6 +7,10 @@ public class Checa_Fase : MonoBehaviour {
 
     public static int fase02 = 0;
 
+    public static int fase01Liberado = 0;
+
+    public static int fase02Liberado = 0;
+
     public static  int fase03Liberado = 0;
 
     public static int ilhaLiberado = 0;
@@ -17,6 +21,8 @@ public class Checa_Fase : MonoBehaviour {
 
     public bool ok;
     public bool ok2;
+    public bool ok3;
+    public bool ok4;
 
     void Start()
     {
@@ -24,7 +30,17 @@ public class Checa_Fase : MonoBehaviour {
 
         string sceneName = currentScene.name;
 
-        if (sceneName == "Level_02")
+        if (sceneName == "Tutorial")
+        {
+            fase01Liberado = 1;
+        }
+
+       else if(sceneName == "Level_01")
+        {
+            fase02Liberado = 1;
+        }
+
+       else if (sceneName == "Level_02")
         {
             fase03Liberado = 1;
         }
@@ -37,27 +53,30 @@ public class Checa_Fase : MonoBehaviour {
 
     void Update () {
 
-        if(fase03Liberado == 1)
+        if(fase01Liberado == 1)
         {
             ok = true;
+        }
+
+        if(fase02Liberado == 1)
+        {
+            ok2 = true;
+        }
+
+        if(fase03Liberado == 1)
+        {
+            ok3 = true;
             camela.SetActive(true);
         }
 
-       else if (fase03Liberado == 0)
-        {
-            camela.SetActive(false);
-        }
 
         if(ilhaLiberado == 1)
         {
-            ok2 = true;
+            ok4 = true;
+            camela.SetActive(false);
             camela02.SetActive(true);
         }
 
-       else if(ilhaLiberado == 0)
-        {
-            camela02.SetActive(false);
-        }
 
 
 	}

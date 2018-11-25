@@ -23,7 +23,12 @@ public class CharController : MonoBehaviour {
     public AudioSource steps;
     public AudioSource jump;
 
-	void Start () {
+
+    public Animator anim;
+    public Animator portaAnim;
+    public Animator ilhaAnim;
+
+    void Start () {
 		controller = GetComponent<CharacterController>();
         steps = GetComponent<AudioSource>();
         jump = GetComponent<AudioSource>();
@@ -149,4 +154,17 @@ public class CharController : MonoBehaviour {
 		                                             cam.transform.localEulerAngles.y,
 		                                             cam.transform.localEulerAngles.z);                                        
 	}
+
+     void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("EntradaIlha"))
+        {
+            ilhaAnim.SetTrigger("EntraIlha");
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("PortaFase01"))
+        {
+            ilhaAnim.SetTrigger("AbriPorta");
+        }
+    }
 }
