@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: "port\xE3o_v2"
+  m_Name: Fundo_da_vala 1
   m_Shader: {fileID: 4800000, guid: d7a166b36355b5a4fbc4a673f3f1e4f0, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: BOOLEAN_3CB1AC48_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_B973E316:
-        m_Texture: {fileID: 2800000, guid: e13e61af15a0fd54597f2b98eec4c9f7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 42dc9bb4b7d6d204e8568b86d18b3454, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -43,7 +43,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ac40789da045cf14989191a90633b9f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 53c1fada5e90de5449152077909dd013, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -63,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_3CB1AC48: 0
+    - Boolean_3CB1AC48: 1
     - Boolean_E72D01AF: 0
     - _AlphaClip: 0
     - _Blend: 0
