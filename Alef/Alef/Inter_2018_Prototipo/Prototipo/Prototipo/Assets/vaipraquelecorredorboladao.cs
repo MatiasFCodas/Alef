@@ -14,13 +14,13 @@ public class vaipraquelecorredorboladao : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter(Collider col)
+	void OnCollisionEnter(Collision col)
 	{
-		if (col.CompareTag("Player"))
+		if (col.gameObject.tag == "Player")
 		{
 
 			SceneManager.LoadScene(4);
-
+			print("minhavidaéumamerdaeeuqueromorrertemumascoisasqueajudamanãomematarmastafoda");
 
 
 		}

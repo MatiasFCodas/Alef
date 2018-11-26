@@ -29,6 +29,7 @@ TagManager:
   - SentidoCorreto
   - PortaFase01
   - EntradaIlha
+  - "Sa\xEDda"
   layers:
   - Default
   - TransparentFX

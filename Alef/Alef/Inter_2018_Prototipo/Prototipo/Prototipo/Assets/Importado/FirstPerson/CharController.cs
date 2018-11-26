@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CharController : MonoBehaviour {
 
@@ -166,5 +167,11 @@ public class CharController : MonoBehaviour {
         {
             ilhaAnim.SetTrigger("AbriPorta");
         }
-    }
+
+		if (other.gameObject.CompareTag("Saída")){
+
+			SceneManager.LoadScene(4);
+		}
+
+	}
 }
