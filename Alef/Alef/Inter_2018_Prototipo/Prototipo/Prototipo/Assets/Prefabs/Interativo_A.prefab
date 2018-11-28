@@ -1702,6 +1702,8 @@ MonoBehaviour:
   canMove: 1
   maxMov: 17
   moves: 0
+  inicio: {x: 0, y: 0, z: 0}
+  inicioRot: {x: 0, y: 0, z: 0, w: 0}
   giro: {fileID: 82823523263674678}
 --- !u!198 &198977760658541540
 ParticleSystem:
@@ -7119,7 +7121,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 1
-      scalar: 3
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2

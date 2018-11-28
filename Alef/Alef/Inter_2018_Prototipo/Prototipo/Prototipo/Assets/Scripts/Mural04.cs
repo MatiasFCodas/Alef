@@ -19,12 +19,15 @@ public class Mural04 : MonoBehaviour {
     public bool abriMural04;
     public AudioSource narracao;
 
+    bool stopMural;
+
     void Update()
     {
 
-        if (puzzleMural04.mural04 == true)
+        if (puzzleMural04.mural04 == true && !stopMural)
         {
-            narracao.Play();
+            stopMural = true;
+            narracao.Play(5);
             StartCoroutine("NarraMural04");
         }
 

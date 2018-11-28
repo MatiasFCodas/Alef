@@ -28,6 +28,11 @@ public class Checa_Chave : MonoBehaviour {
     public GameObject inicioAro_02;
     public GameObject inicioAro_03;
 
+    public GameObject som;
+    public GameObject instrucoes;
+
+    
+
     void Update()
     {
         if (F2_Fim.finalizado >= 3)
@@ -45,6 +50,8 @@ public class Checa_Chave : MonoBehaviour {
 
             porta.GetComponent<BoxCollider>().enabled = true;
             mural04 = true;
+            som.SetActive(false);
+            instrucoes.SetActive(false);
             inicioCubo_01.SetActive(false);
             inicioCubo_02.SetActive(false);
             inicioCubo_03.SetActive(false);
@@ -67,6 +74,4 @@ public class Checa_Chave : MonoBehaviour {
          //   Debug.Log("ChaveSecreta1 ativa");//substituir pela boolean de permissão da porta
         }
     }
-
-
 }

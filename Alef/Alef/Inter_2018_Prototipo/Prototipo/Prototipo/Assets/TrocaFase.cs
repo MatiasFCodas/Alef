@@ -19,6 +19,11 @@ public class TrocaFase : MonoBehaviour {
             FadeToLevel();
         }
 
+        else if (Input.GetKeyDown(KeyCode.E) && key.ok3 == true)
+        {
+            FadeToLevel();
+        }
+
         else if (Input.GetKeyDown(KeyCode.E) && key.ok == true)
         {
             portaAnim.SetTrigger("AbriPorta");
@@ -39,6 +44,11 @@ public class TrocaFase : MonoBehaviour {
         if (key.ok4 == true)
         {
             SceneManager.LoadScene("Ilha");
+        }
+
+        else if(key.ok3 == true)
+        {
+            SceneManager.LoadScene("Level_03");
         }
 
        else if (key.ok == true)

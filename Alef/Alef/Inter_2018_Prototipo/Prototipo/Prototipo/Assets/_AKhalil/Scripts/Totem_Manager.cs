@@ -75,9 +75,9 @@ public class Totem_Manager : MonoBehaviour
 
 
 
-    public GameObject brilho_01;
-    public GameObject brilho_02;
-    public GameObject brilho_03;
+    public GameObject brilho_01_Totem;
+    public GameObject brilho_02_Totem;
+    public GameObject brilho_03_Totem;
 
 
 
@@ -115,9 +115,18 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado01 = modo;
             startingPoint = Alterado_01;
             finishingPoint = Referencia_01;
-            brilho_01.SetActive(true);
-            brilho_02.SetActive(false);
-            brilho_03.SetActive(false);
+            if (petal.ativaPetalas == false)
+            {
+                brilho_01_Totem.SetActive(true);
+                brilho_02_Totem.SetActive(false);
+                brilho_03_Totem.SetActive(false);
+            }
+            if (ativaTotem == true)
+            {
+                petal.Brilho_01_Petala.SetActive(false);
+                petal.Brilho_02_Petala.SetActive(false);
+                petal.Brilho_03_Petala.SetActive(false);
+            }
             return;
         }
 
@@ -129,9 +138,18 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado02 = modo;
             startingPoint = Alterado_02;
             finishingPoint = Referencia_02;
-            brilho_01.SetActive(false);
-            brilho_02.SetActive(true);
-            brilho_03.SetActive(false);
+            if (petal.ativaPetalas == false)
+            {
+                brilho_01_Totem.SetActive(false);
+                brilho_02_Totem.SetActive(true);
+                brilho_03_Totem.SetActive(false);
+            }
+            if (ativaTotem == true)
+            {
+                petal.Brilho_01_Petala.SetActive(false);
+                petal.Brilho_02_Petala.SetActive(false);
+                petal.Brilho_03_Petala.SetActive(false);
+            }
             return;
         }
 
@@ -143,9 +161,18 @@ public class Totem_Manager : MonoBehaviour
             modoArmazenado03 = modo;
             startingPoint = Alterado_03;
             finishingPoint = Referencia_03;
-            brilho_01.SetActive(false);
-            brilho_02.SetActive(false);
-            brilho_03.SetActive(true);
+            if (petal.ativaPetalas == false)
+            {
+                brilho_01_Totem.SetActive(false);
+                brilho_02_Totem.SetActive(false);
+                brilho_03_Totem.SetActive(true);
+            }
+            if (ativaTotem == true)
+            {
+                petal.Brilho_01_Petala.SetActive(false);
+                petal.Brilho_02_Petala.SetActive(false);
+                petal.Brilho_03_Petala.SetActive(false);
+            }
             return;
         }
 

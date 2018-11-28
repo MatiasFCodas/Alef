@@ -6,13 +6,14 @@ public class Camela03 : MonoBehaviour {
 
     public AudioSource camela03;
 
-    //public Animator animCamelo;
+    public Animator animCamelo;
 
     public GameObject legenda03;
 
     public CharController parado;
 
     public bool isComplete;
+    public bool stop;
 
     public GameObject camelo;
 
@@ -24,7 +25,7 @@ public class Camela03 : MonoBehaviour {
         if (isComplete == true)
         {
             legenda03.SetActive(false);
-            //animCamelo.SetTrigger("AndaCamela");
+
 
         }
 
@@ -32,18 +33,25 @@ public class Camela03 : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        StartCoroutine("NarraCamela02");
+        if (!stop)
+        {
+            StartCoroutine("NarraCamela03");
+            stop = true;
+        }
 
     }
 
-    IEnumerator NarraCamela02()
+    IEnumerator NarraCamela03()
     {
         camela03.Play();
         legenda03.SetActive(true);
 
         yield return new WaitForSeconds(15);
 
+
         isComplete = true;
+
+        animCamelo.SetTrigger("AndaCamelaIlha");
 
         StopAllCoroutines();
     }

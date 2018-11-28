@@ -65,6 +65,10 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
     [HideInInspector]public bool ativaPetalas = true;
 
 
+    public GameObject Brilho_01_Petala;
+    public GameObject Brilho_02_Petala;
+    public GameObject Brilho_03_Petala;
+
 
     // Contador de tempo que impede o jogador de spammar movimentos
     public float tempoArmazenado;
@@ -109,6 +113,15 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
             finishingPoint = Referencia_01;
             GiraPetala();
             posicaoArmazenada_01 = posicao;
+            Brilho_01_Petala.SetActive(true);
+            Brilho_02_Petala.SetActive(false);
+            Brilho_03_Petala.SetActive(false);
+            if (ativaPetalas == true)
+            {
+                totem.brilho_01_Totem.SetActive(false);
+                totem.brilho_02_Totem.SetActive(false);
+                totem.brilho_03_Totem.SetActive(false);
+            }
         }
         else if (petalaSelecionada == 2)
         {
@@ -119,6 +132,15 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
             finishingPoint = Referencia_02;
             GiraPetala();
             posicaoArmazenada_02 = posicao;
+            Brilho_01_Petala.SetActive(false);
+            Brilho_02_Petala.SetActive(true);
+            Brilho_03_Petala.SetActive(false);
+            if (ativaPetalas == true)
+            {
+                totem.brilho_01_Totem.SetActive(false);
+                totem.brilho_02_Totem.SetActive(false);
+                totem.brilho_03_Totem.SetActive(false);
+            }
         }
         else if (petalaSelecionada == 3)
         {
@@ -129,6 +151,15 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
             finishingPoint = Referencia_03;
             GiraPetala();
             posicaoArmazenada_03 = posicao;
+            Brilho_01_Petala.SetActive(false);
+            Brilho_02_Petala.SetActive(false);
+            Brilho_03_Petala.SetActive(true);
+            if (ativaPetalas == true)
+            {
+                totem.brilho_01_Totem.SetActive(false);
+                totem.brilho_02_Totem.SetActive(false);
+                totem.brilho_03_Totem.SetActive(false);
+            }
         }
 
         if (estagio == 2) // Alteração entre as petalas caso o jogador esteja no nivel 2

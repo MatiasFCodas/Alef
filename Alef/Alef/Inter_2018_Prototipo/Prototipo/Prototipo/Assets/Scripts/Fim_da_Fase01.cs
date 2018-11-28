@@ -20,7 +20,7 @@ public class Fim_da_Fase01 : MonoBehaviour {
 
      void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+       
             FadeToLevel();
     }
 

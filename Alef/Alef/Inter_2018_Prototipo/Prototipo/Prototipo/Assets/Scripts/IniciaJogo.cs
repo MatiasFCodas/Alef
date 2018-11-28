@@ -5,7 +5,11 @@ using UnityEngine;
 
 public class IniciaJogo : MonoBehaviour {
 
+    public GameObject menu;
+    public GameObject canvasobj;
     public GameObject animatic;
+	public GameObject estrela;
+	public GameObject quadro;
     public Animator anim;
 
     // Use this for initialization
@@ -20,7 +24,13 @@ public class IniciaJogo : MonoBehaviour {
 
     public void Iniciar()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+		quadro.active = true;
         animatic.SetActive(true);
         anim.SetTrigger("StartAnimatic");
+        menu.active = false;
+        canvasobj.active = false;
+		estrela.active = false;
     }
 }

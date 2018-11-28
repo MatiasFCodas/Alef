@@ -23,6 +23,10 @@ public class FlowerController : MonoBehaviour {
     public AudioSource feed02;
     public AudioSource feed03;
 
+    public GameObject instrucoes;
+
+    bool finalizado;
+
     private void Update()
     {
         ChecaCorreto();
@@ -62,32 +66,34 @@ public class FlowerController : MonoBehaviour {
             && totem.Referencia_02.rotation.y >= -0.5664063 && totem.Referencia_02.rotation.y <= -0.5519369
             //Petala 03 / Totem 03 //
             && petal.Referencia_03.rotation.y <= 0.6156614 && petal.Referencia_03.rotation.y >= 0.601815
-            && totem.Referencia_03.rotation.y <= 0.6156614 && totem.Referencia_03.rotation.y >= 0.601815)
+            && totem.Referencia_03.rotation.y <= 0.6156614 && totem.Referencia_03.rotation.y >= 0.601815 
+            && !finalizado)
         {
-           // StartCoroutine(Finalizador());
+            finalizado = true;
+            StartCoroutine(Finalizador());
+           /*
             petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
             totemManager.GetComponent<Totem_Manager>().enabled = false;
             inicioPuzzle.SetActive(false);
             cam.Priority = 9;
-            abriMural05 = true;
+            abriMural05 = true;*/
         }
 
 
 
     }
 
-   // IEnumerator Finalizador()
-    //{
-
-      //  Debug.Log("LiberouTerceiraParte");
-       // player.SetActive(true);
-      //  inicioPuzzle.SetActive(false);
-       // player.GetComponent<CharController>().inPuzzle = false;
-      //  cam.Priority = 9;
-       // yield return new WaitForSeconds(1);
-
-        //abriMural05 = true;
-  //  }
+    IEnumerator Finalizador()
+    {
+        Debug.Log("LiberouTerceiraParte");
+        instrucoes.SetActive(false);        
+        inicioPuzzle.SetActive(false);
+        cam.Priority = 9;
+        yield return new WaitForSeconds(1);
+        petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
+        totemManager.GetComponent<Totem_Manager>().enabled = false;
+        abriMural05 = true;
+    }
 
 
 }
