@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.068993926, g: 0.064830475, b: 0.046626747, a: 1}
+  m_IndirectSpecularColor: {r: 0.068993956, g: 0.064830475, b: 0.04662671, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3779,10 +3779,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camela: {fileID: 1166157630}
   camela02: {fileID: 1042789041}
-  ok: 0
-  ok2: 0
-  ok3: 0
-  ok4: 0
+  ok: 1
+  ok2: 1
+  ok3: 1
+  ok4: 1
 --- !u!4 &367053737
 Transform:
   m_ObjectHideFlags: 0
@@ -15414,6 +15414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726506108}
+  - component: {fileID: 1726506109}
   m_Layer: 0
   m_Name: Templo
   m_TagString: Untagged
@@ -15450,6 +15451,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1726506109
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726506107}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7737ae2718699384eaabf73377472309, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1730980193
 GameObject:
   m_ObjectHideFlags: 0

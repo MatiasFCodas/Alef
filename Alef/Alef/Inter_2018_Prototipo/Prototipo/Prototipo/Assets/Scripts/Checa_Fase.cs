@@ -24,6 +24,9 @@ public class Checa_Fase : MonoBehaviour {
     public bool ok3;
     public bool ok4;
 
+    public Animator anim;
+
+
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -76,8 +79,15 @@ public class Checa_Fase : MonoBehaviour {
             camela.SetActive(false);
             camela02.SetActive(true);
         }
-
-
-
 	}
+
+
+    IEnumerator AnimaTemplo()
+    {
+        //trava camera no templo
+        yield return new WaitForSeconds(1);
+        anim.SetTrigger("AtivaTemplo");
+        yield return new WaitForSeconds(1);
+        //volta movimento do jogador
+    }
 }
