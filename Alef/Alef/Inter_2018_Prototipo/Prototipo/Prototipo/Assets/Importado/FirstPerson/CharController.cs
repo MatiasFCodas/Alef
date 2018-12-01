@@ -72,6 +72,8 @@ public class CharController : MonoBehaviour {
 
     void FixedUpdate () {
 
+        Debug.Log(inPuzzle);
+
         if (moveDirection.x > 0 && steps.isPlaying == false )
         {
            steps.Play();

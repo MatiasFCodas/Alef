@@ -21,7 +21,7 @@ public class InicioPuzzle02 : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
         {
 
             player.GetComponent<CharController>().inPuzzle = true;
