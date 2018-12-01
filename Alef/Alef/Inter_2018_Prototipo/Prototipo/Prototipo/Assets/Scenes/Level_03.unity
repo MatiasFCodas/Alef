@@ -13937,7 +13937,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.04350192, y: 0.12963991, z: -0.0056777364, w: 0.99059016}
+  m_LocalRotation: {x: 0.043683104, y: 0.09257856, z: -0.004050152, w: 0.99473846}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15597,8 +15597,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.004764217, y: -0.99309087, z: 0.043611005, w: 0.10883899}
+  m_LocalPosition: {x: -1.1281953, y: 1.936204, z: 30.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18264,6 +18264,7 @@ MonoBehaviour:
   ok2: 0
   ok3: 0
   ok4: 0
+  anim: {fileID: 0}
 --- !u!4 &806513469
 Transform:
   m_ObjectHideFlags: 0
@@ -19041,7 +19042,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.04972646, y: 0.13417415, z: -0.006747637, w: 0.98968637}
+  m_LocalRotation: {x: 0.04994918, y: 0.09624663, z: -0.004835233, w: 0.9940917}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -41446,7 +41447,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455814149161256, guid: ecb23bcb56ebc5e49ba2844c150be740, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4455814149161256, guid: ecb23bcb56ebc5e49ba2844c150be740, type: 2}
       propertyPath: m_LocalRotation.x
@@ -41498,6 +41499,16 @@ Prefab:
         type: 2}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.9608457
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376079568756334, guid: ecb23bcb56ebc5e49ba2844c150be740,
+        type: 2}
+      propertyPath: ColorModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198376079568756334, guid: ecb23bcb56ebc5e49ba2844c150be740,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecb23bcb56ebc5e49ba2844c150be740, type: 2}
