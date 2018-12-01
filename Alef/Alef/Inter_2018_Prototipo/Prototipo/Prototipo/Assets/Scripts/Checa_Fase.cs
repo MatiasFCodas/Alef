@@ -19,6 +19,8 @@ public class Checa_Fase : MonoBehaviour {
 
     public GameObject camela02;
 
+    public GameObject mapturn;
+
     public bool ok;
     public bool ok2;
     public bool ok3;
@@ -36,21 +38,25 @@ public class Checa_Fase : MonoBehaviour {
         if (sceneName == "Tutorial")
         {
             fase01Liberado = 1;
+            mapturn.transform.localRotation = Quaternion.Euler(0, 90, 0);
         }
 
-       else if(sceneName == "Level_01")
+       else if(sceneName == "Level_01" )
         {
             fase02Liberado = 1;
+            mapturn.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
 
        else if (sceneName == "Level_02")
         {
             fase03Liberado = 1;
+            mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
         }
 
       else if  (sceneName == "Level_03")
         {
             ilhaLiberado = 1;
+            mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
         }
     }
 
