@@ -15,6 +15,8 @@ public class Mural03 : MonoBehaviour {
     public CinemachineVirtualCamera cam;
     public bool isComplete03;
     public bool abriMural03;
+    public CinemachineFreeLook camplayer;
+    public GameObject cancela;
 
     void Update () {
 
@@ -25,7 +27,7 @@ public class Mural03 : MonoBehaviour {
 
         if (isComplete03 == true)
         {
-            cam.Priority = 9;
+          //  cam.Priority = 9;
 
             brilho01.SetActive(false);
             brilho02.SetActive(false);
@@ -36,8 +38,8 @@ public class Mural03 : MonoBehaviour {
     IEnumerator NarraMural03()
     {
         abriMural03 = true;
-
-        cam.Priority = 12;
+        cancela.active = false;
+        cam.Priority = 15;
         brilho01.SetActive(true);
         brilho02.SetActive(true);
         brilho03.SetActive(true);
@@ -49,8 +51,10 @@ public class Mural03 : MonoBehaviour {
         yield return new WaitForSeconds(13);
 
         isComplete03 = true;
-        
+
+
         player.SetActive(true);
+        camplayer.Priority = 20;
         player.GetComponent<CharController>().inPuzzle = false;
 
         StopAllCoroutines();

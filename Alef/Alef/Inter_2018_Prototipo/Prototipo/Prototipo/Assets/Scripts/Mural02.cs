@@ -17,12 +17,14 @@ public class Mural02 : MonoBehaviour {
     public bool isComplete02;
     public bool abriMural02;
 
- 
+    private bool jafoiporra;
+
 	void Update () {
 
-        if (puzzleMural02.puzzleB_02 == true)
+        if (puzzleMural02.puzzleB_02 == true && !jafoiporra)
         {
             StartCoroutine("NarraMural02");
+            jafoiporra = true;
         }
 
         if (isComplete02 == true)
@@ -57,6 +59,7 @@ public class Mural02 : MonoBehaviour {
 
         player.SetActive(true);
         player.GetComponent<CharController>().inPuzzle = false;
+     //   gameObject.GetComponent<Mural02>().enabled = false;
 
         StopAllCoroutines();
     }
