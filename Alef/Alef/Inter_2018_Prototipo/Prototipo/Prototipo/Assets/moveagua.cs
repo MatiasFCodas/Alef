@@ -12,7 +12,7 @@ public class moveagua : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		agua.material.mainTextureOffset += new Vector2(.01f, .03f);
+		agua.material.mainTextureOffset += new Vector2(.002f, .005f);
 
 
 	}

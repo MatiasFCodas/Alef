@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class AcabaAnimatic : MonoBehaviour {
 
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return)) ComecaTutorial();
+    }
 
     void ComecaTutorial()
     {
