@@ -6,6 +6,7 @@ using Cinemachine;
 public class FlowerController : MonoBehaviour {
 
 
+    
 
     public Movimento_Petalas_Lerp petal;
     public Totem_Manager totem;
@@ -25,17 +26,24 @@ public class FlowerController : MonoBehaviour {
 
     public GameObject instrucoes;
 
-    
 
-
-    public GameObject brilho_01;
-    public GameObject brilho_02;
-    public GameObject brilho_03;
+    public ParticleSystem brilho_01_P;
+    public ParticleSystem brilho_02_P;
+    public ParticleSystem brilho_03_P;
 
 
     bool fim_01;
     bool fim_02;
     bool fim_03;
+
+    private void Start()
+    {
+        brilho_01_P.Stop();
+        brilho_02_P.Stop();
+        brilho_03_P.Stop();
+    }
+
+
 
     private void Update()
     {
@@ -64,9 +72,7 @@ public class FlowerController : MonoBehaviour {
         {
             fim_02 = true;
             StartCoroutine(Finalizador_02());
-            Debug.Log("LiberouSegundaParte");
             feed02.PlayDelayed(1);
-            petal.estagio++;
         }
 
 
@@ -97,7 +103,10 @@ public class FlowerController : MonoBehaviour {
         Debug.Log("LiberouPrimeiraParte");
         feed01.PlayDelayed(1);
         petal.estagio++;
-        brilho_01.SetActive(true);
+
+        brilho_01_P.Stop();
+        brilho_02_P.Play();
+
         yield return new WaitForSeconds(5);
     }
 
@@ -106,7 +115,11 @@ public class FlowerController : MonoBehaviour {
         Debug.Log("LiberouSegundaParte");
         feed02.PlayDelayed(1);
         petal.estagio++;
-        brilho_02.SetActive(true);
+
+        brilho_02_P.Stop();
+        brilho_03_P.Play();
+
+
         yield return new WaitForSeconds(5);
     }
 
@@ -116,7 +129,9 @@ public class FlowerController : MonoBehaviour {
         instrucoes.SetActive(false);        
         inicioPuzzle.SetActive(false);
         cam.Priority = 9;
-        brilho_03.SetActive(true);
+
+        brilho_03_P.Stop();
+
         yield return new WaitForSeconds(1);
         petalasManager.GetComponent<Movimento_Petalas_Lerp>().enabled = false;
         totemManager.GetComponent<Totem_Manager>().enabled = false;
