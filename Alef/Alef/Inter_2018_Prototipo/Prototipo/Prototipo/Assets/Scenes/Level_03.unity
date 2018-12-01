@@ -542,7 +542,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -6228,7 +6228,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -13938,7 +13938,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.038578697, y: 0.12865768, z: -0.0049937447, w: 0.99092585}
+  m_LocalRotation: {x: 0.03857833, y: 0.12865762, z: -0.0049937046, w: 0.99092585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15598,7 +15598,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.0056390692, y: 0.9886884, z: -0.03848967, w: -0.14485139}
+  m_LocalRotation: {x: -0.005639018, y: 0.98868847, z: -0.03848932, w: -0.14485139}
   m_LocalPosition: {x: -1.0896533, y: 2.1299999, z: 32.12656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -17268,7 +17268,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714059262}
-  m_LocalRotation: {x: -0.081430964, y: -0.000006960705, z: -0.0000005250331, w: -0.99667907}
+  m_LocalRotation: {x: -0.081425115, y: 0.00000789389, z: -0.0000017402926, w: -0.99667954}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19044,7 +19044,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.04481034, y: 0.13319746, z: -0.0060244715, w: 0.99005777}
+  m_LocalRotation: {x: 0.044810247, y: 0.13319744, z: -0.006024438, w: 0.99005777}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19281,7 +19281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e22b1bf45015be4a8f1b3072ea55d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.2
   Alterado_01: {fileID: 1006209341}
   Alterado_02: {fileID: 1883944698}
   Alterado_03: {fileID: 1199158987}
@@ -19322,7 +19322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934666818}
   m_Layer: 0
-  m_Name: Old
+  m_Name: Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40812,7 +40812,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -47552,7 +47552,7 @@ MonoBehaviour:
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1

@@ -233,7 +233,7 @@ public class Totem_Manager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A)/* && Time.time >= tempoArmazenado*/ && ativaTotem == true)
         {
             tempoArmazenado = Time.time + tempoAdicionado;
-            speed = 0.05f;
+            speed = 0.2f;
 
             if (modo == -3)
             {
