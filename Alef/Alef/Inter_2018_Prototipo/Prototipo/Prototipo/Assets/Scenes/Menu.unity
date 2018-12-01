@@ -452,7 +452,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 103734232}
-  m_LocalRotation: {x: -0.014843976, y: 0.0012804489, z: 0.00001901226, w: 0.999889}
+  m_LocalRotation: {x: -0.014843975, y: 0.0012805996, z: 0.000019014511, w: 0.9998891}
   m_LocalPosition: {x: 0, y: 4.773, z: -3.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1210,7 +1210,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.014843976, y: 0.0012804489, z: 0.000019012261, w: 0.999889}
+  m_LocalRotation: {x: -0.014843975, y: 0.0012805996, z: 0.000019014513, w: 0.9998891}
   m_LocalPosition: {x: -1.736407e-11, y: 5.6629996, z: -3.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1599,7 +1599,7 @@ Transform:
   m_GameObject: {fileID: 795676049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 715938901}
   m_RootOrder: 0
@@ -1619,7 +1619,7 @@ VideoPlayer:
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 990660264}
   m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 2
+  m_RenderMode: 3
   m_AspectRatio: 5
   m_DataSource: 0
   m_PlaybackSpeed: 1

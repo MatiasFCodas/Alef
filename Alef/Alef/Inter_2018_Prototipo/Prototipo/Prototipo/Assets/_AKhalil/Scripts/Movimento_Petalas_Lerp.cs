@@ -88,6 +88,16 @@ public class Movimento_Petalas_Lerp : MonoBehaviour {
         petalaSelecionada = totem.totemSelecionado;
     }
 
+    /*
+
+    void FixedUpdate()
+    {
+        MudaPetala();
+        totem.totemSelecionado = petalaSelecionada;
+        petalaSelecionada = totem.totemSelecionado;
+    }
+    */
+
 
 
 

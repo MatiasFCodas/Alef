@@ -5748,7 +5748,6 @@ MonoBehaviour:
   puzzlePetalas: {fileID: 934158886}
   puzzleTotem: {fileID: 1895229319}
   cam: {fileID: 1693020507}
-  brilho_01_P: {fileID: 1557734649}
 --- !u!1 &79362069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6832,7 +6831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &196409387
 Transform:
   m_ObjectHideFlags: 0
@@ -6840,13 +6839,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196409386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 407848442}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &196409388
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -7092,7 +7091,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0.9019608, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -13938,7 +13937,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.03857833, y: 0.12865762, z: -0.0049937046, w: 0.99092585}
+  m_LocalRotation: {x: 0.043683104, y: 0.09257856, z: -0.004050152, w: 0.99473846}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15598,8 +15597,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.005639018, y: 0.98868847, z: -0.03848932, w: -0.14485139}
-  m_LocalPosition: {x: -1.0896533, y: 2.1299999, z: 32.12656}
+  m_LocalRotation: {x: 0.004764217, y: -0.99309087, z: 0.043611005, w: 0.10883899}
+  m_LocalPosition: {x: -1.1281953, y: 1.936204, z: 30.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17268,7 +17267,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714059262}
-  m_LocalRotation: {x: -0.081425115, y: 0.00000789389, z: -0.0000017402926, w: -0.99667954}
+  m_LocalRotation: {x: -0.08638642, y: -0.0010099951, z: 0.000086536864, w: -0.99626124}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18261,7 +18260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camela: {fileID: 1305154946}
   camela02: {fileID: 1879506368}
-  mapturn: {fileID: 0}
   ok: 0
   ok2: 0
   ok3: 0
@@ -19044,7 +19042,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.044810247, y: 0.13319744, z: -0.006024438, w: 0.99005777}
+  m_LocalRotation: {x: 0.04994918, y: 0.09624663, z: -0.004835233, w: 0.9940917}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19281,7 +19279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e22b1bf45015be4a8f1b3072ea55d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 0.05
   Alterado_01: {fileID: 1006209341}
   Alterado_02: {fileID: 1883944698}
   Alterado_03: {fileID: 1199158987}
@@ -19322,7 +19320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934666818}
   m_Layer: 0
-  m_Name: Puzzle
+  m_Name: Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19951,9 +19949,9 @@ MonoBehaviour:
   feed02: {fileID: 985505712}
   feed03: {fileID: 985505711}
   instrucoes: {fileID: 1257964597}
-  brilho_01_P: {fileID: 1557734649}
-  brilho_02_P: {fileID: 1643664296}
-  brilho_03_P: {fileID: 196409389}
+  brilho_01: {fileID: 1557734646}
+  brilho_02: {fileID: 1643664293}
+  brilho_03: {fileID: 196409386}
 --- !u!4 &985505709
 Transform:
   m_ObjectHideFlags: 0
@@ -29662,7 +29660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1557734647
 Transform:
   m_ObjectHideFlags: 0
@@ -29670,13 +29668,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557734646}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 407848442}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1557734648
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -29743,10 +29741,10 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557734646}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 3
   simulationSpeed: 1
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -29922,7 +29920,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.9607843, b: 1, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -35161,7 +35159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1643664294
 Transform:
   m_ObjectHideFlags: 0
@@ -35169,13 +35167,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643664293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 407848442}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1643664295
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -35245,7 +35243,7 @@ ParticleSystem:
   lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -35421,7 +35419,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.9882353, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
