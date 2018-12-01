@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 615a5db92620e5e4ba521b199f564c7d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arm_Ctrls_L
+    100004: Arm_Ctrls_R
+    100006: Belly_Cluster
+    100008: Chest_Cluster
+    100010: Chest_OFFSET
+    100012: Ctrl_Belly
+    100014: Ctrl_Body
+    100016: Ctrl_Chest
+    100018: Ctrl_Elbow_L
+    100020: Ctrl_Elbow_R
+    100022: Ctrl_Foot_L
+    100024: Ctrl_Foot_R
+    100026: Ctrl_Hand_L
+    100028: Ctrl_Hand_L 1
+    100030: Ctrl_Hand_R
+    100032: Ctrl_Hand_R 1
+    100034: Ctrl_Head
+    100036: Ctrl_Knee_L
+    100038: Ctrl_Knee_R
+    100040: Ctrl_Neck
+    100042: Ctrl_ROOT
+    100044: Ctrl_Sholder_L
+    100046: Ctrl_Sholder_R
+    100048: Ctrl_Waist
+    100050: Def_Ankle_L
+    100052: Def_Ankle_R
+    100054: Def_Clav_L
+    100056: Def_Clav_R
+    100058: Def_Elbow_L
+    100060: Def_Elbow_R
+    100062: Def_FootBall_L
+    100064: Def_FootBall_R
+    100066: Def_FootToe_L
+    100068: Def_FootToe_R
+    100070: Def_Head
+    100072: Def_Hips
+    100074: Def_LwrlLag_L
+    100076: Def_Neck
+    100078: Def_RwrlLag_R
+    100080: Def_shoulder_L
+    100082: Def_shoulder_R
+    100084: Def_Spine_Vert_1
+    100086: Def_Spine_Vert_2
+    100088: Def_Spine_Vert_3
+    100090: Def_UpLag_L
+    100092: Def_UpLag_R
+    100094: Help_Joins
+    100096: Ik_Ankle_L
+    100098: Ik_Ankle_R
+    100100: IK_Arm_L
+    100102: IK_Arm_R
+    100104: IK_Back
+    100106: Ik_Back_Curve
+    100108: Ik_FootBall_L
+    100110: Ik_FootBall_R
+    100112: Ik_FootToe_L
+    100114: Ik_FootToe_R
+    100116: Ik_Sholder_L
+    100118: Ik_Sholder_R
+    100120: joint1
+    100122: joint10
+    100124: joint11
+    100126: joint12
+    100128: joint13
+    100130: joint14
+    100132: joint15
+    100134: joint16
+    100136: joint2
+    100138: joint3
+    100140: joint4
+    100142: joint5
+    100144: joint6
+    100146: joint7
+    100148: joint8
+    100150: joint9
+    100152: Mesh
+    100154: Neck_Head_NULL
+    100156: ROOT
+    100158: Sholder_ROOT
+    100160: Waist_Cluster
+    400000: //RootNode
+    400002: Arm_Ctrls_L
+    400004: Arm_Ctrls_R
+    400006: Belly_Cluster
+    400008: Chest_Cluster
+    400010: Chest_OFFSET
+    400012: Ctrl_Belly
+    400014: Ctrl_Body
+    400016: Ctrl_Chest
+    400018: Ctrl_Elbow_L
+    400020: Ctrl_Elbow_R
+    400022: Ctrl_Foot_L
+    400024: Ctrl_Foot_R
+    400026: Ctrl_Hand_L
+    400028: Ctrl_Hand_L 1
+    400030: Ctrl_Hand_R
+    400032: Ctrl_Hand_R 1
+    400034: Ctrl_Head
+    400036: Ctrl_Knee_L
+    400038: Ctrl_Knee_R
+    400040: Ctrl_Neck
+    400042: Ctrl_ROOT
+    400044: Ctrl_Sholder_L
+    400046: Ctrl_Sholder_R
+    400048: Ctrl_Waist
+    400050: Def_Ankle_L
+    400052: Def_Ankle_R
+    400054: Def_Clav_L
+    400056: Def_Clav_R
+    400058: Def_Elbow_L
+    400060: Def_Elbow_R
+    400062: Def_FootBall_L
+    400064: Def_FootBall_R
+    400066: Def_FootToe_L
+    400068: Def_FootToe_R
+    400070: Def_Head
+    400072: Def_Hips
+    400074: Def_LwrlLag_L
+    400076: Def_Neck
+    400078: Def_RwrlLag_R
+    400080: Def_shoulder_L
+    400082: Def_shoulder_R
+    400084: Def_Spine_Vert_1
+    400086: Def_Spine_Vert_2
+    400088: Def_Spine_Vert_3
+    400090: Def_UpLag_L
+    400092: Def_UpLag_R
+    400094: Help_Joins
+    400096: Ik_Ankle_L
+    400098: Ik_Ankle_R
+    400100: IK_Arm_L
+    400102: IK_Arm_R
+    400104: IK_Back
+    400106: Ik_Back_Curve
+    400108: Ik_FootBall_L
+    400110: Ik_FootBall_R
+    400112: Ik_FootToe_L
+    400114: Ik_FootToe_R
+    400116: Ik_Sholder_L
+    400118: Ik_Sholder_R
+    400120: joint1
+    400122: joint10
+    400124: joint11
+    400126: joint12
+    400128: joint13
+    400130: joint14
+    400132: joint15
+    400134: joint16
+    400136: joint2
+    400138: joint3
+    400140: joint4
+    400142: joint5
+    400144: joint6
+    400146: joint7
+    400148: joint8
+    400150: joint9
+    400152: Mesh
+    400154: Neck_Head_NULL
+    400156: ROOT
+    400158: Sholder_ROOT
+    400160: Waist_Cluster
+    2100000: Peregrina
+    4300000: Mesh
+    7400000: Andar
+    9500000: //RootNode
+    13700000: Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
