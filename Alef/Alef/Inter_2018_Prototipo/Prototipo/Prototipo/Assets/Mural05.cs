@@ -45,9 +45,6 @@ public class Mural05 : MonoBehaviour {
     IEnumerator NarraMural05()
     {
         // feedFinal.Play();
-
-        Debug.Log("erro");
-
         abriMural05 = true;
 
     //    cam.Priority = 12;
