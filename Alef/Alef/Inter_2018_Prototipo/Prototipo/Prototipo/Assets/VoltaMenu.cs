@@ -9,6 +9,7 @@ public class VoltaMenu : MonoBehaviour {
     public GameObject image02;
     public GameObject botaoJogar;
     public GameObject botaoCreditos;
+    public GameObject botaoSair;
     public GameObject botaoVoltar;
 
     public void Voltar()
@@ -20,6 +21,7 @@ public class VoltaMenu : MonoBehaviour {
         image02.SetActive(true);
         botaoJogar.SetActive(true);
         botaoCreditos.SetActive(true);
+        botaoSair.SetActive(true);
 
     }
 }

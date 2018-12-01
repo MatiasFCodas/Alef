@@ -9,6 +9,7 @@ public class AbriCreditos : MonoBehaviour {
     public GameObject image02;
     public GameObject botaoJogar;
     public GameObject botaoCreditos;
+    public GameObject botaoSair;
     public GameObject botaoVoltar;
 
     public void Creditos()
@@ -20,6 +21,7 @@ public class AbriCreditos : MonoBehaviour {
         image02.SetActive(false);
         botaoJogar.SetActive(false);
         botaoCreditos.SetActive(false);
+        botaoSair.SetActive(false);
 
     }
 }
