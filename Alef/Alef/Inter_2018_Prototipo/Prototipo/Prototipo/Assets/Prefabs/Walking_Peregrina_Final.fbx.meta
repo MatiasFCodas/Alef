@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b55cdec634982a4f88c6c8a266c81c5
+guid: 6725848aab372674491bbe2f5dd0f022
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -80,10 +80,10 @@ ModelImporter:
     100148: joint9
     100150: Mesh
     100152: Neck_Head_NULL
-    100154: //RootNode
-    100156: ROOT
-    100158: Sholder_ROOT
-    100160: Waist_Cluster
+    100154: ROOT
+    100156: Sholder_ROOT
+    100158: Waist_Cluster
+    100160: //RootNode
     400000: Arm_Ctrls_L
     400002: Arm_Ctrls_R
     400004: Belly_Cluster
@@ -161,13 +161,13 @@ ModelImporter:
     400148: joint9
     400150: Mesh
     400152: Neck_Head_NULL
-    400154: //RootNode
-    400156: ROOT
-    400158: Sholder_ROOT
-    400160: Waist_Cluster
+    400154: ROOT
+    400156: Sholder_ROOT
+    400158: Waist_Cluster
+    400160: //RootNode
     2100000: Peregrina
     4300000: Mesh
-    7400000: Andando
+    7400000: Walking_Peregrina
     9500000: //RootNode
     13700000: Mesh
   externalObjects: {}
@@ -199,10 +199,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Andando
-      takeName: Andando
+      name: Walking_Peregrina
+      takeName: Walking_Peregrina
       firstFrame: 1
-      lastFrame: 100
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

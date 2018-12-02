@@ -30,7 +30,6 @@ public class CharController : MonoBehaviour {
       public Animator ilhaAnim;
 
      public Animator playerAnim;
-     Animation playerWalk;
 
     public Checa_Fase key;
 
@@ -82,7 +81,7 @@ public class CharController : MonoBehaviour {
         {
            steps.Play();
             playerAnim.SetBool("Andando", true);
-            playerWalk["Andando"].speed = 10.0f;
+
 
         }
 
@@ -90,7 +89,7 @@ public class CharController : MonoBehaviour {
         {
             steps.Play();
             playerAnim.SetBool("Andando", true);
-            playerWalk["Andando"].speed = 10.0f;
+
 
         }
 
@@ -122,27 +121,21 @@ public class CharController : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.A))
             {
-                moveDirection.x = -walkSpeed;
-              //  playerAnim.SetBool("Andando", true);
-                //playerWalk["Andando"].speed = 5.0f;
+                transform.Rotate(Vector3.down * mouseSensivity * Time.deltaTime);
+                //  moveDirection.x = -walkSpeed;
             }
             if (Input.GetKey(KeyCode.D)) {
-                moveDirection.x = walkSpeed;
-              //  playerAnim.SetBool("Andando", true);
-              //  playerWalk["Andando"].speed = 5.0f;
+                transform.Rotate(Vector3.up * mouseSensivity * Time.deltaTime);
+                //   moveDirection.x = walkSpeed;
             }
             if (Input.GetKey(KeyCode.W))
             {
                 moveDirection.z = walkSpeed;
-             //   playerAnim.SetBool("Andando", true);
-             //   playerWalk["Andando"].speed = 5.0f;
 
             }
             if (Input.GetKey(KeyCode.S))
             {
                 moveDirection.z = -walkSpeed;
-           //     playerAnim.SetBool("Andando", true);
-            //    playerWalk["Andando"].speed = -5.0f;
 
             }
 
