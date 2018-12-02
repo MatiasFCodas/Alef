@@ -36,9 +36,6 @@ public class Switch : MonoBehaviour {
 
     public GameObject instrucao;
 
-    public GameObject arosObj_01;
-    public GameObject arosObj_02;
-
 
     void Start()
     {
@@ -57,8 +54,6 @@ public class Switch : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Q) && player.GetComponent<CharController>().inPuzzle == true && puzzleAros == true)
         {
             Debug.Log("Aqui");
-            arosObj_01.SetActive(true);
-            arosObj_02.SetActive(true);
             player.GetComponent<CharController>().inPuzzle = false; 
             player.SetActive(true);
 
@@ -94,8 +89,6 @@ public class Switch : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
-            arosObj_01.SetActive(false);
-            arosObj_02.SetActive(false);
             puzzleAros = true;
 
             instrucao.SetActive(false);
