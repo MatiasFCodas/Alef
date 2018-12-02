@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -91,7 +91,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: 228498cfb0a170446bf71ec056644550,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1552,6 +1552,8 @@ MonoBehaviour:
   fim: {fileID: 0}
   fimOutrosPuzzles_01: {fileID: 0}
   fimOutrosPuzzles_02: {fileID: 0}
+  instrucao: {fileID: 0}
+  instrucaoGeral: {fileID: 0}
 --- !u!82 &64378520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2646,7 +2648,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118554049}
-  m_LocalRotation: {x: 0.06378076, y: 0.13619895, z: -0.00878541, w: 0.98858726}
+  m_LocalRotation: {x: 0.06421552, y: 0.07191011, z: -0.0046377094, w: 0.99533105}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8036,6 +8038,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 0}
   finaisDosCubos_02: {fileID: 0}
   finaisDosCubos_03: {fileID: 0}
+  instrucao: {fileID: 0}
 --- !u!65 &141808256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10011,6 +10014,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 0}
   finaisDosCubos_02: {fileID: 0}
   finaisDosCubos_03: {fileID: 0}
+  instrucao: {fileID: 0}
 --- !u!65 &232912978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11351,6 +11355,10 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984227157530008, guid: 8d1b360bf3d0949438dc4446c3ee892a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d1b360bf3d0949438dc4446c3ee892a, type: 2}
@@ -28236,10 +28244,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camela: {fileID: 1689140246}
   camela02: {fileID: 1689140246}
+  mapturn: {fileID: 0}
   ok: 0
   ok2: 0
   ok3: 0
   ok4: 0
+  anim: {fileID: 0}
 --- !u!4 &439199970
 Transform:
   m_ObjectHideFlags: 0
@@ -31716,6 +31726,85 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 581828692}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &584108670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1984227157530008, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584108671}
+  - component: {fileID: 584108673}
+  - component: {fileID: 584108672}
+  m_Layer: 5
+  m_Name: "Instru\xE7\xF5esCome\xE7o"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &584108671
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224160788344652816, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584108670}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1787825926}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -6.5, y: 0}
+  m_SizeDelta: {x: 657.4, y: 165.9}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &584108672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114297089624011366, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584108670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.130162, g: 0.7075472, b: 0.5323854, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49d2d55a71c995e4f8ba05200a217329, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Aperte E para interagir com o cubo
+--- !u!222 &584108673
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222333391437175314, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584108670}
+  m_CullTransparentMesh: 0
 --- !u!1 &585253924
 GameObject:
   m_ObjectHideFlags: 0
@@ -33089,6 +33178,8 @@ MonoBehaviour:
   fim: {fileID: 0}
   fimOutrosPuzzles_01: {fileID: 0}
   fimOutrosPuzzles_02: {fileID: 0}
+  instrucao: {fileID: 0}
+  instrucaoGeral: {fileID: 0}
 --- !u!1 &675860613
 GameObject:
   m_ObjectHideFlags: 0
@@ -39580,7 +39671,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773604277}
-  m_LocalRotation: {x: 0.0575692, y: 0.1316316, z: -0.007657594, w: 0.98959607}
+  m_LocalRotation: {x: 0.0579061, y: 0.0765436, z: -0.0044387085, w: 0.9953734}
   m_LocalPosition: {x: 0, y: 2.7799895, z: -5.699999}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
@@ -39724,6 +39815,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 503945396}
   finaisDosCubos_02: {fileID: 3241751}
   finaisDosCubos_03: {fileID: 459569659}
+  instrucao: {fileID: 1042508574}
 --- !u!65 &776950593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46486,6 +46578,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 503945396}
   finaisDosCubos_02: {fileID: 3241751}
   finaisDosCubos_03: {fileID: 459569659}
+  instrucao: {fileID: 1042508574}
 --- !u!65 &913820872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58429,6 +58522,87 @@ Transform:
   m_Father: {fileID: 1438903841}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1042508574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1984227157530008, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042508575}
+  - component: {fileID: 1042508577}
+  - component: {fileID: 1042508576}
+  m_Layer: 5
+  m_Name: "Instru\xE7\xF5esCome\xE7o (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1042508575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224160788344652816, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042508574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1787825926}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -6.5, y: 0}
+  m_SizeDelta: {x: 657.4, y: 165.9}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1042508576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114297089624011366, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042508574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.130162, g: 0.7075472, b: 0.5323854, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49d2d55a71c995e4f8ba05200a217329, type: 3}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Aperte E para interagir com os arcos e os feixos de luz
+
+'
+--- !u!222 &1042508577
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222333391437175314, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042508574}
+  m_CullTransparentMesh: 0
 --- !u!1 &1046051656
 GameObject:
   m_ObjectHideFlags: 0
@@ -59881,7 +60055,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1124673887}
-  m_LocalRotation: {x: 0.057570953, y: 0.13163081, z: -0.0076435087, w: 0.9895962}
+  m_LocalRotation: {x: 0.0579061, y: 0.0765436, z: -0.004438709, w: 0.9953734}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -72724,6 +72898,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 503945396}
   finaisDosCubos_02: {fileID: 3241751}
   finaisDosCubos_03: {fileID: 459569659}
+  instrucao: {fileID: 1042508574}
 --- !u!65 &1451854660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74873,6 +75048,8 @@ MonoBehaviour:
   fim: {fileID: 0}
   fimOutrosPuzzles_01: {fileID: 0}
   fimOutrosPuzzles_02: {fileID: 0}
+  instrucao: {fileID: 0}
+  instrucaoGeral: {fileID: 0}
 --- !u!82 &1623310952
 AudioSource:
   m_ObjectHideFlags: 0
@@ -76634,6 +76811,8 @@ MonoBehaviour:
   fim: {fileID: 459569659}
   fimOutrosPuzzles_01: {fileID: 3241751}
   fimOutrosPuzzles_02: {fileID: 503945396}
+  instrucao: {fileID: 584108670}
+  instrucaoGeral: {fileID: 1947251905}
 --- !u!65 &1693008754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78730,6 +78909,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 17852297d67914943bab52faffafca28, type: 3}
+--- !u!224 &1787825926 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224010674874684042, guid: 8d1b360bf3d0949438dc4446c3ee892a,
+    type: 2}
+  m_PrefabInternal: {fileID: 264407637}
 --- !u!1 &1791104165
 GameObject:
   m_ObjectHideFlags: 0
@@ -80320,6 +80504,8 @@ MonoBehaviour:
   fim: {fileID: 503945396}
   fimOutrosPuzzles_01: {fileID: 3241751}
   fimOutrosPuzzles_02: {fileID: 459569659}
+  instrucao: {fileID: 584108670}
+  instrucaoGeral: {fileID: 1947251905}
 --- !u!65 &1903586180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -80385,7 +80571,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1903586178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.97, y: 0, z: -5.95}
+  m_LocalPosition: {x: 5.97, y: 0.63, z: -5.95}
   m_LocalScale: {x: 4.6548, y: 1, z: 5.5}
   m_Children: []
   m_Father: {fileID: 1956087410}
@@ -80448,6 +80634,7 @@ MonoBehaviour:
   finaisDosCubos_01: {fileID: 0}
   finaisDosCubos_02: {fileID: 0}
   finaisDosCubos_03: {fileID: 0}
+  instrucao: {fileID: 0}
 --- !u!65 &1908515969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87100,6 +87287,8 @@ MonoBehaviour:
   fim: {fileID: 3241751}
   fimOutrosPuzzles_01: {fileID: 503945396}
   fimOutrosPuzzles_02: {fileID: 459569659}
+  instrucao: {fileID: 584108670}
+  instrucaoGeral: {fileID: 1947251905}
 --- !u!65 &2026995411
 BoxCollider:
   m_ObjectHideFlags: 0

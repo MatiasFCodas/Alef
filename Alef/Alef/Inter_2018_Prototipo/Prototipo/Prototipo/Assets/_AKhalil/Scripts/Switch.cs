@@ -34,6 +34,8 @@ public class Switch : MonoBehaviour {
     public GameObject finaisDosCubos_02;
     public GameObject finaisDosCubos_03;
 
+    public GameObject instrucao;
+
 
     void Start()
     {
@@ -67,6 +69,20 @@ public class Switch : MonoBehaviour {
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            instrucao.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        instrucao.SetActive(false);
+
+    }
+
 
 
     private void OnTriggerStay(Collider other)
@@ -74,6 +90,8 @@ public class Switch : MonoBehaviour {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             puzzleAros = true;
+
+            instrucao.SetActive(false);
 
             finaisDosCubos_01.SetActive(false);
             finaisDosCubos_02.SetActive(false);

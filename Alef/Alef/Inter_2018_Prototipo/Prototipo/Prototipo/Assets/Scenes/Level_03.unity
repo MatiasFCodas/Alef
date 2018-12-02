@@ -542,7 +542,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -5749,6 +5749,8 @@ MonoBehaviour:
   puzzleTotem: {fileID: 1895229319}
   cam: {fileID: 1693020507}
   brilho_01: {fileID: 1557734649}
+  instrucaoStart: {fileID: 1507241327}
+  instrucao: {fileID: 1257964597}
 --- !u!1 &79362069
 GameObject:
   m_ObjectHideFlags: 0
@@ -6228,7 +6230,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -12250,6 +12252,7 @@ RectTransform:
   - {fileID: 1317966431}
   - {fileID: 1257964598}
   - {fileID: 592231847}
+  - {fileID: 1507241328}
   m_Father: {fileID: 271801095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13938,7 +13941,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.043683555, y: 0.09252014, z: -0.004048928, w: 0.9947439}
+  m_LocalRotation: {x: 0.04373922, y: 0.077613845, z: -0.0033942978, w: 0.9960178}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15598,7 +15601,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.004776921, y: 0.9930972, z: -0.043609977, w: -0.10878124}
+  m_LocalRotation: {x: 0.0041093645, y: -0.99461484, z: 0.043677844, w: 0.0938971}
   m_LocalPosition: {x: -1.1281953, y: 1.936204, z: 30.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -19044,7 +19047,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.04994921, y: 0.0961863, z: -0.0048292764, w: 0.9940976}
+  m_LocalRotation: {x: 0.05001796, y: 0.08080131, z: -0.004056224, w: 0.9954662}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -24599,6 +24602,85 @@ Transform:
   m_Father: {fileID: 388882547}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1507241327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1727993692531788, guid: 3a846bc08257429419352319788095f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1507241328}
+  - component: {fileID: 1507241330}
+  - component: {fileID: 1507241329}
+  m_Layer: 5
+  m_Name: "Instru\xE7\xF5es02 (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1507241328
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224863459296365468, guid: 3a846bc08257429419352319788095f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507241327}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 272658866}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 99.9}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1507241329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114156895872677572, guid: 3a846bc08257429419352319788095f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507241327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.130162, g: 0.7075472, b: 0.5323854, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 49d2d55a71c995e4f8ba05200a217329, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Aperte E para iniciar o puzzle
+--- !u!222 &1507241330
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222960053517001634, guid: 3a846bc08257429419352319788095f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507241327}
+  m_CullTransparentMesh: 0
 --- !u!1 &1508803021
 GameObject:
   m_ObjectHideFlags: 0
@@ -40812,7 +40894,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -47552,7 +47634,7 @@ MonoBehaviour:
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1

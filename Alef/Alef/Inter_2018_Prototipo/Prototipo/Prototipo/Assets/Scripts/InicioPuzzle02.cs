@@ -10,6 +10,7 @@ public class InicioPuzzle02 : MonoBehaviour {
 	public CinemachineVirtualCamera cam;
     public GameObject interativo;
     public GameObject puzzleA;
+    public GameObject instrucao;
 
     public int puzzle02_B = 25;
 
@@ -19,11 +20,18 @@ public class InicioPuzzle02 : MonoBehaviour {
 
 	}
 
-    private void OnTriggerStay(Collider other)
+
+
+     void OnTriggerStay(Collider other)
     {
+
+        if (other.CompareTag("Player"))
+        {
+            instrucao.SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
         {
-
+            instrucao.SetActive(false);
             player.GetComponent<CharController>().inPuzzle = true;
             player.SetActive(false);
 
@@ -32,6 +40,11 @@ public class InicioPuzzle02 : MonoBehaviour {
             interativo.GetComponent<move2>().enabled = true;
             interativo.GetComponent<move2>().maxMov = puzzle02_B;
         }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        instrucao.SetActive(false);
     }
 }
 

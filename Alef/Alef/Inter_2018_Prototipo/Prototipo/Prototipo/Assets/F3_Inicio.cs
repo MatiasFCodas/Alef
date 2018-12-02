@@ -13,10 +13,16 @@ public class F3_Inicio : MonoBehaviour {
 
     public ParticleSystem brilho_01;
 
+    public GameObject instrucaoStart;
+    public GameObject instrucao;
+
     void OnTriggerStay(Collider other)
     {
+        instrucao.SetActive(false);
+        instrucaoStart.SetActive(true);
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
+            instrucaoStart.SetActive(false);
             brilho_01.Play();
             player.GetComponent<CharController>().inPuzzle = true;
             cam.Priority = 12;

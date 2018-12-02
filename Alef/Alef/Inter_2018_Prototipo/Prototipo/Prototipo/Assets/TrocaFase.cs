@@ -13,7 +13,7 @@ public class TrocaFase : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && key.ok4 == true)
+        if (Input.GetKeyDown(KeyCode.E) && key.ok4 == true )
         {
             ilhaAnim.SetTrigger("EntraIlha");
             FadeToLevel();

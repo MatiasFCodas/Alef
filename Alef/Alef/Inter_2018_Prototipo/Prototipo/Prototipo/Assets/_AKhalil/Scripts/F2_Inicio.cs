@@ -30,6 +30,8 @@ public class F2_Inicio : MonoBehaviour {
 
     public GameObject fimOutrosPuzzles_01;
     public GameObject fimOutrosPuzzles_02;
+    public GameObject instrucao;
+    public GameObject instrucaoGeral;
 
 
     void Start()
@@ -38,11 +40,22 @@ public class F2_Inicio : MonoBehaviour {
         fim.GetComponent<F2_Fim>().enabled = true;
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            instrucao.SetActive(true);
+            instrucaoGeral.SetActive(false);
+        }
+    }
+
 
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
+
+            instrucao.SetActive(false);
 
             Cubo.GetComponent<move2>().left = true;
             Cubo.GetComponent<move2>().up = true;
@@ -59,5 +72,11 @@ public class F2_Inicio : MonoBehaviour {
             Cubo.GetComponent<move2>().enabled = true;
             Cubo.GetComponent<move2>().maxMov = MaxMov;
         }
+    }
+
+     void OnTriggerExit(Collider other)
+    {
+        instrucao.SetActive(false);
+
     }
 }

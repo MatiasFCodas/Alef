@@ -7,6 +7,7 @@ public class Puzzles_01 : MonoBehaviour {
 
     public GameObject player;
     public GameObject interativo01_A;
+    public GameObject instrucao;
 
     public GameObject cam_puzzle01A;
 	public CinemachineVirtualCamera cam1;
@@ -22,13 +23,19 @@ public class Puzzles_01 : MonoBehaviour {
 
 
 	}
-	
 
-     void OnTriggerStay(Collider other)
+
+
+
+    void OnTriggerStay(Collider other)
     {
-        if ( Input.GetKeyDown(KeyCode.E))
+        if (other.CompareTag("Player"))
         {
-
+            instrucao.SetActive(true);
+        }
+        if ( Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
+        {
+            instrucao.SetActive(false);
 
             player.GetComponent<CharController>().inPuzzle = true;
             player.SetActive(false);
@@ -40,5 +47,11 @@ public class Puzzles_01 : MonoBehaviour {
 
         }
         }
+
+     void OnTriggerExit(Collider other)
+    {
+        instrucao.SetActive(false);
     }
+
+}
 
