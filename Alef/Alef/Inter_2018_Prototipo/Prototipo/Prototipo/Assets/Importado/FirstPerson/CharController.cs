@@ -25,7 +25,7 @@ public class CharController : MonoBehaviour {
     public AudioSource jump;
 
 
-     public Animator anim;
+         public Animator anim;
       public Animator portaAnim;
       public Animator ilhaAnim;
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class IniciaJogo : MonoBehaviour {
@@ -29,9 +30,11 @@ public class IniciaJogo : MonoBehaviour {
         Cursor.visible = false;
 		quadro.active = true;
         animatic.SetActive(true);
-        anim.SetTrigger("StartAnimatic");
+       anim.SetTrigger("StartAnimatic");
         menu.active = false;
         canvasobj.active = false;
 		estrela.active = false;
+
+        //SceneManager.LoadScene("Tutorial");
     }
 }

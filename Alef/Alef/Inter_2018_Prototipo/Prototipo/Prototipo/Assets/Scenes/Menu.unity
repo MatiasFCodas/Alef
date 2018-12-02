@@ -91,7 +91,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: d4dc62374689cc34eac3393da70fb08e,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -452,7 +452,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 103734232}
-  m_LocalRotation: {x: -0.014843975, y: 0.0012805996, z: 0.000019014511, w: 0.9998891}
+  m_LocalRotation: {x: -0.014844084, y: 0.0012101404, z: 0.00001796883, w: 0.9998891}
   m_LocalPosition: {x: 0, y: 4.773, z: -3.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1210,7 +1210,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.014843975, y: 0.0012805996, z: 0.000019014513, w: 0.9998891}
+  m_LocalRotation: {x: -0.014844084, y: 0.0012101404, z: 0.000017968832, w: 0.9998891}
   m_LocalPosition: {x: -1.736407e-11, y: 5.6629996, z: -3.472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
