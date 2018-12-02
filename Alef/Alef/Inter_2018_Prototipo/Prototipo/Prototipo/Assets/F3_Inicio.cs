@@ -18,8 +18,11 @@ public class F3_Inicio : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        instrucao.SetActive(false);
-        instrucaoStart.SetActive(true);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            instrucao.SetActive(false);
+            instrucaoStart.SetActive(true);
+        }
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             instrucaoStart.SetActive(false);
