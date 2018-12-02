@@ -20,6 +20,7 @@ public class Checa_Fase : MonoBehaviour {
     public GameObject camela02;
 
     public GameObject mapturn;
+    public GameObject levelChange;
 
     public bool ok;
     public bool ok2;
@@ -77,6 +78,7 @@ public class Checa_Fase : MonoBehaviour {
         {
             ok3 = true;
             camela.SetActive(true);
+           //levelChange.GetComponent<BoxCollider>().enabled = true;
         }
 
 

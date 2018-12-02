@@ -29,7 +29,8 @@ public class CharController : MonoBehaviour {
       public Animator portaAnim;
       public Animator ilhaAnim;
 
-    // public Animator playerAnim;
+     public Animator playerAnim;
+     Animation playerWalk;
 
     public Checa_Fase key;
 
@@ -80,19 +81,23 @@ public class CharController : MonoBehaviour {
         if (moveDirection.x > 0 && steps.isPlaying == false )
         {
            steps.Play();
-           // playerAnim.SetBool("Andando", true);
+            playerAnim.SetBool("Andando", true);
+            playerWalk["Andando"].speed = 10.0f;
+
         }
 
         if (moveDirection.x < 0 && steps.isPlaying == false)
         {
             steps.Play();
-            // playerAnim.SetBool("Andando", true);
+            playerAnim.SetBool("Andando", true);
+            playerWalk["Andando"].speed = 10.0f;
+
         }
 
         if (moveDirection.x == 0 && moveDirection.z == 0 )
         {
             steps.Stop();
-            //  playerAnim.SetBool("Andando", false);
+              playerAnim.SetBool("Andando", false);
         }
 
 
@@ -118,19 +123,26 @@ public class CharController : MonoBehaviour {
             if (Input.GetKey(KeyCode.A))
             {
                 moveDirection.x = -walkSpeed;
+              //  playerAnim.SetBool("Andando", true);
+                //playerWalk["Andando"].speed = 5.0f;
             }
             if (Input.GetKey(KeyCode.D)) {
                 moveDirection.x = walkSpeed;
-
+              //  playerAnim.SetBool("Andando", true);
+              //  playerWalk["Andando"].speed = 5.0f;
             }
             if (Input.GetKey(KeyCode.W))
             {
                 moveDirection.z = walkSpeed;
+             //   playerAnim.SetBool("Andando", true);
+             //   playerWalk["Andando"].speed = 5.0f;
 
             }
             if (Input.GetKey(KeyCode.S))
             {
                 moveDirection.z = -walkSpeed;
+           //     playerAnim.SetBool("Andando", true);
+            //    playerWalk["Andando"].speed = -5.0f;
 
             }
 
