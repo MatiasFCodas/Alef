@@ -26,6 +26,7 @@ public class Checa_Fase : MonoBehaviour {
     public bool ok3;
     public bool ok4;
 
+
     public Animator anim;
 
 

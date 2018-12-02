@@ -43,4 +43,10 @@ public class Muro_B : MonoBehaviour {
 
     }
 
+
+    void OnTriggerExit(Collider other)
+    {
+        instrucoes02.SetActive(false);
+    }
+
 }

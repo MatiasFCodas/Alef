@@ -25,9 +25,13 @@ public class CharController : MonoBehaviour {
     public AudioSource jump;
 
 
-    public Animator anim;
-    public Animator portaAnim;
-    public Animator ilhaAnim;
+     public Animator anim;
+      public Animator portaAnim;
+      public Animator ilhaAnim;
+
+    // public Animator playerAnim;
+
+    public Checa_Fase key;
 
     void Start () {
 		controller = GetComponent<CharacterController>();
@@ -76,20 +80,23 @@ public class CharController : MonoBehaviour {
         if (moveDirection.x > 0 && steps.isPlaying == false )
         {
            steps.Play();
+           // playerAnim.SetBool("Andando", true);
         }
 
         if (moveDirection.x < 0 && steps.isPlaying == false)
         {
             steps.Play();
+            // playerAnim.SetBool("Andando", true);
         }
 
         if (moveDirection.x == 0 && moveDirection.z == 0 )
         {
             steps.Stop();
+            //  playerAnim.SetBool("Andando", false);
         }
 
 
-        if(inPuzzle ==true)
+        if (inPuzzle ==true)
         {
             player.SetActive(false);
         }
@@ -189,16 +196,19 @@ public class CharController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            key.ok = true;
             SceneManager.LoadScene(3);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            key.ok2 = true;
             SceneManager.LoadScene(5);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            key.ok3 = true;
             SceneManager.LoadScene(6);
         }
 
@@ -209,6 +219,7 @@ public class CharController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
+            key.ok4 = true;
             SceneManager.LoadScene(7);
         }
 

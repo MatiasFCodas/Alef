@@ -19,12 +19,14 @@ public class PuzzleB_01 : MonoBehaviour {
     public move2 movcubo;
     public AudioSource narracao;
 
+    public GameObject instrucao;
+
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Face"))
         {
-
+            instrucao.SetActive(false);
             cam.Priority = 9;
             feed.Play();
             puzzleB_01 = true;
