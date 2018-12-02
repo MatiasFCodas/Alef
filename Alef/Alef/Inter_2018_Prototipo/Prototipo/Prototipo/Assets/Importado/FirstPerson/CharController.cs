@@ -118,6 +118,9 @@ public class CharController : MonoBehaviour {
 		if(controller.isGrounded){
 
 			moveDirection = Vector3.zero;
+            
+            playerAnim.ResetTrigger("Pulo");
+
 
             if (Input.GetKey(KeyCode.A))
             {
@@ -146,7 +149,7 @@ public class CharController : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection.y = jumpSpeed;
-                jump.Play(0);
+                jump.Play();
                 playerAnim.SetTrigger("Pulo");
             }
 
