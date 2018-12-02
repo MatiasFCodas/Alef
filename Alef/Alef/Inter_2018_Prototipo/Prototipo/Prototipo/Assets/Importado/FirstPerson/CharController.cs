@@ -147,6 +147,7 @@ public class CharController : MonoBehaviour {
             {
                 moveDirection.y = jumpSpeed;
                 jump.Play(0);
+                playerAnim.SetTrigger("Pulo");
             }
 
 		}
