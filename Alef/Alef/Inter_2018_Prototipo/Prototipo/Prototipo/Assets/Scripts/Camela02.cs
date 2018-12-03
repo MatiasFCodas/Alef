@@ -8,6 +8,7 @@ public class Camela02 : MonoBehaviour
     public AudioSource camela02;
 
     public Animator animCamelo;
+    public Animator animMov;
 
     public GameObject legenda02;
 
@@ -25,8 +26,8 @@ public class Camela02 : MonoBehaviour
         if (isComplete == true)
         {
             legenda02.SetActive(false);
-            animCamelo.SetTrigger("AndaCamela");
-
+            animMov.SetTrigger("Anda");
+            animCamelo.SetTrigger("AndaCamela");    
         }
 
     }
@@ -34,13 +35,15 @@ public class Camela02 : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         StartCoroutine("NarraCamela02");
-
+        camelo.GetComponent<BoxCollider>().enabled = false;
     }
 
     IEnumerator NarraCamela02()
     {
         camela02.Play();
         legenda02.SetActive(true);
+        animMov.SetTrigger("Levanta");
+
 
         yield return new WaitForSeconds(15);
 

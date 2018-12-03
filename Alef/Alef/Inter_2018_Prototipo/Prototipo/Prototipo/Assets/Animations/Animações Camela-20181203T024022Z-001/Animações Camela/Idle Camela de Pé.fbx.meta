@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: f707edf67ca84504da4db52faf1f5889
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: cabaca1
+    100006: camela1
+    100008: capa_camela
+    100010: Cluster_Spine_End
+    100012: Cluster_Spine_Mid
+    100014: Cluster_Spine_Start
+    100016: Ctrl_Arm_L
+    100018: Ctrl_Arm_R
+    100020: Ctrl_Belly
+    100022: Ctrl_Body
+    100024: Ctrl_capa
+    100026: Ctrl_Elbow_L
+    100028: Ctrl_Elbow_R
+    100030: Ctrl_Foot_L
+    100032: Ctrl_Foot_R
+    100034: Ctrl_Head
+    100036: Ctrl_Head1
+    100038: Ctrl_Knee_L
+    100040: Ctrl_Knee_R
+    100042: Ctrl_Neck
+    100044: Ctrl_ROOT
+    100046: Ctrl_Sholder_L
+    100048: Ctrl_Sholder_R
+    100050: Ctrl_Spine_End
+    100052: Ctrl_Spine_Mid
+    100054: Ctrl_Waist
+    100056: Def_Ankle_L
+    100058: Def_Ankle_R
+    100060: Def_Clav_L
+    100062: Def_Clav_R
+    100064: Def_Elbow_L
+    100066: Def_Elbow_R
+    100068: Def_FootToe_L
+    100070: Def_FootToe_R
+    100072: Def_Head
+    100074: Def_Hips
+    100076: Def_Neck_1
+    100078: Def_Neck_2
+    100080: Def_Pulse_L
+    100082: Def_Pulse_R
+    100084: Def_RwrlLag_L
+    100086: Def_RwrlLag_R
+    100088: Def_shoulder_L
+    100090: Def_shoulder_R
+    100092: Def_Spine_Vert_1
+    100094: Def_Spine_Vert_2
+    100096: Def_UpLag_L
+    100098: Def_UpLag_R
+    100100: Help_Joins1
+    100102: //RootNode
+    100104: Ik_Arm_L
+    100106: Ik_Arm_R
+    100108: ik_back
+    100110: IK_Back_Curve
+    100112: Ik_Foot_L
+    100114: Ik_Foot_R
+    100116: IK_Lag_L
+    100118: Ik_Lag_R
+    100120: IK_Neck
+    100122: Ik_Sholder_L
+    100124: Ik_Sholder_R
+    100126: join_cabaca
+    100128: joint1
+    100130: joint10
+    100132: joint11
+    100134: joint12
+    100136: joint13
+    100138: joint14
+    100140: joint2
+    100142: joint29
+    100144: joint3
+    100146: joint30
+    100148: joint31
+    100150: joint32
+    100152: joint33
+    100154: joint33 1
+    100156: joint34
+    100158: joint34 1
+    100160: joint35
+    100162: joint4
+    100164: joint5
+    100166: joint6
+    100168: joint7
+    100170: joint8
+    100172: joint9
+    100174: ROOT
+    100176: soquete_cabaca
+    100178: Soquete_Hand_L
+    400000: Arm_L
+    400002: Arm_R
+    400004: cabaca1
+    400006: camela1
+    400008: capa_camela
+    400010: Cluster_Spine_End
+    400012: Cluster_Spine_Mid
+    400014: Cluster_Spine_Start
+    400016: Ctrl_Arm_L
+    400018: Ctrl_Arm_R
+    400020: Ctrl_Belly
+    400022: Ctrl_Body
+    400024: Ctrl_capa
+    400026: Ctrl_Elbow_L
+    400028: Ctrl_Elbow_R
+    400030: Ctrl_Foot_L
+    400032: Ctrl_Foot_R
+    400034: Ctrl_Head
+    400036: Ctrl_Head1
+    400038: Ctrl_Knee_L
+    400040: Ctrl_Knee_R
+    400042: Ctrl_Neck
+    400044: Ctrl_ROOT
+    400046: Ctrl_Sholder_L
+    400048: Ctrl_Sholder_R
+    400050: Ctrl_Spine_End
+    400052: Ctrl_Spine_Mid
+    400054: Ctrl_Waist
+    400056: Def_Ankle_L
+    400058: Def_Ankle_R
+    400060: Def_Clav_L
+    400062: Def_Clav_R
+    400064: Def_Elbow_L
+    400066: Def_Elbow_R
+    400068: Def_FootToe_L
+    400070: Def_FootToe_R
+    400072: Def_Head
+    400074: Def_Hips
+    400076: Def_Neck_1
+    400078: Def_Neck_2
+    400080: Def_Pulse_L
+    400082: Def_Pulse_R
+    400084: Def_RwrlLag_L
+    400086: Def_RwrlLag_R
+    400088: Def_shoulder_L
+    400090: Def_shoulder_R
+    400092: Def_Spine_Vert_1
+    400094: Def_Spine_Vert_2
+    400096: Def_UpLag_L
+    400098: Def_UpLag_R
+    400100: Help_Joins1
+    400102: //RootNode
+    400104: Ik_Arm_L
+    400106: Ik_Arm_R
+    400108: ik_back
+    400110: IK_Back_Curve
+    400112: Ik_Foot_L
+    400114: Ik_Foot_R
+    400116: IK_Lag_L
+    400118: Ik_Lag_R
+    400120: IK_Neck
+    400122: Ik_Sholder_L
+    400124: Ik_Sholder_R
+    400126: join_cabaca
+    400128: joint1
+    400130: joint10
+    400132: joint11
+    400134: joint12
+    400136: joint13
+    400138: joint14
+    400140: joint2
+    400142: joint29
+    400144: joint3
+    400146: joint30
+    400148: joint31
+    400150: joint32
+    400152: joint33
+    400154: joint33 1
+    400156: joint34
+    400158: joint34 1
+    400160: joint35
+    400162: joint4
+    400164: joint5
+    400166: joint6
+    400168: joint7
+    400170: joint8
+    400172: joint9
+    400174: ROOT
+    400176: soquete_cabaca
+    400178: Soquete_Hand_L
+    2100000: camela
+    2100002: "Caba\xE7a_da_camela"
+    2100004: lambert1
+    2300000: capa_camela
+    3300000: capa_camela
+    4300000: camela1
+    4300002: cabaca1
+    4300004: capa_camela
+    7400000: "Idle Camela de P\xE9"
+    9500000: //RootNode
+    13700000: cabaca1
+    13700002: camela1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: "Idle Camela de P\xE9"
+      takeName: "Idle Camela de P\xE9"
+      firstFrame: 130
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

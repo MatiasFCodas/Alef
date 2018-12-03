@@ -17,6 +17,8 @@ public class Camela03 : MonoBehaviour {
 
     public GameObject camelo;
 
+    public Animator animMov;
+
 
 
 
@@ -25,8 +27,7 @@ public class Camela03 : MonoBehaviour {
         if (isComplete == true)
         {
             legenda03.SetActive(false);
-
-
+            animMov.SetTrigger("Anda");
         }
 
     }
@@ -37,6 +38,7 @@ public class Camela03 : MonoBehaviour {
         {
             StartCoroutine("NarraCamela03");
             stop = true;
+            camelo.GetComponent<BoxCollider>().enabled = false;
         }
 
     }
@@ -45,6 +47,8 @@ public class Camela03 : MonoBehaviour {
     {
         camela03.Play();
         legenda03.SetActive(true);
+
+        animMov.SetTrigger("Levanta");
 
         yield return new WaitForSeconds(15);
 
