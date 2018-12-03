@@ -28,6 +28,9 @@ public class Checa_Fase : MonoBehaviour {
     public bool ok4;
 
 
+	private bool rodou = false;
+
+
     public Animator anim;
 
 
@@ -37,30 +40,36 @@ public class Checa_Fase : MonoBehaviour {
 
         string sceneName = currentScene.name;
 
-        if (sceneName == "Tutorial")
-        {
-            fase01Liberado = 1;
-            mapturn.transform.localRotation = Quaternion.Euler(0, 90, 0);
-        }
+		if (sceneName == "Tutorial")
+		{
+			fase01Liberado = 1;
+			mapturn.transform.localRotation = Quaternion.Euler(0, 90, 0);
+		}
 
-       else if(sceneName == "Level_01" )
-        {
-            fase02Liberado = 1;
-            mapturn.transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
+		else if (sceneName == "Level_01")
+		{
+			fase02Liberado = 1;
+			mapturn.transform.localRotation = Quaternion.Euler(0, 180, 0);
+		}
 
-       else if (sceneName == "Level_02")
-        {
-            fase03Liberado = 1;
-            mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
-        }
+		else if (sceneName == "Level_02")
+		{
+			fase03Liberado = 1;
+			mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
+		}
 
-      else if  (sceneName == "Level_03")
-        {
-            ilhaLiberado = 1;
-            mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
-        }
-    }
+		else if (sceneName == "Level_03")
+		{
+			ilhaLiberado = 1;
+			mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
+		}
+
+
+
+		
+
+		
+	}
 
     void Update () {
 
@@ -88,6 +97,27 @@ public class Checa_Fase : MonoBehaviour {
             camela.SetActive(false);
             camela02.SetActive(true);
         }
+
+
+		if (!rodou)
+		{
+			if (ok == true)
+			{
+				mapturn.transform.localRotation = Quaternion.Euler(0, 90, 0);
+			}
+
+			if (ok2 == true)
+			{
+				mapturn.transform.localRotation = Quaternion.Euler(0, 270, 0);
+			}
+
+			if (ok3 == true)
+			{
+				mapturn.transform.localRotation = Quaternion.Euler(0, 180, 0);
+			}
+
+			rodou = true;
+		}
 	}
 
 
