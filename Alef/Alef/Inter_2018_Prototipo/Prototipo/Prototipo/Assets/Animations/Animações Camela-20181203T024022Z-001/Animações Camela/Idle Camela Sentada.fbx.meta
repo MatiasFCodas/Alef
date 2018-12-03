@@ -195,7 +195,32 @@ ModelImporter:
     9500000: //RootNode
     13700000: cabaca1
     13700002: camela1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Caba\xE7a_da_camela"
+    second: {fileID: 2100000, guid: bbffc29c88e57074d89e4ed7cd28880b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camela
+    second: {fileID: 2100000, guid: f5a4819ee95fe7f43b2eacce4bb7f24c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 1cba2aa14bbaadf4d801f3858e84a944, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Caba\xE7a da camela"
+    second: {fileID: 2800000, guid: d3624f5e499875f49870bfa49698fb76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Textura Camela
+    second: {fileID: 2800000, guid: 7d5b72e1c05a9c74c8740c0766a3fa5b, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
