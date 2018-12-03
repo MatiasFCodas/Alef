@@ -13785,6 +13785,7 @@ GameObject:
   - component: {fileID: 363389651}
   - component: {fileID: 363389653}
   - component: {fileID: 363389652}
+  - component: {fileID: 363389654}
   m_Layer: 0
   m_Name: polySurface522
   m_TagString: Untagged
@@ -13858,6 +13859,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 363389650}
+  m_Mesh: {fileID: 4300014, guid: 2d874e6ec06d1714ea5ab901a5240233, type: 3}
+--- !u!64 &363389654
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 363389650}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300014, guid: 2d874e6ec06d1714ea5ab901a5240233, type: 3}
 --- !u!1 &367504085
 GameObject:
@@ -13945,7 +13960,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.043682944, y: 0.09266865, z: -0.004055015, w: 0.9947301}
+  m_LocalRotation: {x: 0.059809662, y: 0.1053266, z: -0.0063319197, w: 0.9926173}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15615,8 +15630,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.5239871, y: 0.3523431, z: -0.25172624, w: -0.7334342}
-  m_LocalPosition: {x: -3.1099977, y: 51.620003, z: -11.56}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17288,7 +17303,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714059262}
-  m_LocalRotation: {x: -0.08638642, y: -0.0010099951, z: 0.000086536864, w: -0.99626124}
+  m_LocalRotation: {x: -0.1025846, y: 0.018389525, z: -0.0018978581, w: -0.9945525}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19065,7 +19080,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.04994902, y: 0.09633932, z: -0.004836823, w: 0.99408275}
+  m_LocalRotation: {x: 0.06604664, y: 0.10977668, z: -0.0073069325, w: 0.9917326}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -47674,7 +47689,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 11
+  m_Priority: 12
   m_LookAt: {fileID: 360062708}
   m_Follow: {fileID: 666018467}
   m_CommonLens: 1
