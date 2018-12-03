@@ -124,11 +124,11 @@ public class CharController : MonoBehaviour {
 
             if (Input.GetKey(KeyCode.A))
             {
-                transform.Rotate(Vector3.down * mouseSensivity * Time.deltaTime);
+                transform.Rotate(Vector3.down * mouseSensivity* 2 * Time.deltaTime);
                 //  moveDirection.x = -walkSpeed;
             }
             if (Input.GetKey(KeyCode.D)) {
-                transform.Rotate(Vector3.up * mouseSensivity * Time.deltaTime);
+                transform.Rotate(Vector3.up * mouseSensivity *2 * Time.deltaTime);
                 //   moveDirection.x = walkSpeed;
             }
             if (Input.GetKey(KeyCode.W))

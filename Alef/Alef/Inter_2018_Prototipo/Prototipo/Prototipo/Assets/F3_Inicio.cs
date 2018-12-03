@@ -16,13 +16,18 @@ public class F3_Inicio : MonoBehaviour {
     public GameObject instrucaoStart;
     public GameObject instrucao;
 
-    void OnTriggerStay(Collider other)
+     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             instrucao.SetActive(false);
             instrucaoStart.SetActive(true);
         }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+
         if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             instrucaoStart.SetActive(false);
@@ -32,5 +37,10 @@ public class F3_Inicio : MonoBehaviour {
             puzzlePetalas.GetComponent<Movimento_Petalas_Lerp>().enabled = true;
             puzzleTotem.GetComponent<Totem_Manager>().enabled = true;
         }
+    }
+
+     void OnTriggerExit(Collider other)
+    {
+        
     }
 }
