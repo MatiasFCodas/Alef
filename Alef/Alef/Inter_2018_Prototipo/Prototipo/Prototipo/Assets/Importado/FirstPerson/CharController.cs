@@ -205,19 +205,19 @@ public class CharController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            key.ok = true;
+           // key.ok = true;
             SceneManager.LoadScene(3);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            key.ok2 = true;
+            //key.ok2 = true;
             SceneManager.LoadScene(5);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            key.ok3 = true;
+           // key.ok3 = true;
             SceneManager.LoadScene(6);
         }
 
@@ -228,7 +228,7 @@ public class CharController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            key.ok4 = true;
+            //key.ok4 = true;
             SceneManager.LoadScene(7);
         }
 
