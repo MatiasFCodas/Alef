@@ -542,7 +542,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -6230,7 +6230,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -11623,6 +11623,7 @@ MonoBehaviour:
   stopMural: 0
   feedFinal: {fileID: 231729942}
   porta: {fileID: 271801091}
+  checafases: {fileID: 806513467}
 --- !u!95 &231729941
 Animator:
   serializedVersion: 3
@@ -13960,7 +13961,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 375655220}
-  m_LocalRotation: {x: 0.059809662, y: 0.1053266, z: -0.0063319197, w: 0.9926173}
+  m_LocalRotation: {x: 0.05998327, y: 0.07303692, z: -0.0043862923, w: 0.99551415}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15630,8 +15631,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0053813434, y: 0.9941861, z: -0.05990214, w: -0.08931329}
+  m_LocalPosition: {x: -1.4200219, y: 2.0918067, z: 30.009998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17303,7 +17304,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 714059262}
-  m_LocalRotation: {x: -0.1025846, y: 0.018389525, z: -0.0018978581, w: -0.9945525}
+  m_LocalRotation: {x: -0.102584586, y: 0.018390326, z: -0.0018979431, w: -0.9945525}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18282,7 +18283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &806513468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19080,7 +19081,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 903072375}
-  m_LocalRotation: {x: 0.06604664, y: 0.10977668, z: -0.0073069325, w: 0.9917326}
+  m_LocalRotation: {x: 0.066253066, y: 0.07670397, z: -0.00510438, w: 0.99483716}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -40968,7 +40969,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1
@@ -47708,7 +47709,7 @@ MonoBehaviour:
     m_InputAxisValue: 0
     m_InvertAxis: 0
   m_XAxis:
-    Value: -0
+    Value: 0
     m_MaxSpeed: 0
     m_AccelTime: 0.1
     m_DecelTime: 0.1

@@ -19,6 +19,8 @@ public class Mural05 : MonoBehaviour {
     public AudioSource feedFinal;
     public GameObject porta;
 
+	public GameObject checafases;
+
 
     void Update () {
 		
@@ -75,6 +77,8 @@ public class Mural05 : MonoBehaviour {
         player.GetComponent<CharController>().inPuzzle = false;
         porta.GetComponent<BoxCollider>().enabled = true;
 
+
+		checafases.SetActive(true);
         
 
         StopAllCoroutines();

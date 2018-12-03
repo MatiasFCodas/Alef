@@ -19,6 +19,8 @@ public class Mural04 : MonoBehaviour {
     public bool abriMural04;
     public AudioSource narracao;
 
+	public GameObject checafases;
+
     bool stopMural;
 
     void Update()
@@ -69,6 +71,8 @@ public class Mural04 : MonoBehaviour {
 
         player.SetActive(true);
         player.GetComponent<CharController>().inPuzzle = false;
+
+		checafases.SetActive(true);
 
         StopAllCoroutines();
 

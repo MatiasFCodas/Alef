@@ -16,6 +16,8 @@ public class Mural01 : MonoBehaviour {
     public bool isComplete01;
     public bool abriMural01;
 
+	public GameObject checafases;
+
 
 	void Update () {
 
@@ -55,6 +57,8 @@ public class Mural01 : MonoBehaviour {
         yield return new WaitForSeconds(10);
 
         isComplete01 = true;
+
+		checafases.SetActive(true);
 
         StopAllCoroutines();
 
