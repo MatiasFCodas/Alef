@@ -18,6 +18,8 @@ public class Camela03 : MonoBehaviour {
     public GameObject camelo;
 
     public Animator animMov;
+    public Animator animTemplo;
+    public AudioSource templo;
 
 
 
@@ -47,7 +49,8 @@ public class Camela03 : MonoBehaviour {
     {
         camela03.Play();
         legenda03.SetActive(true);
-
+        animTemplo.SetTrigger("AtivaTemplo");
+        templo.Play();
         animMov.SetTrigger("Levanta");
 
         yield return new WaitForSeconds(15);

@@ -11,26 +11,40 @@ public class TrocaFase : MonoBehaviour {
 
     public Checa_Fase key;
 
+    public GameObject instrucao;
+
     void OnTriggerStay(Collider other)
     {
+        instrucao.SetActive(true);
+
         if (Input.GetKeyDown(KeyCode.E) && key.ok4 == true )
         {
             ilhaAnim.SetTrigger("EntraIlha");
             FadeToLevel();
+            instrucao.SetActive(false);
+
         }
 
         else if (Input.GetKeyDown(KeyCode.E) && key.ok3 == true)
         {
             FadeToLevel();
+            instrucao.SetActive(false);
         }
 
         else if (Input.GetKeyDown(KeyCode.E) && key.ok == true)
         {
             portaAnim.SetTrigger("AbriPorta");
             FadeToLevel();
+            instrucao.SetActive(false);
 
         }
 
+
+    }
+
+     void OnTriggerExit(Collider other)
+    {
+        instrucao.SetActive(false);
 
     }
 
